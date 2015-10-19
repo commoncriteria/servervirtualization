@@ -4,13 +4,13 @@ Protection Profile for Server Virtualization
 Protection Profile for Server Virtualization
 
 ## Working Draft
-[Essential Security Requirements (ESR)](http://common-criteria.rhcloud.com/ssh/output/servervirtualization-esr.html)
+[Essential Security Requirements (ESR)](http://common-criteria.rhcloud.com/servervirtualization/output/servervirtualization-esr.html)
 
-[Protection Profile for Server Virtualization](http://common-criteria.rhcloud.com/ssh/output/servervirtualization-release.html)
+[Protection Profile for Server Virtualization](http://common-criteria.rhcloud.com/servervirtualization/output/servervirtualization-release.html)
 
 ## Release Version
 [Protection Profile for Server Virtualization v1.1](https://www.niap-ccevs.org/pp/PP_SV_V1.1/) 10/07/2015
-Protection Profile for Server Virtualization v1.0 10/29/2014
+<br/>Protection Profile for Server Virtualization v1.0 10/29/2014
 
 ## Change Log
 
