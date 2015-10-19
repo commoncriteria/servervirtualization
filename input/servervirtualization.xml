@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="..\transforms\pp2html.xsl"?>
+<PP xmlns="http://common-criteria.rhcloud.com/ns/cc" name="Secure Shell"
+xmlns:htm="http://www.w3.org/1999/xhtml">
+  <PPReference title="PP Reference" id="ID006">
+    <ReferenceTable>
+      <PPTitle>Protection Profile for Server Virtualization</PPTitle>
+      <PPVersion>1.1</PPVersion>
+      <PPAuthor>National Information Assurance Partnership</PPAuthor>
+      <PPPubDate>2015-10-05</PPPubDate>
+      <PPCertificationID>unassigned</PPCertificationID>
+      <CCVersion>Version 3.1R4</CCVersion>
+      <Keywords>Server Virtualization</Keywords>
+      <entry>
+        <name>Registration</name>
+        <description>National Information Assurance Partnership</description>
+      </entry>
+    </ReferenceTable>
+  </PPReference>
+  <RevisionHistory role="draft">
+    <entry>
+      <version>v .9</version>
+      <date>2015-08-19</date>
+      <subject>First Draft - </subject>
+    </entry>
+  </RevisionHistory>
+  <RevisionHistory role="final">
+    <entry>
+      <version>1.0</version>
+      <date>2015-09-14</date>
+      <subject>Initial Release - </subject>
+    </entry>
+  </RevisionHistory>
+  <chapter title="Introduction" id="int">
+   
+  </chapter>
+  <chapter title="Conformance Claims" id="conf">
+   
+  </chapter>
+
+  <chapter title="Security Problem Description" id="spd">
+ 
+  </chapter>
+  
+  <chapter title="Security Objectives" id="sobj">
+  </chapter>
+
+  <chapter title="Security Requirements" id="req">
+    
+  </chapter>
+  
+  <appendix title="Optional Requirements" id="optional">
+    
+  </appendix>
+  <appendix title="Selection-Based Requirements" id="sel-based">
+    
+  </appendix>
+  <appendix title="Objective Requirements" id="objective">This Annex includes requirements that
+  </appendix>
+  <appendix id="biblio" title="References">
+    <bibliography>
+      <entry id="bibCC">
+        <tag>CC</tag>
+        <description>Common Criteria for Information Technology Security Evaluation - 
+        <ul>
+          <li>
+          <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R4.pdf">Part 1:
+          Introduction and General Model</a>, CCMB-2012-09-001, Version 3.1 Revision 4, September
+          2012.</li>
+          <li>
+          <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R4.pdf">Part 2:
+          Security Functional Components</a>, CCMB-2012-09-002, Version 3.1 Revision 4, September
+          2012.</li>
+          <li>
+          <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R4.pdf">Part 3:
+          Security Assurance Components</a>, CCMB-2012-09-003, Version 3.1 Revision 4, September
+          2012.</li>
+        </ul></description>
+      </entry>
+   
+    </bibliography>
+  </appendix>
+  <appendix title="Acronyms" id="acronyms">
+   
+  </appendix>
+</PP>
