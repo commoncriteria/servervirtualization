@@ -18,7 +18,7 @@ Protection Profile for Server Virtualization
 To clone this project along with its _transforms_ submodule run:
 
 ````
-  git clone --recursive git@github.com:commoncriteria/ssh.git
+  git clone --recursive git@github.com:commoncriteria/servervirtualization.git
 ````
 To pull updates from the upstream _transforms_ submodule and commit them run:
 ````
