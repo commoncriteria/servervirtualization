@@ -3257,7 +3257,7 @@
             </aactivity>
           </f-element>
         </f-component>
-        <f-component id="FPT_INT_EXT.1" name="Support for Introspection"  status="objective">
+        <f-component id="FPT_INT_EXT.1" name="Support for Introspection" status="objective">
           <f-element id="FPT_INT_EXT.1.1">
             <title>The TSF shall support a mechanism for permitting the VMM or privileged VMs to access the internals of another VM for purposes of introspection.
             </title>
@@ -4305,13 +4305,13 @@
     </section>
  
   </appendix>
-  <appendix title="Selection-Based Requirements" id="sbreqs">
+  <appendix title="Selection-Based Requirements" id="sel-based">
 
   </appendix>
-  <appendix title="Optional Requirements" id="optreqs">
+  <appendix title="Optional Requirements" id="optional">
     
   </appendix>
-  <appendix title="Objective Requirements" id="objreqs">
+  <appendix title="Objective Requirements" id="objective">
     
   </appendix>
   <appendix title="Entropy Documentation and Assessment" id="entropy">
