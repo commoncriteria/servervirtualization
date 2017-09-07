@@ -1,12 +1,13 @@
-Protection Profile for Server Virtualization [![Build Status](https://travis-ci.org/commoncriteria/servervirtualization.svg?branch=master)](https://travis-ci.org/commoncriteria/servervirtualization)
+Protection Profile for Server Virtualization 
 ============
+[![Build Status](https://travis-ci.org/commoncriteria/servervirtualization.svg?branch=master)](https://travis-ci.org/commoncriteria/servervirtualization)
 
 Protection Profile for Server Virtualization
 
 ## Working Draft
-[Essential Security Requirements (ESR)](http://common-criteria.rhcloud.com/servervirtualization/output/servervirtualization-esr.html)
+[Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-esr.html)
 
-[Protection Profile for Server Virtualization](http://common-criteria.rhcloud.com/servervirtualization/output/servervirtualization-release.html)
+[Protection Profile for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html)
 
 ## Release Version
 [Protection Profile for Server Virtualization v1.1](https://www.niap-ccevs.org/pp/PP_SV_V1.1/) 10/07/2015
