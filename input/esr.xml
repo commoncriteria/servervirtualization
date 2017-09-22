@@ -4,15 +4,20 @@
 <ESR xmlns="http://common-criteria.rhcloud.com/ns/esr" name="Server Virtualization">
 
 	<intro>
-		<esrtitle>Protection Profile for Server Virtualization</esrtitle>
+		<esrtitle>Server Virtualization Essential Security Requirements</esrtitle>
 		<maintainer>National Information Assurance Partnership</maintainer>
 		<identifier>42</identifier>
-		<version>0.8</version>
-		<status>draft</status>
-		<issuedate>07 October 2015</issuedate>
+		<version>1.0</version>
+		<status>final</status>
+		<issuedate>19 October 2016</issuedate>
 		<approver/>
 		<supercedes/>
 	</intro>
+	
+	<section title="Status" id="status">
+		This Essential Security Requirements (ESR) document specifies the essential 
+		requirements for server virtualization software. 
+	</section>
 
 	<section title="Background and Purpose" id="purpose">
 		<!-- This section sets the context for not only the ESR, but what is 
@@ -25,7 +30,17 @@
 			elaborate on subtleties not apparent in the “bulleted” high level
 			statements.
 		-->
-		
+		Server Virtualization, for the purposes of this EP, refers to a virtualization 
+		system (VS) that implements virtualized hardware components on server-class hardware. 
+		It creates a virtualized hardware environment for each instance of a guest operating 
+		system (virtual machines or VMs) permitting these environments to execute concurrently 
+		while maintaining isolation and the appearance of exclusive control over assigned computing 
+		resources. Each VM instance supports applications such as file servers, web servers, 
+		and mail servers. Server virtualization may also support client operating systems in a 
+		virtual desktop or thin-client environment. Typically, virtualized servers provide services 
+		to remote clients and are generally not directly accessible by non-administrative users.<br></br>
+
+		This EP does not address client virtualization, application virtualization, or containers.
 	</section>
 
 	<section title="Use Cases" id="usecases">
@@ -38,7 +53,20 @@
 			considered in the drafting of the Essential Security Requirements 
 			(ESR) and for the TC to consider when writing the PP.
 		-->
-		
+		<ul>
+			<li>Virtualized Servers – Virtualized instances of network services traditionally 
+				executed on separate hardware platforms, such as web servers, file servers, and 
+				mail servers. 
+			</li>
+			<li>Virtualized Network Infrastructure – Virtualized instances of routers, switches, 
+				and other network infrastructure. 
+			</li>
+			<li>Virtualized Enterprise User Environments – The server back-end of virtual 
+				desktop (VDI) or thin-client implementations where actual computation occurs 
+				in a server-based VM and the user interacts through a client. The client 
+				application is not covered by this EP.
+			</li>
+		</ul>
 	</section>
 
 	<section title="Resources to be protected" id="resourcesprotected">
@@ -51,10 +79,44 @@
     		considered in the drafting of the Essential Security Requirements 
     		(ESR) and for the TC to consider when writing the PP.
     	-->
-		
+		<ul>
+			<li>The platform onto which the Virtualization System is installed including the hardware, 
+				firmware, and host operating system
+			</li>
+			<li>The Virtual Machine Manager (VMM) including the Hypervisor and Service VMs
+			</li>
+			<li>The Management Subsystem (if applicable)
+			</li>
+			<li>The VMs and their contents
+			</li>
+		</ul>		
 	</section>
 
 	<section title="Attacker access" id="attackeraccess"> 
+		An attacker has access to either:
+		<ul>
+			<li>One or more Guest VMs, and
+			</li>
+			<li>Its operational network
+			</li>
+		</ul>
+	</section>
+	
+	<section title="TOE Boundary" id="boundary">
+		<ul>
+			<li>The Virtual Machine Manager (VMM)
+				<ul>
+					<li>The Hypervisor
+					</li>
+					<li>Service VMs
+					</li>
+					<li>VM abstractions (but not Guest VM workloads)
+					</li>
+				</ul>
+			</li>
+			<li>The Management Subsystem (if applicable)
+			</li>
+		</ul>	
 	</section>
 
 	<section title="Essential Security Requirements" id="requirements">
@@ -74,6 +136,33 @@
         	of this document, to provide the TC enough information to ensure 
         	they have an understanding of what is minimally required in breath.
         -->
+		The following are the essential security requirements that are expected to 
+		be implemented by any application that is compliant with the Server Virtualization 
+		EP. Note that these security requirements are conditional on that functionality 
+		being present. For example, a product that does not require an external network 
+		connection for any purpose is considered to satisfy any security requirements that 
+		pertain to the secure use of external network connections. 
+		<br></br>
+		Any other conditional requirements that depend on whether or not the product 
+		implements a certain capability are listed in the “Optional Extensions” section below.
+		<br></br>
+		The Virtualization System shall:
+		<ul>
+			<li>Maintain isolation between its VMs (and their resources)
+			</li>
+			<li>Maintain the integrity of the VMM
+			</li>
+			<li>Protect the platform from VMs and remote users of the VS
+			</li>
+			<li>Protect the Management Subsystem (if applicable) from unauthorized access
+			</li>
+			<li>Be capable of being updated/patched in a secure and timely manner
+			</li>
+			<li>Provide the VMs access to sufficient sources of entropy (or necessary platform resources)
+			</li>
+			<li>Provide audit capabilities for security-relevant events
+			</li>
+		</ul>
 		
 	</section>
 
@@ -83,12 +172,49 @@
 			its	intended environment that can be assumed to hold true. This 
 			will provide additional scope on the resulting PP.
 		-->
-		
+		<ul>
+			<li>The VS relies on a trustworthy computing platform for its execution, and it 
+				is assumed that the platform has not been compromised prior to the installation of the VS.
+			</li>
+			<li>Physical security appropriate to the value of the VS and the data it contains is provided.
+			</li>
+			<li>Administrators of the VS are trusted follow and apply all Administrator guidance.
+			</li>
+			<li>The VMs will have assurance sufficient to outweigh the risk that they will violate the 
+				security policy of the TOE by using covert channels.
+			</li>
+			<li>The user of the VS is not willfully negligent or hostile, and uses the VS in compliance 
+				with the applied enterprise security policy and guidance.
+			</li>
+		</ul>
 	</section>
 
 
 	<section title="Optional Extensions" id="extensions"> 
-		
+		The following requirements may already be realized in some products in this technology class, 
+		but the ESR is not mandating these capabilities exist in “baseline” level products:
+		<ul>
+			<li>Automatic response to certain security events
+			</li>
+			<li>Verifying VM Integrity
+			</li>
+		</ul>
+	</section>
+	
+	<section title="Objective Requirements" id="objective"> 
+		Requirements captured in this section specify security-relevant behavior that is not expected to be 
+		realized currently in products of this type, but they are capabilities that may be mandated in future 
+		versions of the ESR and resulting PPs. 
+		<ul>
+			<li>Device Driver Isolation
+			</li>
+			<li>Support for Software Identification Tags
+			</li>
+			<li>Support for VM Introspection
+			</li>
+			<li>Support for Measured Launch of Platform and VMM
+			</li>
+		</ul>
 	</section>
 
 	<section title="Outside the TOE's Scope" id="outsidescope">
@@ -101,6 +227,16 @@
 			evaluation facilities expected to assess products against the PP 
 			(e.g., assessing anti-tamper measures). 
 		-->
-		
+		<ul>
+			<li>The platform onto which the Virtualization System is installed including the hardware, 
+				firmware, and non-VS-essential portions of the host operating system (if any)
+			</li>
+			<li>Software installed inside VMs that is unrelated to the functioning of the Virtualization System
+			</li>
+			<li>Application virtualization
+			</li>
+			<li>Containers
+			</li>
+		</ul>	
 	</section>
 </ESR>
