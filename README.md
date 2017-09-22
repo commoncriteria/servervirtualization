@@ -8,15 +8,15 @@ This repository hosts the draft version of the Extended Package for Server Virtu
 [Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-esr.html) for this technology class of 
 products. This repository is used to facilitate collaboration and development on the draft document. 
 See the [release](#Release-Version) section if you are looking for the officially released version for evaluations. 
-A list of products that have passed evaluation against this Protection Profile can be found [here](https://www.niap-ccevs.org/Product/PCL.cfm?ID624=74).
+A list of products that have passed evaluation against this Protection Profile can be found [here](https://www.niap-ccevs.org/Profile/Info.cfm?id=410).
 
 ## Draft Version
 
-* [Protection Profile for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html) (html)
-* [Protection Profile for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.pdf) (pdf)
+* [Extended Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html) (html)
+* [Extended Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.pdf) (pdf)
 
 ## Release Version
-* [Protection Profile for Server Virtualization](https://www.niap-ccevs.org/Profile/Info.cfm?id=394)
+* [Extended Package for Server Virtualization](https://www.niap-ccevs.org/Profile/Info.cfm?id=410)
 
 ## Contributing
 
