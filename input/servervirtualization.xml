@@ -128,7 +128,8 @@
                     <htm:b>Assignment</htm:b> operation (denoted by <htm:span class="assignable-content">italicized text</htm:span>): is used to assign a specific value to an unspecified parameter, such as the length of a password. Showing the value in square brackets indicates assignment.</htm:li>
                 <htm:li>
                     <htm:b>Iteration</htm:b> operation: are identified with a number inside parentheses (e.g. "(1)")</htm:li>
-                <htm:b>Extended SFRs</htm:b> operation: identified by having a label "EXT" after the SFR name</htm:li>
+                <htm:li>
+                    <htm:b>Extended SFRs</htm:b> operation: identified by having a label "EXT" after the SFR name</htm:li>
             </htm:ul>
             <subsection id="fmt" title="Security Management (FMT)">
                 <f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior"  status="threshold">
