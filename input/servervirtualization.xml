@@ -128,6 +128,7 @@
                     <htm:b>Assignment</htm:b> operation (denoted by <htm:span class="assignable-content">italicized text</htm:span>): is used to assign a specific value to an unspecified parameter, such as the length of a password. Showing the value in square brackets indicates assignment.</htm:li>
                 <htm:li>
                     <htm:b>Iteration</htm:b> operation: are identified with a number inside parentheses (e.g. "(1)")</htm:li>
+                <htm:b>Extended SFRs</htm:b> operation: identified by having a label "EXT" after the SFR name</htm:li>
             </htm:ul>
             <subsection id="fmt" title="Security Management (FMT)">
                 <f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior"  status="threshold">
@@ -148,8 +149,15 @@
                                 <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br></htm:br><htm:br></htm:br>
                                 <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li><htm:br></htm:br><htm:br></htm:br>
                             </htm:ul>
-                            <htm:center><htm:h4>Table 1 – Client Virtualization Management Functions</htm:h4></htm:center>
+                            <htm:center><htm:h4>Table 1 – Server Virtualization Management Functions</htm:h4></htm:center>
                             <htm:table>
+                                <htm:tr>
+                                    <htm:th>Number</htm:th> 
+                                    <htm:th>Function</htm:th> 
+                                    <htm:th>Administrator</htm:th> 
+                                    <htm:th>User</htm:th> 
+                                    <htm:th>Notes (all SFR references are from the Base Virtualization PP</htm:th> 
+                                </htm:tr>
                                 <htm:tr>
                                     <htm:th>1</htm:th> 
                                     <htm:th>Ability to update the Virtualization System</htm:th> 
