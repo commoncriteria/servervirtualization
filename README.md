@@ -41,8 +41,6 @@ To pull updates from the upstream _transforms_ submodule and commit them run:
  git commit
 ````
 
-[Help working with Transforms Submodule](https://github.com/commoncriteria/transforms/wiki/Working-with-Transforms-as-a-Submodule)
-
 ### Development Info
 [Help working with Transforms Submodule](https://github.com/commoncriteria/transforms/wiki/Working-with-Transforms-as-a-Submodule)
 
