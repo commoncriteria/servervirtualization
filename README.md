@@ -1,19 +1,32 @@
-Protection Profile for Server Virtualization 
+Extended Package for Server Virtualization 
 ============
-[![Build Status](https://travis-ci.org/commoncriteria/servervirtualization.svg?branch=master)](https://travis-ci.org/commoncriteria/servervirtualization)
+[![Build Status](https://travis-ci.org/commoncriteria/servervirtualization.svg?branch=master)](https://travis-ci.org/commoncriteria/servervirtualization) 
+[![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/servervirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/servervirtualization/issues) 
+![license](https://img.shields.io/badge/license-Unlicensed-blue.svg)
 
-Protection Profile for Server Virtualization
+This repository hosts the draft version of the Extended Package for Server Virtualization based on the 
+[Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-esr.html) for this technology class of 
+products. This repository is used to facilitate collaboration and development on the draft document. 
+See the [release](#Release-Version) section if you are looking for the officially released version for evaluations. 
+A list of products that have passed evaluation against this Protection Profile can be found [here](https://www.niap-ccevs.org/Product/PCL.cfm?ID624=74).
 
-## Working Draft
-[Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-esr.html)
+## Draft Version
 
-[Protection Profile for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html)
+* [Protection Profile for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html) (html)
+* [Protection Profile for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.pdf) (pdf)
 
 ## Release Version
-[Protection Profile for Server Virtualization v1.1](https://www.niap-ccevs.org/pp/PP_SV_V1.1/) 10/07/2015
-<br/>Protection Profile for Server Virtualization v1.0 10/29/2014
+* [Protection Profile for Server Virtualization](https://www.niap-ccevs.org/Profile/Info.cfm?id=394)
 
-## Change Log
+## Contributing
+
+If you are interested in contributing directly to future versions the this Protection Profile, please consider joining the NIAP technical community.
+* [How to join the NIAP Technical Community (Mailing list and updates)](https://www.niap-ccevs.org/NIAP_Evolution/tech_communities.cfm)
+
+## Feedback
+
+Questions, comments, and fixes can be submitted to the [repository issue tracker](https://github.com/commoncriteria/servervirtualization/issues)
+
 
 ## Quickstart
 To clone this project along with its _transforms_ submodule run:
@@ -29,3 +42,20 @@ To pull updates from the upstream _transforms_ submodule and commit them run:
 ````
 
 [Help working with Transforms Submodule](https://github.com/commoncriteria/transforms/wiki/Working-with-Transforms-as-a-Submodule)
+
+### Development Info
+[Help working with Transforms Submodule](https://github.com/commoncriteria/transforms/wiki/Working-with-Transforms-as-a-Submodule)
+
+## Repository Content
+* input - Contains the 'meat' of the project. It's the input content (in XML form) that gets transformed to readable html.
+* output - The output directory where the html is placed after transformation.
+* output/images - The directory where images are stored
+* transforms - Points to the transform subproject which is really a repository for resources shared amongst many Common Criteria projects.
+
+## Links 
+* [National Information Assurance Partnership (NIAP)](https://www.niap-ccevs.org/)
+* [Common Criteria Portal](https://www.commoncriteriaportal.org/)
+
+## License
+
+See [License](./LICENSE)
