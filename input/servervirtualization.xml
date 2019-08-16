@@ -2,22 +2,16 @@
 <?xml-stylesheet type="text/xsl" href="../transforms/pp2html.xsl"?>
 
 <?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<PP xmlns="http://common-criteria.rhcloud.com/ns/cc" name="Server Virtualization"
-    xmlns:htm="http://www.w3.org/1999/xhtml"> 
-    <PPReference title="PP Reference" id="ID003">
+<PP xmlns="https://niap-ccevs.org/cc/v1" name="Server Virtualization"
+    xmlns:htm="http://www.w3.org/1999/xhtml" boilerplate="yes"> 
+    <PPReference>
         <ReferenceTable>
             <PPTitle>Protection Profile for Virtualization Extended Package
                 Server Virtualization</PPTitle>
             <PPVersion>1.0</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
             <PPPubDate>2016-11-17</PPPubDate>
-            <PPCertificationID>unassigned</PPCertificationID>
-            <CCVersion>Version 3.0</CCVersion>
             <Keywords>Virtualization</Keywords>
-            <entry>
-                <name>Registration</name>
-                <description>National Information Assurance Partnership</description>
-            </entry>
         </ReferenceTable>
     </PPReference>
     <RevisionHistory role="draft">
@@ -26,7 +20,6 @@
             <date>2016-11-17</date>
             <subject>Initial Publication</subject>
         </entry>
-
     </RevisionHistory>
     
     <chapter id="intro" title="Introduction">
@@ -132,7 +125,7 @@
                     <htm:b>Extended SFRs</htm:b> operation: identified by having a label "EXT" after the SFR name</htm:li>
             </htm:ul>
             <subsection id="fmt" title="Security Management (FMT)">
-                <f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior"  status="threshold">
+                <f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
                     <f-element id="FMT_MOF_EXT.1.1">
                         <title>The TSF shall be capable of supporting 
                             <selectables>
