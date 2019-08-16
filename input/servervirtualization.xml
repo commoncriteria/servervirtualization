@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../transforms/pp2html.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../transforms/module/module2html.xsl"?>
+<?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-<?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<PP xmlns="https://niap-ccevs.org/cc/v1" name="Server Virtualization"
-    xmlns:htm="http://www.w3.org/1999/xhtml" boilerplate="yes"> 
+<Module boilerplate="yes" target-products="Server Virtualization" xmlns="https://niap-ccevs.org/cc/v1"
+  name="Server Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml">
 
     <PPReference>
         <ReferenceTable>
@@ -463,4 +463,4 @@
       
       
     -->
-</PP>
+</Module>
