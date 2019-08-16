@@ -4,6 +4,7 @@
 <?xml-model href="CCProtectionProfile.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <PP xmlns="https://niap-ccevs.org/cc/v1" name="Server Virtualization"
     xmlns:htm="http://www.w3.org/1999/xhtml" boilerplate="yes"> 
+
     <PPReference>
         <ReferenceTable>
             <PPTitle>Protection Profile for Virtualization Extended Package
@@ -14,7 +15,8 @@
             <Keywords>Virtualization</Keywords>
         </ReferenceTable>
     </PPReference>
-    <RevisionHistory role="draft">
+
+    <RevisionHistory>
         <entry>
             <version>1.0</version>
             <date>2016-11-17</date>
@@ -138,10 +140,10 @@
                     <f-element id="FMT_MOF_EXT.1.2">
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator or User as shown in Table 1, based on the following key:<htm:br></htm:br><htm:br></htm:br>
                             <htm:ul style="list-style: none;">
-                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br><htm:br></htm:br>
-                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br></htm:br><htm:br></htm:br>
-                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br></htm:br><htm:br></htm:br>
-                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li><htm:br></htm:br><htm:br></htm:br>
+                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br>
+                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br></htm:br>
+                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br></htm:br>
+                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li><htm:br></htm:br>
                             </htm:ul>
                             <htm:center><htm:h4>Table 1 – Server Virtualization Management Functions</htm:h4></htm:center>
                             <htm:table>
@@ -352,7 +354,6 @@
                             The evaluator shall examine the Operational Guidance to ensure that it describes how the Administrator and/or User are able to perform each management function that the ST claims the TOE supports.<htm:br></htm:br><htm:br></htm:br>
                             The evaluator shall verify for each claimed management function that the Operational Guidance is sufficiently detailed to allow the function to be performed and that the function can be performed by the role(s) that are authorized to do so.<htm:br></htm:br><htm:br></htm:br>
                             The evaluator shall also verify for each claimed management function that if the TOE claims not to provide a particular role with access to the function, then it is not possible to access the TOE as that role and perform that function.<htm:br></htm:br><htm:br></htm:br>
-                            
                         </aactivity>
                     </f-element>
                 </f-component>
