@@ -2,6 +2,27 @@
 <?xml-stylesheet type="text/xsl" href="../transforms/module/module2html.xsl"?>
 <?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
+
+<!-- To Do
+  - Revision History
+  - Refinement - Compare to CC guide and add refinement and bold
+Consistency Arguments
+  ECDs
+    threats: objective refers - DONE
+  assumptions: objective refers - DONE
+  OSPs: objective refers (Organizational Security Policies) - DONE
+  TODO :security objectives - DONE; note, changed so they look like the ones in MDF, there are no mappings or rationales
+  Free The Toe - Done
+  TODO: Need to check the Supporting Document - not all of the EAs are being pulled over: None of the TOE Security Functional Requirements show up in the SD
+  fix table refs in text so that they refer to the correct #s
+-->
+
+<!-- Note about format of ECDs
+Behavior means it's a new EXT component and we have to make that chart.
+            <behavior>
+            </behavior>
+            -->
+
 <Module boilerplate="yes" target-products="Server Virtualization" xmlns="https://niap-ccevs.org/cc/v1"
   name="Server Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml">
 
@@ -9,8 +30,8 @@
         <ReferenceTable>
             <PPVersion>1.0</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
-            <PPPubDate>2016-11-17</PPPubDate>
-            <Keywords>Virtualization</Keywords>
+            <PPPubDate>2020-06-23</PPPubDate>
+            <Keywords>Server Virtualization</Keywords>
         </ReferenceTable>
     </PPReference>
 
@@ -19,6 +40,11 @@
             <version>1.0</version>
             <date>2016-11-17</date>
             <subject>Initial Publication</subject>
+        </entry>
+        <entry>
+            <version>1.0</version>
+            <date>2020-06-23</date>
+            <subject>Converted to Module</subject>
         </entry>
     </RevisionHistory>
     
@@ -38,8 +64,7 @@
           do not include administration of software running within Guest VMs, such as the Guest OS. Administrators need
           not be human as in the case of embedded or headless VMs. Administrators are often nothing more than software
           entities that operate within the VM.</term>
-	      <term abbr="AES" full="Advanced Encryption Standard"/>
-	      <term full="Auditor">Auditors are responsible for managing the audit capabilities of the TOE. An Auditor may
+	  <term full="Auditor">Auditors are responsible for managing the audit capabilities of the TOE. An Auditor may
           also be an Administrator. It is not a requirement that the TOE be capable of supporting an Auditor role that
           is separate from that of an Administrator.</term>
         <term abbr="CPU" full="Central Processing Unit"/>
@@ -131,25 +156,28 @@
 	    </tech-terms>
   
       <section id="targets" title="Compliant Targets of Evaluation">
-        Server Virtualization, for the purposes of this EP, relates to a virtualization system that implements 
+        Server Virtualization, for the purposes of this EP, refers to a virtualization system that implements 
         virtualized hardware components on server-class hardware. It creates a virtualized hardware environment for 
         each instance of an operating system (virtual machines or VMs) permitting these environments to execute
         concurrently while maintaining isolation and the appearance of exclusive control over assigned computing
         resources. Each VM instance supports applications such as file servers, web servers, and mail servers. Server
         virtualization may also support client operating systems in a virtual desktop or thin-client environment.
-        Typically, virtualized servers provide services to remote clients and are generally not directly accessible by
-        non-administrative users.
+        Typically, virtualized servers provide services to remote clients from a data center, and are generally not
+	directly accessible by non-administrative users.<htm:br/><htm:br/>
+	A TOE that claims conformance with this PP Module must also claim conformance to the Protection Profile 
+	for Virtualization. And a TOE that claims comformance with the Protection Profile for Virtualization
+	must also claim conformance either to this Module or to the PP Module for Client Virtualization.
         
         <subsection id="TOEboundry" title="TOE Boundary">
-          The TOE boundary is the same as that which is defined for a Virtualization System in general. Refer to 
-          the Base Virtualization PP for an outline of the TOE boundary.            
+          The TOE boundary is the same as that which is defined for a Virtualization System in the
+		Virtualization Base PP. 
         </subsection>   
       </section>
       
       <section id="usecase" title="Use Cases">
-        Requirements in this EP are designed to address the security problem in the following use cases. The
+        Requirements in this PP Module are designed to address the security problem in the following use cases. The
         description of these use cases provides instructions for how the TOE and its Operational Environment should be 
-        made to support the functionality required by this EP.            
+        made to support the functionality required by this PP Module.
         <usecases>
           <usecase title="Virtualized Servers" id="virtservers">
             <description>
@@ -164,7 +192,10 @@
           </usecase>
           <usecase title="Virtualized Enterprise User Environments" id="userenv">
              <description>
-                The server back-end of virtual desktop or thin-client implementations where actual computation occurs in a server-based VM and the user interacts through a client. The client application is not covered by this EP.                </description>
+                The server back-end of virtual desktop or thin-client implementations where actual computation 
+		     occurs in a server-based VM and the user interacts through a client. The client application is 
+		     not covered by this PP Module.               
+	     </description>
           </usecase>
         </usecases>
       </section>
@@ -174,109 +205,90 @@
     <cclaims>
         <cclaim title="Conformance Statement">
           <description> 
-            This PP Module inherits exact conformance as required from the specified Base-PP and as defined in the
+            This PP Module inherits exact conformance as required from the specified Base PP and as defined in the
             CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and Optional SFRs (dated May 2017).
             <htm:br/><htm:br/> 
-            The following PPs and PP-Modules are allowed to be specified in a PP-Configuration with this PP-Module.
+            The following PPs and PP-Modules are allowed to be specified in a PP-Configuration with this PP-Module:
             <htm:ul>
-              <htm:li>PP-Module for VPN Client, Version 2.1   ????  </htm:li>
+              <htm:li>Protection Profile for Virtualization, Version 1.1</htm:li>
             </htm:ul>
-            A product must be evaluated against the Server Virtualization EP in conjunction with the base
-            Virtualization PP; a product may not be evaluated solely against this Server Virtualization EP. To be 
-            conformant to this Module, an ST must demonstrate Exact Conformance, a subset of Strict Conformance as 
-            defined in [CC] Part 1 (ASE_CCL). The ST must include all components in this EP that are:                
-            <htm:ul>    
-                <htm:li>Unconditional (which are always required)</htm:li>
-                <htm:li>Selection-based (which are required when certain selections are chosen in the unconditional 
-                  requirements) and may include components that are</htm:li>
-                <htm:li>Optional</htm:li>
-                <htm:li>Objective.</htm:li>
-            </htm:ul>
-            Unconditional requirements are found in the main body of the document (Section 5), while appendices
-            contain the selection-based, optional, and objective requirements. The ST may iterate any of these 
-            components but it must not introduce any additional component (e.g., from CC Part 2 or 3) that is not 
-            defined in the Base Virtualization PP (which this EP extends), or in this EP itself.            
+            A product must be evaluated against this Server Virtualization PP Module in conjunction with the base
+            Virtualization PP. A product may not be evaluated solely against this Server Virtualization PP Module.               
           </description>
         </cclaim>
         <cclaim title="CC Conformance Claims">
           <description>
                 This PP Module is conformant to Parts 2 (extended) and 3 (conformant) of Common Criteria Version 3.1, 
-                Revision 4 [CC].
+                Release 5 [CC].
           </description>
         </cclaim>
         <cclaim title="Package Claims">
             <description>
-                This PP-Module does ???? not connect with any other Modules or Packages? What is this for?
+                This PP-Module does not directly interface with any Package.
             </description>
         </cclaim>
       </cclaims>
     </chapter>
   
-    <chapter id="desc" title="Security Problem Description">
+    <chapter id="spd" title="Security Problem Description">
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
       enforce.<htm:br></htm:br><htm:br></htm:br>
-      Note that as an EP of the Base Virtualization PP, all threats, assumptions, and OSPs defined in the base PP will 
-      also apply to a TOE unless otherwise specified, depending on which of the base PPs it extends. The Security
-      Functional Requirements defined in this EP will mitigate the threats that are defined in the EP but may also
-      mitigate some threats defined in the base PPs in more comprehensive detail due to the specific capabilities
+      Note that as a PP Module of the Base Virtualization PP, all threats, assumptions, and OSPs defined in the Base PP 
+      apply to a TOE defined under this PP Module unless otherwise specified. The Security
+      Functional Requirements defined in this PP Module are designed to mitigate the threats defined in this Module but may also
+      mitigate some threats defined in the Base PP in more comprehensive detail due to the specific capabilities
       provided by a Server Virtualization System.<htm:br></htm:br><htm:br></htm:br>
       <section id="threats" title="Threats">
         This PP defines no additional threats beyond those defined in the Base Virtualization PP. Note however that the
         SFRs defined in this Module will assist in the mitigation of the T.UNAUTHORIZED_UPDATE and T.UNAUTHORIZED_ACCESS 
-        threats defined in that PP.        
+        threats defined in the Base PP.        
       </section>
-      <section id="assumptions" title="Assumptions">
+      <section id="Assumptions" title="Assumptions">
         This PP defines no additional assumptions beyond those defined in the Base Virtualization PP.
       </section>
-      <section id="policies" title="Organizational Security Policies">
+      <section id="securityPolicy" title="Organizational Security Policies">
         This PP defines no additional OSPs beyond those defined in the Base Virtualization PP.
       </section>
     </chapter>
-    <chapter id="obj" title="Security Objectives">
-        <section id="objtoe" title="Security Objectives for the TOE">
+    <chapter id="objectives" title="Security Objectives">
+        <section id="TOEobjectives" title="Security Objectives for the TOE">
             This PP defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however that the SFRs defined in this EP will assist in the enforcement of the O.VMM_INTEGRITY and O.MANAGEMENT_ACCESS objectives defined in that PP.        
         </section>
-        <section id="objopenv" title="Security Objectives for the Operational Environment">
+        <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
             Because this EP does not define any additional assumptions or organizational security policies, there are no additional security objectives for the Operational Environment to satisfy.        
         </section>
         <section id="objrationale" title="Security Objectives Rationale">
             This section is not applicable to this EP because no additional security objectives are defined.
         </section>
+	<section title="Security Objectives Rationale" id="rationale">
+         <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
+         </section>
     </chapter>
-    <chapter id="req" title="Security Requirements">
-        <section id="sfrdirection" title="Base PP Security Functional Requirements Direction">
-            The Base Virtualization PP defines requirements for generic virtualization systems, not all of which provide Server Virtualization functionality. Therefore, the SFRs defined in the base PP provide the ST author with a number of selections and assignments as well as optional and selection-based requirements in order to capture the entire set of virtualization systems that can be evaluated. This section provides the ST author with specific instructions that must be taken for including the relevant SFRs from the base PP when the TOE claims conformance to this EP in particular.<htm:br></htm:br><htm:br></htm:br>
-            At this time, there are no specific actions that must be taken with the base PP SFRs beyond ensuring that all mandatory SFRs are present, all selections and assignments are completed appropriately, and all selection-based SFRs are claimed based on the selections that are chosen.<htm:br></htm:br><htm:br></htm:br>
-        </section>
-        <section id="sfr" title="TOE Security Functional Requirements">
-            The Security Functional Requirements (SFRs) included in this section are those that the TSF is expected to satisfy.<htm:br></htm:br><htm:br></htm:br>
-            The Security Functional Requirements (SFRs) included in this section are derived from Part 2 of the Common Criteria for Information Technology Security Evaluation, Version 3.1, Revision 4, with additional extended functional components.<htm:br></htm:br><htm:br></htm:br>
-            The CC defines operations on Security Functional Requirements: assignments, selections, assignments within selections and refinements. This document uses the following font conventions to identify the operations defined by the CC:<htm:br></htm:br><htm:br></htm:br>
-            <htm:ul>
-                <htm:li>
-                    <htm:b>Refinement</htm:b> operation (denoted by <htm:b>bold text</htm:b>): is used to add details to a requirement, and thus further restricts a requirement.</htm:li>
-                <htm:li>
-                    <htm:b>Selection</htm:b> (denoted by <htm:i>italicized text</htm:i>): is used to select one or more options provided by the [CC] in stating a requirement.</htm:li>
-                <htm:li>
-                    <htm:b>Assignment</htm:b> operation (denoted by <htm:span class="assignable-content">italicized text</htm:span>): is used to assign a specific value to an unspecified parameter, such as the length of a password. Showing the value in square brackets indicates assignment.</htm:li>
-                <htm:li>
-                    <htm:b>Iteration</htm:b> operation: are identified with a number inside parentheses (e.g. "(1)")</htm:li>
-                <htm:li>
-                    <htm:b>Extended SFRs</htm:b> operation: identified by having a label "EXT" after the SFR name</htm:li>
-            </htm:ul>
-            <subsection id="fmt" title="Security Management (FMT)">
-                <f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
-                    <f-element id="FMT_MOF_EXT.1.1">
-                        <title>The TSF shall be capable of supporting 
-                            <selectables>
-                                <selectable>local</selectable>
-                                <selectable>remote</selectable>
-                            </selectables> administration.
-                        </title>
+    <chapter id="sfr" title="Security Requirements">
+	<base-pp version="1.1" name="Virtualization" product="Virtualization" short="Virt"
+      		url="https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408"
+      		xmlurl="https://raw.githubusercontent.com/commoncriteria/virtualization/master/input/virtualization.xml">
+	  <modified-sfrs/>
+	  <additional-sfrs>	
+            <subsection id="management-fmt" title="Security Management (FMT)">
+		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior"/>
+		<f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
+			<consistency-rationale>ARGH!!!!!!</consistency-rationale>
+            		<comp-lev> requires the TSF to define a specific location for its key storage.</comp-lev>
+		        <management>There are no management functions foreseen.</management>
+            		<audit>There are no auditable events foreseen.</audit>
+            		<dependencies>Blerm? FCS_CKM.1 Cryptographic Key Generation</dependencies>	
+                     	<f-element>
+                        	<title>The TSF shall be capable of supporting 
+                            		<selectables>
+                                	<selectable>local</selectable>
+                                	<selectable>remote</selectable>
+                            		</selectables> administration.
+                        	</title>
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the base PP to be included in the ST.</note>
                     </f-element>
-                    <f-element id="FMT_MOF_EXT.1.2">
+                    <f-element>
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator or User as shown in Table 1, based on the following key:<htm:br></htm:br><htm:br></htm:br>
                             <htm:ul style="list-style: none;">
                                 <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br>
@@ -503,15 +515,15 @@
         </section>
     </chapter>
     
-    <appendix id="opt" title="Optional Requirements">
+    <appendix id="appendix-optional" title="Optional Requirements">
         As indicated in Section 2, the baseline requirements (those that must be performed by the TOE) are contained in the body of this EP. Additionally, there are three other types of requirements specified in Appendix A, Appendix B, and Appendix C. The first type (in this Appendix) are requirements that can be included in the ST, but are not required in order for a TOE to claim conformance to this EP. The second type (in Appendix B) are requirements based on selections in the body of the EP: if certain selections are made, then additional requirements in that appendix must be included. The third type (in Appendix C) are components that are not required in order to conform to this EP, but will be included in the baseline requirements in future versions of this EP, so adoption by vendors is encouraged. Note that the ST author is responsible for ensuring that requirements that may be associated with those in Appendix A, Appendix B, and Appendix C but are not listed (e.g., FMT-type requirements) are also included in the ST.<htm:br></htm:br><htm:br></htm:br>
         Currently, no optional requirements specific to this product type have been identified.
     </appendix>
-    <appendix id="sel" title="Selection-Based Requirements">
+    <appendix id="appendix-sel-based" title="Selection-Based Requirements">
         As indicated in the introduction to this EP, the baseline requirements (those that must be performed by the TOE or its underlying platform) are contained in the body of the EP. There are additional requirements based on selections in the body of the EP: if certain selections are made, then additional requirements below will need to be included.<htm:br></htm:br><htm:br></htm:br>
         Currently, no selection-based requirements specific to this product type have been identified.
     </appendix>
-    <appendix id="obj-req" title="Objective Requirements">
+    <appendix id="appendix-objective" title="Objective Requirements">
         This Annex includes requirements that specify security functionality which also addresses threats. The requirements are not currently mandated in the body of this EP as they describe security functionality not yet widely available in commercial technology. However, these requirements may be included in the ST such that the TOE is still conformant to this EP, and it is expected that they be included as soon as possible.<htm:br></htm:br><htm:br></htm:br>
         Currently, no objective requirements specific to this product type have been identified.</appendix>
     <appendix id="ent" title="Entropy Documentation and Assessment">
