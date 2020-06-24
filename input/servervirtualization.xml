@@ -251,6 +251,7 @@ Behavior means it's a new EXT component and we have to make that chart.
         This PP defines no additional OSPs beyond those defined in the Base Virtualization PP.
       </section>
     </chapter>
+	
     <chapter id="objectives" title="Security Objectives">
         <section id="TOEobjectives" title="Security Objectives for the TOE">
             This PP defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however that the SFRs defined in this EP will assist in the enforcement of the O.VMM_INTEGRITY and O.MANAGEMENT_ACCESS objectives defined in that PP.        
@@ -510,27 +511,14 @@ Behavior means it's a new EXT component and we have to make that chart.
                 </f-component>
             </subsection>
 	  </additional-sfrs>
-        </section>
         <section id="sar" title="TOE Security Assurance Requirements">
             The Base Virtualization PP lists the Security Assurance Requirements (SARs) from Part 3 of the Common Criteria for Information Technology Security Evaluation, Version 3.1, Revision 4. As an EP of the Base Virtualization PP, this EP does not prescribe any SARs beyond those defined in the base PP. The evaluator shall ensure that the SARs defined in the claimed base PP are assessed against the entire TSF as appropriate.
         </section>
       </base-pp>
     </chapter>
     
-    <appendix id="appendix-optional" title="Optional Requirements">
-        As indicated in Section 2, the baseline requirements (those that must be performed by the TOE) are contained in the body of this EP. Additionally, there are three other types of requirements specified in Appendix A, Appendix B, and Appendix C. The first type (in this Appendix) are requirements that can be included in the ST, but are not required in order for a TOE to claim conformance to this EP. The second type (in Appendix B) are requirements based on selections in the body of the EP: if certain selections are made, then additional requirements in that appendix must be included. The third type (in Appendix C) are components that are not required in order to conform to this EP, but will be included in the baseline requirements in future versions of this EP, so adoption by vendors is encouraged. Note that the ST author is responsible for ensuring that requirements that may be associated with those in Appendix A, Appendix B, and Appendix C but are not listed (e.g., FMT-type requirements) are also included in the ST.<htm:br></htm:br><htm:br></htm:br>
-        Currently, no optional requirements specific to this product type have been identified.
-    </appendix>
-    <appendix id="appendix-sel-based" title="Selection-Based Requirements">
-        As indicated in the introduction to this EP, the baseline requirements (those that must be performed by the TOE or its underlying platform) are contained in the body of the EP. There are additional requirements based on selections in the body of the EP: if certain selections are made, then additional requirements below will need to be included.<htm:br></htm:br><htm:br></htm:br>
-        Currently, no selection-based requirements specific to this product type have been identified.
-    </appendix>
-    <appendix id="appendix-objective" title="Objective Requirements">
-        This Annex includes requirements that specify security functionality which also addresses threats. The requirements are not currently mandated in the body of this EP as they describe security functionality not yet widely available in commercial technology. However, these requirements may be included in the ST such that the TOE is still conformant to this EP, and it is expected that they be included as soon as possible.<htm:br></htm:br><htm:br></htm:br>
-        Currently, no objective requirements specific to this product type have been identified.</appendix>
-    <appendix id="ent" title="Entropy Documentation and Assessment">
-        The TOE does not require any additional supplementary information to describe its entropy source(s) beyond the requirements outlined in the ‘Entropy Documentation and Assessment’ section of the Base Virtualization PP. As with other base PP requirements, the only additional requirement is that the entropy documentation also applies to the specific Server Virtualization capabilities of the TOE in addition to the functionality required by the base PP.
-    </appendix>
+<!-- Appendix: References   
+-->
     <appendix id="ref" title="References">
         <htm:table>
             <htm:tr>
@@ -557,63 +545,4 @@ Behavior means it's a new EXT component and we have to make that chart.
     <appendix id="acro" title="Acronyms">
         All relevant acronyms for this EP are defined in the Base Virtualization PP.
     </appendix>
-    <!-- 
-      
-        <f-component id="" name=""  status="threshold">
-          <f-element id="">
-            <title>
-            </title>
-            </f-element>
-            <f-element id="">
-            <title>
-            </title>
-            <note role="application"> </note>
-            <aactivity>
-                <testlist>
-                <test></test>
-                <test></test>
-                </testlist>
-            </aactivity>
-          </f-element>
-        </f-component>
-        
-        
-      <selectables linebreak="yes">
-              <selectable></selectable>
-              <selectable></selectable>
-            </selectables>
-      <selectables>
-              <selectable></selectable>
-              <selectable></selectable>
-            </selectables>      
-        <f-component id="" name=""  status="threshold">
-        <f-element id="">
-          <title>
-            </title>
-          <note role="application"> </note>
-          <aactivity>
-                    <testlist>
-                <test>
-                <test>
-                </testlist>
-          </aactivity>
-        </f-element>
-        </f-component>     
-        
-        <htm:table  border="1">
-        <htm:caption></htm:caption>
-        <htm:tr class="header">
-          <htm:th></htm:td>
-          <htm:th></htm:td>
-          <htm:th></htm:td>
-        </htm:tr>
-        <htm:tr>
-          <htm:td></htm:td>
-          <htm:td></htm:td>
-          <htm:td></htm:td>
-        </htm:tr>
-      </htm:table>
-      
-      
-    -->
 </Module>
