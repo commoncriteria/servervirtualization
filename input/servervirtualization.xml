@@ -509,6 +509,7 @@ Behavior means it's a new EXT component and we have to make that chart.
                     </f-element>
                 </f-component>
             </subsection>
+	  </additional-sfrs>
         </section>
         <section id="sar" title="TOE Security Assurance Requirements">
             The Base Virtualization PP lists the Security Assurance Requirements (SARs) from Part 3 of the Common Criteria for Information Technology Security Evaluation, Version 3.1, Revision 4. As an EP of the Base Virtualization PP, this EP does not prescribe any SARs beyond those defined in the base PP. The evaluator shall ensure that the SARs defined in the claimed base PP are assessed against the entire TSF as appropriate.
