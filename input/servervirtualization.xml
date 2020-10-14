@@ -240,7 +240,7 @@
     </chapter>
 	
     <chapter id="sfr" title="Security Requirements">
-	<base-pp version="1.1" name="Virtualization" product="Virtualization" short="Virt"
+	<base-pp version="1.1" name="Virtualization" product="Virtualization" short="Virtualization"
       		url="https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408"
       		xmlurl="https://raw.githubusercontent.com/commoncriteria/virtualization/master/input/virtualization.xml">
 	  <modified-sfrs/>
@@ -289,11 +289,11 @@
                                     <htm:th>Notes (all SFR references are from the Base Virtualization PP</htm:th> 
                                 </htm:tr>
                                 <htm:tr>
-                                    <htm:th>1</htm:th> 
-                                    <htm:th>Ability to update the Virtualization System</htm:th> 
-                                    <htm:th>X</htm:th> 
-                                    <htm:th>N</htm:th> 
-                                    <htm:th>See FPT_TUD_EXT.1</htm:th> 
+                                    <htm:td>1</htm:td> 
+                                    <htm:td>Ability to update the Virtualization System</htm:td> 
+                                    <htm:td>X</htm:td> 
+                                    <htm:td>N</htm:td> 
+                                    <htm:td>See FPT_TUD_EXT.1</htm:td> 
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>2</htm:td>
@@ -477,12 +477,10 @@
                            </htm:table>
                         </title>
                         <note role="application">
-                            It is unlikely that this table will be identified as “Table 1” in the ST. The ST author is permitted to apply
-				a refinement operation to the table name in order to give it an appropriate identification. The ST author
-				is expected to update this table with an indication as to whether any of the ‘optional’ or 
+                            The ST author is expected to update this table with an indication as to whether any of the ‘optional’ or 
 				‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ 
 				column as it is provided in this EP as an aid to the ST author in constructing this table.<htm:br/><htm:br/>
-                            This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<htm:br></htm:br><htm:br></htm:br>
+                            This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<htm:br/><htm:br/>
                             Administration is considered “local” if the Administrator is physically present at the machine on which the VS
 				is installed.<htm:br/><htm:br/>
                             Administration is considered “remote” if communications between the Administrator and the Management Subsystem
@@ -521,9 +519,9 @@
 	<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
 	        the overall TOE is still a Virtualization System. The TOE boundary does not change.
 	</con-toe>
-    	<con-sec-prob/>
-	<con-obj/>
-	<con-op-en/>
+    	<con-sec-prob>Con Sec Prob</con-sec-prob>
+	<con-obj> Con Obj </con-obj>
+	<con-op-en> Con Op En </con-op-en>
 	<con-mod id="T.SOMETHING">This threat threatens something.	</con-mod>
       </base-pp>
     </chapter>
