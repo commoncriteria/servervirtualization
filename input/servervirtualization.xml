@@ -542,13 +542,12 @@
             </subsection>
 	  </additional-sfrs>
 	<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
-	        the overall TOE is still a Virtualization System. The TOE boundary does not change.</con-toe>
+	        the overall TOE is still a Virtualization System. The TOE boundary does not change.
 	</con-toe>
     	<con-sec-prob/>
 	<con-obj/>
 	<con-op-en/>
-	<con-mod id="T.SOMETHING">This threat threatens something.
-	</con-mod>
+	<con-mod id="T.SOMETHING">This threat threatens something.	</con-mod>
       </base-pp>
     </chapter>
     
