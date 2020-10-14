@@ -170,15 +170,22 @@
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
       enforce.<htm:br/><htm:br/>
-      Note that as a PP Module of the Base Virtualization PP, all threats, assumptions, and OSPs defined in the Base PP 
-      apply to a TOE defined under this PP Module unless otherwise specified. The Security
-      Functional Requirements defined in this PP Module are designed to mitigate the threats defined in this Module but may also
-      mitigate some threats defined in the Base PP in more comprehensive detail due to the specific capabilities
-      provided by a Server Virtualization System.<htm:br/><htm:br/>
       <section id="threats" title="Threats">
         This PP defines no additional threats beyond those defined in the Base Virtualization PP. Note however that the
         SFRs defined in this Module will assist in the mitigation of the T.UNAUTHORIZED_UPDATE and T.UNAUTHORIZED_ACCESS 
         threats defined in the Base PP.        
+	      <threat name="T.UNAUTHORIZED_UPDATE">
+		      <description>See Virtualization PP, Section 3.1</description>
+		      <objective-refer ref="O.VMM_INTEGRITY">
+			      <rationale>sdsdsd</rationale>
+		      </objective-refer>
+	      </threat>
+	      <threat name="T.UNAUTHORIZED_ACCESS">
+		      <description>See Virtualization PP, Section 3.1</description>
+		      <objective-refer ref="O.MANAGEMENT_ACCESS">
+			      <rationale>sdssd</rationale>
+		      </objective-refer>
+	      </threat>		      
       </section>
       <section id="Assumptions" title="Assumptions">
         This PP defines no additional assumptions beyond those defined in the Base Virtualization PP.
@@ -190,17 +197,34 @@
 	
     <chapter id="objectives" title="Security Objectives">
         <section id="TOEobjectives" title="Security Objectives for the TOE">
-            This Module defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however that the SFRs 
-		defined in this Module will assist in the enforcement of the O.VMM_INTEGRITY and O.MANAGEMENT_ACCESS objectives defined in
-		that PP.        
+            This Module defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however 
+		that the SFR defined in this Module will assist in the enforcement of the O.VMM_INTEGRITY and O.MANAGEMENT_ACCESS 
+		objectives defined in that PP.    
+		<SOs>
+			<SO name="O.VMM_INTEGRITY">
+				<description>See Virtualization PP, Section 4.1</description>
+				<addressed-by>FMT_MOF_EXT.1</addressed-by>
+				<rationale> sdfsdsd </rationale>
+				<consistency-rationale>???</consitency-rationale>
+			</SO>
+			<SO name="O.MANAGEMENT_ACCESS">
+				<description>See Virtualization PP, Section 4.1</description>
+				<addressed-by>FMT_MOF_EXT.1</addressed-by>
+				<rationale> sdfsdsd </rationale>
+				<consistency-rationale>???</consitency-rationale>
+			</SO>
+		</SOs>
         </section>
+	    
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
             Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
 		security objectives for the Operational Environment to satisfy.        
         </section>
-        <section id="objrationale" title="Security Objectives Rationale">
+	    
+<!--        <section id="objrationale" title="Security Objectives Rationale">
             This section is not applicable to this Module because no additional security objectives are defined.
         </section>
+-->	    
 	<section title="Security Objectives Rationale" id="rationale">
          <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
          </section>
@@ -218,7 +242,7 @@
 				additional component, FMT_MOF_EXT.1. 
 			</mod-def>		
 		</ext-comp-def>
-		<f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
+		<f-component cc-id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
 			<consistency-rationale>This SFR requires the Server Virtualization product to use security functionality
 				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</consistency-rationale>
