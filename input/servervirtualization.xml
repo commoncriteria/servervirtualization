@@ -213,7 +213,7 @@
 				<rationale>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify 
 				      the VS is through a trusted update process initiated by an authorized Administrator
 				      as required by FMT_MOF_EXT.</rationale>
-				<consistency-rationale>This objectiove comes directly from the PP.</consistency-rationale>
+				<consistency-rationale>This objective comes directly from the PP.</consistency-rationale>
 			</SO>
 			<SO name="O.MANAGEMENT_ACCESS">
 				<description>See Virtualization PP, Section 4.1</description>
