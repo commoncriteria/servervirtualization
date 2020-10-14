@@ -50,102 +50,46 @@
       </section>
       
       <tech-terms>
-	      All relevant terminology for this EP are defined in the Base Virtualization PP.
-      <!--
-     	  <term full="Administrator">Administrators perform management activities on the VS. These management functions 
+        <term full="Administrator">Administrators perform management activities on the VS. These management functions 
           do not include administration of software running within Guest VMs, such as the Guest OS. Administrators need
           not be human as in the case of embedded or headless VMs. Administrators are often nothing more than software
           entities that operate within the VM.</term>
-	  <term full="Auditor">Auditors are responsible for managing the audit capabilities of the TOE. An Auditor may
-          also be an Administrator. It is not a requirement that the TOE be capable of supporting an Auditor role that
-          is separate from that of an Administrator.</term>
-        <term abbr="CPU" full="Central Processing Unit"/>
-        <term abbr="DEP" full="Data Execution Prevention"/>
-        <term abbr="DKM" full="Derived Keying Material"/>
-	      <term full="Domain">A Domain or Information Domain is a policy construct that groups together execution 
+      <term full="Domain">A Domain or Information Domain is a policy construct that groups together execution 
           environments and networks by sensitivity of information and access control policy. For example, classification
           levels represent information domains. Within classification levels, there might be other domains representing
           communities of interest or coalitions. In the context of a VS, information domains are generally implemented
           as collections of VMs connected by virtual networks. The VS itself can be considered an Information Domain, 
           as can its Management Subsystem.</term>
-        <term abbr="DSS" full="Digital Signature Standard"/>
-        <term abbr="ECC" full="Elliptic Curve Cryptography"/>
-        <term abbr="FIPS" full="Federal Information Processing Standard"/>
-        <term abbr="FFC" full="Finite-Field Cryptography"/>
-	      <term full="Guest Network">See Operational Network.</term>
-	      <term full="Guest Operating System (OS)">An operating system that runs within a Guest VM.</term>
-	      <term full="Guest VM">A Guest VM is a VM that contains a virtual environment for the execution of an independent
+      <term full="Guest Operating System (OS)">An operating system that runs within a Guest VM.</term>
+      <term full="Guest VM">A Guest VM is a VM that contains a virtual environment for the execution of an independent
           computing system. Virtual environments execute mission workloads and implement customer-specific client or
           server functionality in Guest VMs, such as a web server or desktop productivity applications.</term>
-	      <term full="Helper VM">A Helper VM is a VM that performs services on behalf of one or more Guest VMs, but does
-          not qualify as a Service VM—and therefore is not part of the VMM. Helper VMs implement functions or services
-          that are particular to the workloads of Guest VMs. For example, a VM that provides a virus scanning service
-          for a Guest VM would be considered a Helper VM. For the purposes of this document, Helper VMs are considered 
-          a type of Guest VM, and are therefore subject to all the same requirements, unless specifically stated 
-          otherwise.</term>
-	      <term full="Host Operating System (OS)">An operating system onto which a VS is installed. Relative to the VS, 
+     <term full="Host Operating System (OS)">An operating system onto which a VS is installed. Relative to the VS, 
           the Host OS is part of the Platform.</term>
-	      <term full="Hypervisor">The Hypervisor is part of the VMM. It is the software executive of the physical platform
+      <term full="Hypervisor">The Hypervisor is part of the VMM. It is the software executive of the physical platform
           of a VS. A Hypervisor’s primary function is to mediate access to all CPU and memory resources, but it is also
           responsible for either the direct management or the delegation of the management of all other hardware
           devices on the hardware platform.</term>
-	      <term full="Hypercall">An API function that allows VM-aware software running within a VM to invoke VMM functionality.</term>
-        <term abbr="IEC" full="International Electrotechnical Commission"/>
-	      <term full="Information Domain">See Domain.</term>
-	      <term full="Introspection">A capability that allows a specially designated and privileged domain to have 
-          visibility into another domain for purposes of anomaly detection or monitoring.</term>
-        <term abbr="ISO" full="International Organization for Standardization"/>
-        <term abbr="IP" full="Internet Protocol"/>
-        <term abbr="IT" full="Information Technology"/>
-        <term abbr="ITSEF" full="Information Technology Security Evaluation Facility"/>
-        <term abbr="KDF" full="Key Derivation Function"/>
-        <term abbr="MAC" full="Message Authentication Code"/>
-	      <term full="Management Network">A network, which may have both physical and virtualized components, used to 
-          manage and administer a VS. Management networks include networks used by VS Administrators to communicate
-          with management components of the VS, and networks used by the VS for communications between VS components. 
-          For purposes of this document, networks that connect physical hosts for purposes of VM transfer or coordinate,
-          and backend storage networks are considered management networks. </term>
-	      <term full="Management Subsystem">Components of the VS that allow VS Administrators to configure and manage the
+      <term full="Hypercall">An API function that allows VM-aware software running within a VM to invoke VMM functionality.</term>
+      <term full="Management Subsystem">Components of the VS that allow VS Administrators to configure and manage the
           VMM, as well as configure Guest VMs. VMM management functions include VM configuration, virtualized network
           configuration, and allocation of physical resources.</term>
-        <term abbr="NIST" full="National Institute of Standards and Technology"/>
-        <term abbr="NVLAP" full="National Voluntary Laboratory Accreditation Program"/>
-	      <term full="Operational Network">An Operational Network is a network, which may have both physical and 
-          virtualized components, used to connect Guest VMs to each other and potentially to other entities outside of
-          the VS. Operational Networks support mission workloads and customer-specific client or server functionality. 
-          Also called a “Guest Network.”</term>
-        <term abbr="OS" full="Operating System"/>
-	      <term full="Physical Platform">The hardware environment on which a VS executes. Physical platform resources
-          include processors, memory, devices, and associated firmware.</term>
-        <term abbr="PKV" full="Public Key Verification"/>
-	      <term full="Platform">The hardware, firmware, and software environment into which a VS is installed and executes.</term>
-        <term abbr="RSA" full="Rivest, Shamir, Adleman"/>
-	      <term full="Service VM">A Service VM is a VM whose purpose is to support the Hypervisor in providing the resources or
-		      services necessary to support Guest VMs. Service VMs may implement some portion of Hypervisor functionality, but 
-		      also may contain important system functionality that is not necessary for Hypervisor operation. As with any VM,
-		      Service VMs necessarily execute without full Hypervisor privileges—only the privileges required to perform its 
-		      designed functionality. Examples of Service VMs include device driver VMs that manage access to a physical devices,
-		      and name-service VMs that help establish communication paths between VMs.</term>
-        <term abbr="SP" full="Special Publication"/>
-        <term abbr="SPD" full="Security Policy Database"/>
-	      <term full="System Security Policy" abbr="SSP">The overall policy enforced by the VS defining constraints on the behavior
-		      of VMs and users.</term>
-        <term abbr="SWID" full="Software Identification"/>
-        <term abbr="TPM" full="Trusted Platform Module"/>
-	      <term full="User">Users operate Guest VMs and are subject to configuration policies applied to the VS by Administrators.
+      <term abbr="OS" full="Operating System"/>
+      <term full="Platform">The hardware, firmware, and software environment into which a VS is installed and executes.</term>
+      <term full="User">Users operate Guest VMs and are subject to configuration policies applied to the VS by Administrators.
 		      Users need not be human as in the case of embedded or headless VMs, users are often nothing more than software
 		      entities that operate within the VM.</term>
-	      <term full="Virtual Machine" abbr="VM">A Virtual Machine is a virtualized hardware environment in which an operating system
+      <term full="Virtual Machine" abbr="VM">A Virtual Machine is a virtualized hardware environment in which an operating system
 		      may execute.</term>
-	      <term full="Virtual Machine Manager" abbr="VMM">A VMM is a collection of software components responsible for enabling VMs to
+      <term full="Virtual Machine Manager" abbr="VMM">A VMM is a collection of software components responsible for enabling VMs to
 		      function as expected by the software executing within them. Generally, the VMM consists of a Hypervisor, Service 
 		      VMs, and other components of the VS, such as virtual devices, binary translation systems, and physical device
 		      drivers. It manages concurrent execution of all VMs and virtualizes platform resources as needed.</term>
-	      <term full="Virtualization System" abbr="VS">A software product that enables multiple independent computing systems to 
+      <term full="Virtualization System" abbr="VS">A software product that enables multiple independent computing systems to 
 		      execute on the same physical hardware platform without interference from one other. For the purposes of this 
 		      document, the VS consists of a Virtual Machine Manager (VMM), Virtual Machine abstractions, a management subsystem,
-		      and other components.</term>  -->
-	    </tech-terms>
+		      and other components.</term>
+    </tech-terms>
   
       <section id="targets" title="Compliant Targets of Evaluation">
         Server Virtualization, for the purposes of this Module, refers to a virtualization system that implements 
