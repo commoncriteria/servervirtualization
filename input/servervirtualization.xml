@@ -255,8 +255,10 @@
 			<consistency-rationale>This SFR requires the Server Virtualization product to use security functionality
 				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</consistency-rationale>
-<!--            		<comp-lev> requires the TSF to define a specific location for its key storage.</comp-lev>   -->
-<!--		        <management>There are no management functions foreseen.</management>  -->
+			<comp-lev/>
+<!--	            	<comp-lev> requires the TSF to define a specific location for its key storage.</comp-lev>   -->
+<!--		        <management>There are no management functions foreseen.</management> -->
+			<management/>
             		<audit>There are no auditable events defined for this SFR.</audit>
             		<dependencies>FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</dependencies>	
@@ -519,10 +521,10 @@
 	<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
 	        the overall TOE is still a Virtualization System. The TOE boundary does not change.
 	</con-toe>
-    	<con-sec-prob>Con Sec Prob</con-sec-prob>
-	<con-obj> Con Obj </con-obj>
-	<con-op-en> Con Op En </con-op-en>
-	<con-mod id="T.SOMETHING">This threat threatens something.	</con-mod>
+    	<con-sec-prob/>
+	<con-obj/>
+	<con-op-en/>
+<!--	<con-mod id="T.SOMETHING">This threat threatens something.	</con-mod>   -->
       </base-pp>
     </chapter>
     
