@@ -4,24 +4,8 @@
 
 
 <!-- To Do
-  - Revision History
-  - Refinement - Compare to CC guide and add refinement and bold
-Consistency Arguments
-  ECDs
-    threats: objective refers - DONE
-  assumptions: objective refers - DONE
-  OSPs: objective refers (Organizational Security Policies) - DONE
-  TODO :security objectives - DONE; note, changed so they look like the ones in MDF, there are no mappings or rationales
-  Free The Toe - Done
-  TODO: Need to check the Supporting Document - not all of the EAs are being pulled over: None of the TOE Security Functional Requirements show up in the SD
-  fix table refs in text so that they refer to the correct #s
 -->
 
-<!-- Note about format of ECDs
-Behavior means it's a new EXT component and we have to make that chart.
-            <behavior>
-            </behavior>
-            -->
 
 <Module boilerplate="yes" target-products="Server Virtualization" xmlns="https://niap-ccevs.org/cc/v1"
   name="Server Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml">
@@ -30,7 +14,13 @@ Behavior means it's a new EXT component and we have to make that chart.
         <ReferenceTable>
             <PPVersion>1.0</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
-            <PPPubDate>2020-06-23</PPPubDate>
+            <PPPubDate>2016-11-17</PPPubDate>
+            <Keywords>Server Virtualization</Keywords>
+        </ReferenceTable>
+        <ReferenceTable>
+            <PPVersion>1.1</PPVersion>
+            <PPAuthor>National Information Assurance Partnership</PPAuthor>
+            <PPPubDate>2020-11-17</PPPubDate>
             <Keywords>Server Virtualization</Keywords>
         </ReferenceTable>
     </PPReference>
@@ -39,11 +29,11 @@ Behavior means it's a new EXT component and we have to make that chart.
         <entry>
             <version>1.0</version>
             <date>2016-11-17</date>
-            <subject>Initial Publication</subject>
+            <subject>Initial Publication as an Extended Package</subject>
         </entry>
         <entry>
-            <version>1.0</version>
-            <date>2020-06-23</date>
+            <version>1.1</version>
+            <date>2020-11-17</date>
             <subject>Converted to Module</subject>
         </entry>
     </RevisionHistory>
@@ -60,6 +50,8 @@ Behavior means it's a new EXT component and we have to make that chart.
       </section>
       
       <tech-terms>
+	      All relevant terminology for this EP are defined in the Base Virtualization PP.
+      <!--
      	  <term full="Administrator">Administrators perform management activities on the VS. These management functions 
           do not include administration of software running within Guest VMs, such as the Guest OS. Administrators need
           not be human as in the case of embedded or headless VMs. Administrators are often nothing more than software
@@ -152,11 +144,11 @@ Behavior means it's a new EXT component and we have to make that chart.
 	      <term full="Virtualization System" abbr="VS">A software product that enables multiple independent computing systems to 
 		      execute on the same physical hardware platform without interference from one other. For the purposes of this 
 		      document, the VS consists of a Virtual Machine Manager (VMM), Virtual Machine abstractions, a management subsystem,
-		      and other components.</term>
+		      and other components.</term>  -->
 	    </tech-terms>
   
       <section id="targets" title="Compliant Targets of Evaluation">
-        Server Virtualization, for the purposes of this EP, refers to a virtualization system that implements 
+        Server Virtualization, for the purposes of this Module, refers to a virtualization system that implements 
         virtualized hardware components on server-class hardware. It creates a virtualized hardware environment for 
         each instance of an operating system (virtual machines or VMs) permitting these environments to execute
         concurrently while maintaining isolation and the appearance of exclusive control over assigned computing
@@ -170,7 +162,7 @@ Behavior means it's a new EXT component and we have to make that chart.
         
         <subsection id="TOEboundry" title="TOE Boundary">
           The TOE boundary is the same as that which is defined for a Virtualization System in the
-		Virtualization Base PP. 
+		base Virtualization PP. 
         </subsection>   
       </section>
       
@@ -181,19 +173,19 @@ Behavior means it's a new EXT component and we have to make that chart.
         <usecases>
           <usecase title="Virtualized Servers" id="virtservers">
             <description>
-              Virtualized instances of network services traditionally executed on separate hardware platforms, such as
+              A platform for virtualized instances of network-based services traditionally executed on separate hardware platforms, such as
               web servers, file servers, and mail servers.                
             </description>
           </usecase>
           <usecase title="Virtualized Network Infrastructure" id="networkinfra">
             <description>
-               Virtualized instances of routers, switches, and other network infrastructure.
+               A platform for virtualized instances of routers, switches, and other network infrastructure.
             </description>
           </usecase>
           <usecase title="Virtualized Enterprise User Environments" id="userenv">
              <description>
-                The server back-end of virtual desktop or thin-client implementations where actual computation 
-		     occurs in a server-based VM and the user interacts through a client. The client application is 
+                A platform for the server back-end of virtual desktop or thin-client implementations where actual computation 
+		     occurs in server-based VMs and users interact through a client. The client application is 
 		     not covered by this PP Module.               
 	     </description>
           </usecase>
@@ -205,10 +197,10 @@ Behavior means it's a new EXT component and we have to make that chart.
     <cclaims>
         <cclaim title="Conformance Statement">
           <description> 
-            This PP Module inherits exact conformance as required from the specified Base PP and as defined in the
+            This PP Module inherits exact conformance as required from the Virtualization PP and as defined in the
             CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and Optional SFRs (dated May 2017).
             <htm:br/><htm:br/> 
-            The following PPs and PP-Modules are allowed to be specified in a PP-Configuration with this PP-Module:
+            The following PP is allowed to be specified in a PP-Configuration with this PP-Module:
             <htm:ul>
               <htm:li>Protection Profile for Virtualization, Version 1.1</htm:li>
             </htm:ul>
@@ -233,12 +225,12 @@ Behavior means it's a new EXT component and we have to make that chart.
     <chapter id="spd" title="Security Problem Description">
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
-      enforce.<htm:br></htm:br><htm:br></htm:br>
+      enforce.<htm:br/><htm:br/>
       Note that as a PP Module of the Base Virtualization PP, all threats, assumptions, and OSPs defined in the Base PP 
       apply to a TOE defined under this PP Module unless otherwise specified. The Security
       Functional Requirements defined in this PP Module are designed to mitigate the threats defined in this Module but may also
       mitigate some threats defined in the Base PP in more comprehensive detail due to the specific capabilities
-      provided by a Server Virtualization System.<htm:br></htm:br><htm:br></htm:br>
+      provided by a Server Virtualization System.<htm:br/><htm:br/>
       <section id="threats" title="Threats">
         This PP defines no additional threats beyond those defined in the Base Virtualization PP. Note however that the
         SFRs defined in this Module will assist in the mitigation of the T.UNAUTHORIZED_UPDATE and T.UNAUTHORIZED_ACCESS 
@@ -254,18 +246,22 @@ Behavior means it's a new EXT component and we have to make that chart.
 	
     <chapter id="objectives" title="Security Objectives">
         <section id="TOEobjectives" title="Security Objectives for the TOE">
-            This PP defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however that the SFRs defined in this EP will assist in the enforcement of the O.VMM_INTEGRITY and O.MANAGEMENT_ACCESS objectives defined in that PP.        
+            This Module defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however that the SFRs 
+		defined in this Module will assist in the enforcement of the O.VMM_INTEGRITY and O.MANAGEMENT_ACCESS objectives defined in
+		that PP.        
         </section>
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
-            Because this EP does not define any additional assumptions or organizational security policies, there are no additional security objectives for the Operational Environment to satisfy.        
+            Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
+		security objectives for the Operational Environment to satisfy.        
         </section>
         <section id="objrationale" title="Security Objectives Rationale">
-            This section is not applicable to this EP because no additional security objectives are defined.
+            This section is not applicable to this Module because no additional security objectives are defined.
         </section>
 	<section title="Security Objectives Rationale" id="rationale">
          <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
          </section>
     </chapter>
+	
     <chapter id="sfr" title="Security Requirements">
 	<base-pp version="1.1" name="Virtualization" product="Virtualization" short="Virt"
       		url="https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408"
@@ -273,29 +269,38 @@ Behavior means it's a new EXT component and we have to make that chart.
 	  <modified-sfrs/>
 	  <additional-sfrs>	
             <subsection id="management-fmt" title="Security Management (FMT)">
-		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior"/>
+		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
+           		<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
+				additional component, FMT_MOF_EXT.1. 
+			</mod-def>		
+		</ext-comp-def>
 		<f-component id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
-			<consistency-rationale>ARGH!!!!!!</consistency-rationale>
-            		<comp-lev> requires the TSF to define a specific location for its key storage.</comp-lev>
-		        <management>There are no management functions foreseen.</management>
-            		<audit>There are no auditable events foreseen.</audit>
-            		<dependencies>Blerm? FCS_CKM.1 Cryptographic Key Generation</dependencies>	
+			<consistency-rationale>This SFR requires the Server Virtualization product to use security functionality
+				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
+				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</consistency-rationale>
+<!--            		<comp-lev> requires the TSF to define a specific location for its key storage.</comp-lev>   -->
+<!--		        <management>There are no management functions foreseen.</management>  -->
+            		<audit>There are no auditable events defined for this SFR.</audit>
+            		<dependencies>FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
+				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</dependencies>	
                      	<f-element>
                         	<title>The TSF shall be capable of supporting 
                             		<selectables>
-                                	<selectable>local</selectable>
-                                	<selectable>remote</selectable>
+	                                	<selectable>local</selectable>
+        	                        	<selectable>remote</selectable>
                             		</selectables> administration.
                         	</title>
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the base PP to be included in the ST.</note>
                     </f-element>
                     <f-element>
-                        <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator or User as shown in Table 1, based on the following key:<htm:br></htm:br><htm:br></htm:br>
+                        <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator 
+				or User as shown in Table 1, based on the following key:<htm:br/><htm:br/>
                             <htm:ul style="list-style: none;">
-                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br></htm:br>
-                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br></htm:br>
-                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br></htm:br>
-                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)</htm:li><htm:br></htm:br>
+                                <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br/>
+                                <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br/>
+                                <htm:li>N = Not Permitted (TOE must not provide that function to that role)</htm:li><htm:br/>
+                                <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular 
+					selection-based SFR)</htm:li><htm:br/>
                             </htm:ul>
                             <htm:center><htm:h4>Table 1 – Server Virtualization Management Functions</htm:h4></htm:center>
                             <htm:table>
@@ -495,25 +500,55 @@ Behavior means it's a new EXT component and we have to make that chart.
                            </htm:table>
                         </title>
                         <note role="application">
-                            It is unlikely that this table will be identified as “Table 1” in the ST. The ST author is permitted to apply a refinement operation to the table name in order to give it an appropriate identification. The ST author is expected to update this table with an indication as to whether any of the ‘optional’ or ‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ column as it is provided in this EP as an aid to the ST author in constructing this table.<htm:br></htm:br><htm:br></htm:br>
+                            It is unlikely that this table will be identified as “Table 1” in the ST. The ST author is permitted to apply
+				a refinement operation to the table name in order to give it an appropriate identification. The ST author
+				is expected to update this table with an indication as to whether any of the ‘optional’ or 
+				‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ 
+				column as it is provided in this EP as an aid to the ST author in constructing this table.<htm:br/><htm:br/>
                             This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<htm:br></htm:br><htm:br></htm:br>
-                            Administration is considered “local” if the Administrator is physically present at the machine on which the VS is installed.<htm:br></htm:br><htm:br></htm:br>
-                            Administration is considered “remote” if communications between the Administrator and the Management Subsystem travel on a network.<htm:br></htm:br><htm:br></htm:br>
-                            There is no requirement to authenticate Users of the Virtualization System. Users that have access to VMs but not to the Management Subsystem need not authenticate to the Virtualization System in order to use Guest VMs. Requirements for authentication of VM users is determined by the policies of the domains running within the Guest VMs.<htm:br></htm:br><htm:br></htm:br>
+                            Administration is considered “local” if the Administrator is physically present at the machine on which the VS
+				is installed.<htm:br/><htm:br/>
+                            Administration is considered “remote” if communications between the Administrator and the Management Subsystem
+				travel on a network.<htm:br/><htm:br/>
+                            There is no requirement to authenticate Users of the Virtualization System. Users that have access to VMs but
+				not to the Management Subsystem need not authenticate to the Virtualization System in order to use Guest
+				VMs. Requirements for authentication of VM users is determined by the policies of the domains running
+				within the Guest VMs.<htm:br/><htm:br/>
                         </note>
                         <aactivity>
-                            The evaluator shall examine the TSS and Operational Guidance to ensure that it describes which security management functions require Administrator privilege and the actions associated with each management function. The evaluator shall verify that for each management function and role specified in Table 1, the defined role is able to perform all mandatory functions as well as all optional or selection-based functions claimed in the ST.<htm:br></htm:br><htm:br></htm:br>
-                            The evaluator shall examine the Operational Guidance to ensure that it describes how the Administrator and/or User are able to perform each management function that the ST claims the TOE supports.<htm:br></htm:br><htm:br></htm:br>
-                            The evaluator shall verify for each claimed management function that the Operational Guidance is sufficiently detailed to allow the function to be performed and that the function can be performed by the role(s) that are authorized to do so.<htm:br></htm:br><htm:br></htm:br>
-                            The evaluator shall also verify for each claimed management function that if the TOE claims not to provide a particular role with access to the function, then it is not possible to access the TOE as that role and perform that function.<htm:br></htm:br><htm:br></htm:br>
+				<TSS>
+                            		The evaluator shall examine the TSS and Operational Guidance to ensure that it describes which 
+					security management functions require Administrator privilege and the actions associated with each 
+					management function. The evaluator shall verify that for each management function and role
+					specified in Table 1, the defined role is able to perform all mandatory functions as well as all 
+					optional or selection-based functions claimed in the ST.<htm:br/><htm:br/>
+				</TSS>
+				<Guidance>
+	                            The evaluator shall examine the Operational Guidance to ensure that it describes how the Administrator
+					or User are able to perform each management function that the ST claims the TOE supports.<htm:br/><htm:br/>
+                            		The evaluator shall verify for each claimed management function that the Operational Guidance is 
+					sufficiently detailed to allow the function to be performed and that the function can be performed
+					by the role(s) that are authorized to do so.<htm:br/><htm:br/>
+				</Guidance>
+				<Tests>
+	                            The evaluator shall also verify for each claimed management function that if the TOE claims not to provide a
+					particular role with access to the function, then it is not possible to access the TOE as that
+					role and perform that function.<htm:br/><htm:br/>
+				</Tests>
                         </aactivity>
                     </f-element>
+		<audit-event/>
                 </f-component>
             </subsection>
 	  </additional-sfrs>
-        <section id="sar" title="TOE Security Assurance Requirements">
-            The Base Virtualization PP lists the Security Assurance Requirements (SARs) from Part 3 of the Common Criteria for Information Technology Security Evaluation, Version 3.1, Revision 4. As an EP of the Base Virtualization PP, this EP does not prescribe any SARs beyond those defined in the base PP. The evaluator shall ensure that the SARs defined in the claimed base PP are assessed against the entire TSF as appropriate.
-        </section>
+	<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
+	        the overall TOE is still a Virtualization System. The TOE boundary does not change.</con-toe>
+	</con-toe>
+    	<con-sec-prob/>
+	<con-obj/>
+	<con-op-en/>
+	<con-mod id="T.SOMETHING">This threat threatens something.
+	</con-mod>
       </base-pp>
     </chapter>
     
