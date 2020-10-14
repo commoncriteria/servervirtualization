@@ -205,13 +205,13 @@
 				<description>See Virtualization PP, Section 4.1</description>
 				<addressed-by>FMT_MOF_EXT.1</addressed-by>
 				<rationale> sdfsdsd </rationale>
-				<consistency-rationale>???</consitency-rationale>
+				<consistency-rationale>???</consistency-rationale>
 			</SO>
 			<SO name="O.MANAGEMENT_ACCESS">
 				<description>See Virtualization PP, Section 4.1</description>
 				<addressed-by>FMT_MOF_EXT.1</addressed-by>
 				<rationale> sdfsdsd </rationale>
-				<consistency-rationale>???</consitency-rationale>
+				<consistency-rationale>???</consistency-rationale>
 			</SO>
 		</SOs>
         </section>
