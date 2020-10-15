@@ -290,7 +290,7 @@
 		<con-op-en/>
 		<con-mod id="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
-		<con-mod id="T.UNAUTHORIZED_ACCESS"/>This threat applies to functionality that is described in the Base-PP, but is 
+		<con-mod id="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
 		
 	</base-pp>
