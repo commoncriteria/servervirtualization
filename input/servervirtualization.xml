@@ -307,11 +307,9 @@
 			<consistency-rationale>This SFR requires the Server Virtualization product to use security functionality
 				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</consistency-rationale>
-			<comp-lev/>
-<!--	            	<comp-lev> requires the TSF to define a specific location for its key storage.</comp-lev>   -->
-<!--		        <management>There are no management functions foreseen.</management> -->
-			<management/>
-            		<audit>There are no auditable events defined for this SFR.</audit>
+	            	<comp-lev>defines required management functions and responsibilities.</comp-lev>
+		        <management>There are no additional management functions beyond those already described in FMT_MOF_EXT.1.</management>
+           		<audit>There are no auditable events defined for this SFR.</audit>
             		<dependencies>FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</dependencies>	
                      	<f-element>
