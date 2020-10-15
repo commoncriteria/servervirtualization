@@ -223,6 +223,8 @@
 	
 	<!-- 4. Security Objectives -->
     <chapter id="objectives" title="Security Objectives">
+	    
+	    <!-- 4.1 Security Objectives for the TOE -->
         <section id="TOEobjectives" title="Security Objectives for the TOE">
             This Module defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however 
 		that the SFR defined in this Module will assist in the achievement of the following objectives defined in the Base-PP:    
@@ -245,26 +247,54 @@
 		</SOs>
         </section>
 	
-	<!-- 4. Security Objectives -->
+	<!-- 4.2 Security Objectives for the Operational Environment -->
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
             Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
 		security objectives for the Operational Environment to satisfy.        
         </section>
 	    
-<!--        <section id="objrationale" title="Security Objectives Rationale">
-            This section is not applicable to this Module because no additional security objectives are defined.
-        </section>
--->	    
+	 <!-- 4.3 Security Objectives Rationale -->
 	<section title="Security Objectives Rationale" id="rationale">
          <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
          </section>
     </chapter>
 	
+	<!-- 5. Security Requirements -->
     <chapter id="sfr" title="Security Requirements">
+	    
+	 <!-- 5.1 Virtualization PP -->
 	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization"
       		url="https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408"
       		xmlurl="https://github.com/commoncriteria/virtualization/blob/master/input/virtualization.xml">
-<!--	  <modified-sfrs/>  -->
+
+		<!-- 5.1 Virtualization PP Security Functional Requirements Direction -->
+		<sec-func-req-dir>
+			 In a PP-Configuration that includes the Virtualization PP, the TOE is expected to rely on some of the 
+			security functions implemented by the Virtualization System as a whole and evaluated against the Base-PP.
+			This section describes any modifications that the ST author must make to Base-PP SFRs to satisfy the 
+			required VS functionality.
+
+		<!-- 5.1.1 Modified SFRs -->	
+		<modified-sfrs/> 
+		<additional-sfrs/>
+			
+		<!-- Consistency Rationale crap -->
+		<!-- Consistency of TOE Type -->
+		<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
+		        the overall TOE is still a Virtualization System. The TOE boundary does not change.
+		</con-toe>
+	
+		<con-sec-prob/>
+		<con-obj/>
+		<con-op-en/>
+		<con-mod id="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
+			managed through functionality described in this PP-module.</con-mod>
+		<con-mod id="T.UNAUTHORIZED_ACCESS"/>This threat applies to functionality that is described in the Base-PP, but is 
+			managed through functionality described in this PP-module.</con-mod>
+		
+	</base-pp>
+	
+	 <!-- 5.2 TOE Security Functional Requirements -->
 	  <man-sfrs>	
             <subsection id="management-fmt" title="Security Management (FMT)">
 		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
@@ -539,30 +569,14 @@
                 </f-component>
             </subsection>
 	  </man-sfrs>
-		
-	<!--                       -->
-	<!-- Consistency Rationale -->
-	<!-- 		           -->
-		
-	<!-- Consistency of TOE Type -->
-	<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
-	        the overall TOE is still a Virtualization System. The TOE boundary does not change.
-	</con-toe>
-		
-	<!-- Consistency of Security Product Description -->
-    	<con-sec-prob/>
-		
-	<!-- Consistency of Objectives -->
-	<con-obj/>
-		
-	<!-- Consistency of Operational Environment -->
-	<con-op-en/>
-		
-	<!-- Consistency of Requirements? -->
-<!--	<con-mod id="T.SOMETHING">This threat threatens something.	</con-mod>   -->
-      </base-pp>
+	    
+	  <!-- 5.3 TOE Security Functional Requirements Rationale -->
+	  
     </chapter>
     
+	<!-- 6. Consistency Rationale -->
+	
+	
 <!-- Appendix: References   
 -->
     <appendix id="ref" title="References">
