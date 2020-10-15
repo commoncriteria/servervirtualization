@@ -518,12 +518,26 @@
                 </f-component>
             </subsection>
 	  </additional-sfrs>
+		
+	<!--                       -->
+	<!-- Consistency Rationale -->
+	<!-- 		           -->
+		
+	<!-- Consistency of TOE Type -->
 	<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
 	        the overall TOE is still a Virtualization System. The TOE boundary does not change.
 	</con-toe>
+		
+	<!-- Consistency of Security Product Description -->
     	<con-sec-prob/>
+		
+	<!-- Consistency of Objectoves -->
 	<con-obj/>
+		
+	<!-- Consistency of Operational Environment -->
 	<con-op-en/>
+		
+	<!-- Consistency of Requirements? -->
 <!--	<con-mod id="T.SOMETHING">This threat threatens something.	</con-mod>   -->
       </base-pp>
     </chapter>
