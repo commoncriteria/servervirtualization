@@ -173,7 +173,8 @@
       <section id="threats" title="Threats">
         This PP defines no additional threats beyond those defined in the Base Virtualization PP. Note however that the
         SFRs defined in this Module will assist in the mitigation of the T.UNAUTHORIZED_UPDATE and T.UNAUTHORIZED_ACCESS 
-        threats defined in the Base PP.        
+        threats defined in the Base PP.   
+	      <threats>
 	      <threat name="T.UNAUTHORIZED_UPDATE">
 		      <description>See Virtualization PP, Section 3.1</description>
 		      <objective-refer ref="O.VMM_INTEGRITY">
@@ -192,13 +193,10 @@
 		      </objective-refer>
 		      <consistency-rationale>This threat comes directly from the PP.</consistency-rationale>
 	      </threat>		      
+	      </threats>
       </section>
-      <section id="Assumptions" title="Assumptions">
-        This PP defines no additional assumptions beyond those defined in the Base Virtualization PP.
-      </section>
-      <section id="securityPolicy" title="Organizational Security Policies">
-        This PP defines no additional OSPs beyond those defined in the Base Virtualization PP.
-      </section>
+      <section id="Assumptions" title="Assumptions"/>
+      <section id="securityPolicy" title="Organizational Security Policies"/>
     </chapter>
 	
     <chapter id="objectives" title="Security Objectives">
