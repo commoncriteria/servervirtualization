@@ -269,10 +269,11 @@
 
 		<!-- 5.1 Virtualization PP Security Functional Requirements Direction -->
 		<sec-func-req-dir>
-			 In a PP-Configuration that includes the Virtualization PP, the TOE is expected to rely on some of the 
+			In a PP-Configuration that includes the Virtualization PP, the TOE is expected to rely on some of the 
 			security functions implemented by the Virtualization System as a whole and evaluated against the Base-PP.
 			This section describes any modifications that the ST author must make to Base-PP SFRs to satisfy the 
 			required VS functionality.
+		</sec-func-req-dir>
 
 		<!-- 5.1.1 Modified SFRs -->	
 		<modified-sfrs/> 
