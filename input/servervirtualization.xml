@@ -303,8 +303,8 @@
 				additional component, FMT_MOF_EXT.1. 
 			</mod-def>		
 		</ext-comp-def>
-		<f-component cc-id="FMT_MOF_EXT.1" name="Management of Security Functions Behavior">
-			<consistency-rationale>This SFR requires the Server Virtualization product to use security functionality
+		<f-component cc-id="fmt_mof_ext.1" name="Management of Security Functions Behavior">
+			<consistency-rationale>This SFR requires the Server Virtualization product to manage security functionality
 				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</consistency-rationale>
 	            	<comp-lev>defines required management functions and responsibilities.</comp-lev>
