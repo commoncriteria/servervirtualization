@@ -243,8 +243,8 @@
 	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization"
       		url="https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408"
       		xmlurl="https://github.com/commoncriteria/virtualization/blob/master/input/virtualization.xml">
-	  <modified-sfrs/>
-	  <additional-sfrs>	
+<!--	  <modified-sfrs/>  -->
+	  <man-sfrs>	
             <subsection id="management-fmt" title="Security Management (FMT)">
 		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
            		<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
@@ -517,7 +517,7 @@
 		<audit-event/>
                 </f-component>
             </subsection>
-	  </additional-sfrs>
+	  </man-sfrs>
 		
 	<!--                       -->
 	<!-- Consistency Rationale -->
@@ -531,7 +531,7 @@
 	<!-- Consistency of Security Product Description -->
     	<con-sec-prob/>
 		
-	<!-- Consistency of Objectoves -->
+	<!-- Consistency of Objectives -->
 	<con-obj/>
 		
 	<!-- Consistency of Operational Environment -->
