@@ -573,8 +573,6 @@
 	  
     </chapter>
     
-	<!-- 6. Consistency Rationale -->
-	
 	
 <!-- Appendix: References   
 -->
@@ -602,6 +600,6 @@
         </htm:table>
     </appendix>
     <appendix id="acro" title="Acronyms">
-        All relevant acronyms for this EP are defined in the Base Virtualization PP.
+        All relevant acronyms for this PP-Module are defined in the Base Virtualization PP.
     </appendix>
 </Module>
