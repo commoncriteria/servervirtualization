@@ -313,7 +313,7 @@
            		<audit>There are no auditable events defined for this SFR.</audit>
 <!--            		<dependencies>FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</dependencies>	 -->
-			<dependencies/>
+			<dependencies>No other dependencies.</dependencies>
                      	<f-element>
                         	<title>The TSF shall be capable of supporting 
                             		<selectables>
