@@ -280,7 +280,7 @@
 		<modified-sfrs/> 
 		<additional-sfrs/>
 			
-		<!-- Consistency Rationale crap -->
+		<!-- Consistency Rationale -->
 		<!-- Consistency of TOE Type -->
 		<con-toe>When this PP-Module is used to extend the Virtualization PP, the TOE type for
 		        the overall TOE is still a Virtualization System. The TOE boundary does not change.
@@ -314,7 +314,7 @@
 <!--            		<dependencies>FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
 				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</dependencies>	 -->
 			<dependencies>No other dependencies.</dependencies>
-                     	<f-element>
+                     	<f-element id="fmt-mof-ext-1e1">
                         	<title>The TSF shall be capable of supporting 
                             		<selectables>
 	                                	<selectable>local</selectable>
@@ -323,7 +323,7 @@
                         	</title>
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the base PP to be included in the ST.</note>
                     </f-element>
-                    <f-element>
+                    <f-element id="fmt-mof-ext-1e2">
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator 
 				or User as shown in Table 1, based on the following key:<htm:br/><htm:br/>
                             <htm:ul style="list-style: none;">
