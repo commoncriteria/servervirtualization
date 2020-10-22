@@ -44,7 +44,7 @@
 
      	<!-- 1.1 Overview -->
 	<section id="overview" title="Overview">
-          The scope of this Module is to define the security functionality of a Server Virtualization product in
+          The scope of this PP-Module is to define the security functionality of a Server Virtualization product in
           terms of [CC] and to define functional and assurance requirements for such products. This PP-Module is not 
           complete in itself, but rather is intended for use with the following Base-PP:
 	      
@@ -116,7 +116,7 @@
 	must also claim conformance either to this Module or to the PP Module for Client Virtualization.
         
 	<!-- 1.3.1 TOE Boundary -->
-        <subsection id="TOEboundry" title="TOE Boundary">
+        <subsection id="TOEboundary" title="TOE Boundary">
           The TOE boundary is the same as that which is defined for a Virtualization System in the
 		base Virtualization PP. 
         </subsection>   
