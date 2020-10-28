@@ -2,9 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="../transforms/module/module2html.xsl"?>
 <?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
-
-<!-- To Do
-
+<!--  
+	Changes for version 1.1
+	- Converted into XML
+	- Converted into a PP-Module
+	- TD0360 Integrated
+	- Rationales and other PP-Module crap added
 -->
 
 
@@ -461,9 +464,9 @@
                                 <htm:tr>
                                     <htm:td>17</htm:td>
                                     <htm:td>Ability to configure name/address of directory server to bind with</htm:td>
-                                    <htm:td>X</htm:td>
+                                    <htm:td>S</htm:td>
                                     <htm:td>O</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>Must be selected if "directory-based" is selected anywhere in FIA_UAU.5.1 in the Base Virtualization PP.</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>18</htm:td>
