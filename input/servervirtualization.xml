@@ -477,7 +477,7 @@
                                 <htm:tr>
                                     <htm:td>18</htm:td>
                                     <htm:td>Ability to configure name/address of audit/logging server to which to send audit/logging records</htm:td>
-                                    <htm:td>X</htm:td>
+                                    <htm:td>X</htm:td> 
                                     <htm:td>N</htm:td>
                                     <htm:td> </htm:td>
                                 </htm:tr>
