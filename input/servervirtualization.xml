@@ -354,10 +354,13 @@
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>2</htm:td>
-                                    <htm:td>Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</htm:td>
+                                    <htm:td><selectables>
+					    <selectable id="sel-mf-2">Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</selectable>
+					    <selectable>Not applicable.</selectable></htm:td>
                                     <htm:td>S</htm:td>
                                     <htm:td>N</htm:td>
                                     <htm:td>Must be selected if ST includes FIA_PMG_EXT.1.</htm:td>
+				    <!-- sel "sel-mf-2" if req="fia-uau-5e1" ids="sel-uau-pwd"  -->
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>3</htm:td>
@@ -463,10 +466,13 @@
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>17</htm:td>
-                                    <htm:td>Ability to configure name/address of directory server to bind with</htm:td>
+                                    <htm:td><selectables>
+					    <selectable id="sel-mf-17">Ability to configure name/address of directory server to bind with</selectable>
+					    <selectable>Not applicable</selectable></htm:td>
                                     <htm:td>S</htm:td>
                                     <htm:td>O</htm:td>
                                     <htm:td>Must be selected if "directory-based" is selected anywhere in FIA_UAU.5.1 in the Base Virtualization PP.</htm:td>
+				    <!-- sel "sel-mf-17" if req="fia-uau-5e1" ids="sel-uau-ssh-dirbased;sel-uau-pwd-dirbased; sel-uau-x509-dirbased"  -->
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>18</htm:td>
