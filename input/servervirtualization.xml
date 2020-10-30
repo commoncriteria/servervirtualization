@@ -546,7 +546,8 @@
 				    </htm:td>
                                     <htm:td>S</htm:td>
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>This function must be selected if "allow the administrator to choose whether to accept the certificate in these cases"
+					    in FIA_X509_EXT.2.2 in the base PP.</htm:td>
 				    <!-- sel "sel-mf-27" if req="fia-x509-ext-2e2" ids="sel-x509-adminset"  -->
                                 </htm:tr>
                            </htm:table>
