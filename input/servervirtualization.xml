@@ -541,7 +541,7 @@
                                 <htm:tr>
                                     <htm:td>27</htm:td>
                                     <htm:td><selectables>
-					    <selectable>Ability to configure what to do if unable to determine the validity of a certificate.</selectable>
+					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate.</selectable>
 					    </selectables>
 				    </htm:td>
                                     <htm:td>S</htm:td>
