@@ -8,6 +8,7 @@
 	- Converted into a PP-Module
 	- TD0360 Integrated
 	- Rationales and other PP-Module crap added
+	- Added audit function for configuring what to do if it is unanable to determine the validity of a certificate.
 -->
 
 
@@ -536,6 +537,17 @@
                                     <htm:td>O</htm:td>
                                     <htm:td>O</htm:td>
                                     <htm:td> </htm:td>
+                                </htm:tr>
+                                <htm:tr>
+                                    <htm:td>27</htm:td>
+                                    <htm:td><selectables>
+					    <selectable>Ability to configure what to do if unable to determine the validity of a certificate.</selectable>
+					    </selectables>
+				    </htm:td>
+                                    <htm:td>S</htm:td>
+                                    <htm:td>N</htm:td>
+                                    <htm:td> </htm:td>
+				    <!-- sel "sel-mf-27" if req="fia-x509-ext-2e2" ids="sel-x509-adminset"  -->
                                 </htm:tr>
                            </htm:table>
                         </title>
