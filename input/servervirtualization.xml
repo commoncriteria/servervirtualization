@@ -157,7 +157,7 @@
 	<!-- 2. Conformance Claims -->
     <chapter id="conf" title="Conformance Claims">
     <cclaims>
-        <cclaim title="Conformance Statement">
+        <cclaim name="Conformance Statement">
           <description> 
             This PP-Module inherits exact conformance as required from the Virtualization PP and as defined in the
             CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and Optional SFRs (dated May 2017).
@@ -166,18 +166,18 @@
             <htm:ul>
               <htm:li>Protection Profile for Virtualization, Version 1.1</htm:li>
             </htm:ul>
-            A product must be evaluated against this Server Virtualization PP Module in conjunction with the base
-            Virtualization PP. A product may not be evaluated solely against this Server Virtualization PP Module.<htm:br/><htm:br/>
+            A product must be evaluated against this Server Virtualization PP-Module in conjunction with the base
+            Virtualization PP. A product may not be evaluated solely against this Server Virtualization PP-Module.<htm:br/><htm:br/>
 	    There are no other PP-Modules that are allowed to be specified in a PP-Configuration with this PP-Module.
           </description>
         </cclaim>
-        <cclaim title="CC Conformance Claims">
+        <cclaim name="CC Conformance Claims">
           <description>
                 This PP Module is conformant to Parts 2 (extended) and 3 (conformant) of Common Criteria Version 3.1, 
                 Release 5 [CC].
           </description>
         </cclaim>
-        <cclaim title="Package Claims">
+        <cclaim name="Package Claims">
             <description>
                 This PP-Module does not directly interface with any Package.
             </description>
@@ -266,6 +266,12 @@
 	
 	<!-- 5. Security Requirements -->
     <chapter id="sfr" title="Security Requirements">
+
+	    <subsection id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
+        	<audit-table table="mandatory">
+  	     		<htm:br/><htm:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
+	  	</audit-table>
+	    </subsection>
 	    
 	 <!-- 5.1 Virtualization PP -->
 	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization"
