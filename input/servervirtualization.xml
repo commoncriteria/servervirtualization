@@ -625,7 +625,7 @@
             </htm:tr>
             <htm:tr>
                 <htm:td>[Base Virtualization PP]</htm:td>
-                <htm:td>Protection Profile for Virtualization, Version: 1.0, 2016-11-17</htm:td>                
+                <htm:td>Protection Profile for Virtualization, Version: 1.1, 2020-11-17</htm:td>                
             </htm:tr>
         </htm:table>
     </appendix>
