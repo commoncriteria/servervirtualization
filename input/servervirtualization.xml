@@ -266,12 +266,6 @@
 	
 	<!-- 5. Security Requirements -->
     <chapter id="sfr" title="Security Requirements">
-
-	    <subsection id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
-        	<audit-table table="mandatory">
-  	     		<htm:br/><htm:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
-	  	</audit-table>
-	    </subsection>
 	    
 	 <!-- 5.1 Virtualization PP -->
 	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization"
@@ -308,6 +302,13 @@
 	
 	 <!-- 5.2 TOE Security Functional Requirements -->
 	  <man-sfrs>	
+		  
+  	    <subsection id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
+        	<audit-table table="mandatory">
+  	     		<htm:br/><htm:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
+	  	</audit-table>
+	    </subsection>
+		  
             <subsection id="management-fmt" title="Security Management (FMT)">
 		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
            		<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
