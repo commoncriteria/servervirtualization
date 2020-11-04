@@ -45,13 +45,13 @@
 	<section id="overview" title="Overview">
           The scope of this PP-Module is to define the security functionality of a Server Virtualization product in
           terms of [CC] and to define functional and assurance requirements for such products. This PP-Module is not 
-          complete in itself, but rather is intended for use with the following Base-PP:
+          complete in itself, but rather is intended for use with the following base PP:
 	      
 	      <htm:ul>
 		      <htm:li>Protection Profile for Virtualization, Version 1.1.</htm:li>
 	      </htm:ul>
 
-	  This Base-PP is valid because Server Virtualization is a specific type of Virtualization System and is expected to
+	  This base PP is valid because Server Virtualization is a specific type of Virtualization System and is expected to
           implement security functionality that is not common to all Virtualization Systems. One additional SFR
           has been defined in this PP-Module to define security functionality that is unique to this
           particular type of Virtualization System.        
@@ -188,8 +188,8 @@
 	    
 	<!-- 3.1 Threats -->
       <section id="threats" title="Threats">
-        This PP defines no additional threats beyond those defined in the Base Virtualization PP. Note however that the
-        SFRs defined in this PP-Module will assist in the mitigation of the following threats defined in the Base PP:   
+        This PP defines no additional threats beyond those defined in the base Virtualization PP. Note however that the
+        SFRs defined in this PP-Module will assist in the mitigation of the following threats defined in the base PP:   
 	      <threats>
 	      <threat name="T.UNAUTHORIZED_UPDATE">
 		      <description>See Virtualization PP, Section 3.1.</description>
@@ -228,8 +228,8 @@
 	    
 	    <!-- 4.1 Security Objectives for the TOE -->
         <section id="TOEobjectives" title="Security Objectives for the TOE">
-            This Module defines no additional TOE security objectives beyond those defined in the Base Virtualization PP. Note however 
-		that the SFR defined in this Module will assist in the achievement of the following objectives defined in the Base-PP:    
+            This Module defines no additional TOE security objectives beyond those defined in the base Virtualization PP. Note however 
+		that the SFR defined in this Module will assist in the achievement of the following objectives defined in the base PP:    
 		<SOs>
 			<SO name="O.VMM_INTEGRITY">
 				<description>See Virtualization PP, Section 4.1.</description>
@@ -272,8 +272,8 @@
 		<!-- 5.1 Virtualization PP Security Functional Requirements Direction -->
 		<sec-func-req-dir>
 			In a PP-Configuration that includes the Virtualization PP, the TOE is expected to rely on some of the 
-			security functions implemented by the Virtualization System as a whole and evaluated against the Base-PP.
-			This section describes any modifications that the ST author must make to Base-PP SFRs to satisfy the 
+			security functions implemented by the Virtualization System as a whole and evaluated against the base PP.
+			This section describes any modifications that the ST author must make to base PP SFRs to satisfy the 
 			required VS functionality.
 		</sec-func-req-dir>
 
@@ -290,9 +290,9 @@
 		<con-sec-prob/>
 		<con-obj/>
 		<con-op-en/>
-		<con-mod id="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
+		<con-mod id="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the base PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
-		<con-mod id="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
+		<con-mod id="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the base PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
 		
 	</base-pp>
@@ -348,7 +348,7 @@
                                     <htm:th>Function</htm:th> 
                                     <htm:th>Administrator</htm:th> 
                                     <htm:th>User</htm:th> 
-                                    <htm:th>Notes (all SFR references are from the Base Virtualization PP</htm:th> 
+                                    <htm:th>Notes (all SFR references are from the base Virtualization PP</htm:th> 
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>1</htm:td> 
@@ -476,7 +476,7 @@
 					    <selectable>Not applicable</selectable></selectables></htm:td>
                                     <htm:td>S</htm:td>
                                     <htm:td>O</htm:td>
-                                    <htm:td>Must be selected if "directory-based" is selected anywhere in FIA_UAU.5.1 in the Base Virtualization PP.</htm:td>
+                                    <htm:td>Must be selected if "directory-based" is selected anywhere in FIA_UAU.5.1 in the base Virtualization PP.</htm:td>
 				    <!-- sel "sel-mf-17" if req="fia-uau-5e1" ids="sel-uau-ssh-dirbased;sel-uau-pwd-dirbased; sel-uau-x509-dirbased"  -->
                                 </htm:tr>
                                 <htm:tr>
@@ -631,7 +631,7 @@
         </htm:table>
     </appendix>
     <appendix id="acro" title="Acronyms">
-        All relevant acronyms for this PP-Module are defined in the Base Virtualization PP.
+        All relevant acronyms for this PP-Module are defined in the base Virtualization PP.
     </appendix>
     <bibliography>
       <cc-entry/>
