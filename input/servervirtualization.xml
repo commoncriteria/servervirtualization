@@ -157,12 +157,6 @@
             This PP-Module inherits exact conformance as required from the Virtualization PP and as defined in the
             CC and CEM addenda for Exact Conformance, Selection-Based SFRs, and Optional SFRs (dated May 2017).
             <htm:br/><htm:br/> 
-            The following PP is allowed to be specified in a PP-Configuration with this PP-Module:
-            <htm:ul>
-              <htm:li>Protection Profile for Virtualization, Version 1.1</htm:li>
-            </htm:ul>
-            A product must be evaluated against this Server Virtualization PP-Module in conjunction with the base
-            Virtualization PP. A product may not be evaluated solely against this Server Virtualization PP-Module.<htm:br/><htm:br/>
 	    There are no other PP-Modules that are allowed to be specified in a PP-Configuration with this PP-Module.
           </description>
         </cclaim>
@@ -174,7 +168,7 @@
         </cclaim>
         <cclaim name="Package Claims">
             <description>
-                This PP-Module does not directly interface with any Package.
+                This PP-Module conforms to the TLS Package. 
             </description>
         </cclaim>
       </cclaims>
