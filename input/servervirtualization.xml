@@ -168,7 +168,7 @@
         </cclaim>
         <cclaim name="Package Claims">
             <description>
-                This PP-Module conforms to the TLS Package. 
+               This PP-Module conforms to the Functional Package for TLS and the Extended Package for Secure Shell (SSH).
             </description>
         </cclaim>
       </cclaims>
@@ -540,7 +540,7 @@
                                     <htm:td>27</htm:td>
                                     <htm:td><selectables>
 					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate.</selectable>
-                                            <selectable>QQQ ADd choice </selectable>
+					    <selectable>No ability to configure such action</selectable>
 					    </selectables>
 				    </htm:td>
                                     <htm:td>S</htm:td>
@@ -598,6 +598,14 @@
           <obj-sfrs/> 
     </chapter>
     
+
+    <appendix id="ent" title="Entropy">
+	The TOE does not require any additional supplementary information to describe its entropy source(s)
+	beyond the requirements outlined in the ‘Entropy Documentation and Assessment’ section of the Base
+	Virtualization PP. As with other base PP requirements, the only additional requirement is that the
+	entropy documentation also applies to the specific Client Virtualization capabilities of the TOE in
+	addition to the functionality required by the base PP.
+    </appendix>
 	
 <!-- Appendix: References   
 -->
@@ -612,9 +620,9 @@
                 <htm:td>
                     Common Criteria for Information Technology Security Evaluation –<htm:br></htm:br><htm:br></htm:br>
                     <htm:ul>
-                        <htm:li>Part 1: Introduction and General Model, CCMB-2012-09-001, Version 3.1 Revision 4, September 2012</htm:li>
-                        <htm:li>Part 2: Security Functional Components, CCMB-2012-09-002, Version 3.1 Revision 4, September 2012</htm:li>
-                        <htm:li>Part 3: Security Assurance Components, CCMB-2012-09-003, Version 3.1 Revision 4, September 2012 </htm:li>
+                        <htm:li>Part 1: Introduction and General Model, CCMB-2012-09-001, Version 3.1 Revision 5, April 2017</htm:li>
+                        <htm:li>Part 2: Security Functional Components, CCMB-2012-09-002, Version 3.1 Revision 5, April 2017</htm:li>
+                        <htm:li>Part 3: Security Assurance Components, CCMB-2012-09-003, Version 3.1 Revision 5, April 2017 </htm:li>
                     </htm:ul>
                 </htm:td>
             </htm:tr>
@@ -624,11 +632,5 @@
             </htm:tr>
         </htm:table>
     </appendix>
-    <appendix id="acro" title="Acronyms">
-        All relevant acronyms for this PP-Module are defined in the base Virtualization PP.
-    </appendix>
-    <bibliography>
-      <cc-entry/>
-    </bibliography>
     <acronyms/>
 </Module>
