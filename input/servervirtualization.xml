@@ -327,7 +327,7 @@
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator 
-				or User as shown in Table 1, based on the following key:<htm:br/><htm:br/>
+				or User as shown in <ctr-ref ref-id="manfunc"/>, based on the following key:<htm:br/><htm:br/>
                             <htm:ul style="list-style: none;">
                                 <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br/>
                                 <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br/>
@@ -335,7 +335,7 @@
                                 <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular 
 					selection-based SFR)</htm:li><htm:br/>
                             </htm:ul>
-                            <htm:center><htm:h4>Table 1 – Server Virtualization Management Functions</htm:h4></htm:center>
+                            <htm:center><htm:h4><ctr ctr-type="Table" id="manfunc">: Server Virtualization Management Functions</ctr></htm:h4></htm:center>
                             <htm:table>
                                 <htm:tr>
                                     <htm:th>Number</htm:th> 
@@ -552,9 +552,9 @@
                            </htm:table>
                         </title>
                         <note role="application">
-                            The ST author is expected to update this table with an indication as to whether any of the ‘optional’ or 
+                            The ST author is expected to update <ctr-ref ref-id="manfunc"/> with an indication as to whether any of the ‘optional’ or 
 				‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ 
-				column as it is provided in this EP as an aid to the ST author in constructing this table.<htm:br/><htm:br/>
+				column as it is provided in this PP-Module as an aid to the ST author in constructing the table.<htm:br/><htm:br/>
                             This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<htm:br/><htm:br/>
                             Administration is considered “local” if the Administrator is physically present at the machine on which the VS
 				is installed.<htm:br/><htm:br/>
@@ -570,7 +570,7 @@
                             		The evaluator shall examine the TSS and Operational Guidance to ensure that it describes which 
 					security management functions require Administrator privilege and the actions associated with each 
 					management function. The evaluator shall verify that for each management function and role
-					specified in Table 1, the defined role is able to perform all mandatory functions as well as all 
+					specified in <ctr-ref ref-id="manfunc"/>, the defined role is able to perform all mandatory functions as well as all 
 					optional or selection-based functions claimed in the ST.<htm:br/><htm:br/>
 				</TSS>
 				<Guidance>
@@ -603,14 +603,17 @@
 	The TOE does not require any additional supplementary information to describe its entropy source(s)
 	beyond the requirements outlined in the ‘Entropy Documentation and Assessment’ section of the Base
 	Virtualization PP. As with other base PP requirements, the only additional requirement is that the
-	entropy documentation also applies to the specific Client Virtualization capabilities of the TOE in
+	entropy documentation also applies to the specific Server Virtualization capabilities of the TOE in
 	addition to the functionality required by the base PP.
     </appendix>
+	
     <bibliography>
       <entry id="bib-base-pp">
         <tag>VirtPP</tag>
         <description>Protection Profile for Virtualization, Version: 1.1, 2020-11-17</description>
       </entry>
     </bibliography>
+	
     <acronyms/>
+	
 </Module>
