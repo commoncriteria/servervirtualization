@@ -606,31 +606,11 @@
 	entropy documentation also applies to the specific Client Virtualization capabilities of the TOE in
 	addition to the functionality required by the base PP.
     </appendix>
-	
-<!-- Appendix: References   
--->
-    <appendix id="ref" title="References">
-        <htm:table>
-            <htm:tr>
-                <htm:td>Identifier</htm:td>
-                <htm:td>Title</htm:td>
-            </htm:tr>
-            <htm:tr>
-                <htm:td>[CC]</htm:td>
-                <htm:td>
-                    Common Criteria for Information Technology Security Evaluation –<htm:br></htm:br><htm:br></htm:br>
-                    <htm:ul>
-                        <htm:li>Part 1: Introduction and General Model, CCMB-2012-09-001, Version 3.1 Revision 5, April 2017</htm:li>
-                        <htm:li>Part 2: Security Functional Components, CCMB-2012-09-002, Version 3.1 Revision 5, April 2017</htm:li>
-                        <htm:li>Part 3: Security Assurance Components, CCMB-2012-09-003, Version 3.1 Revision 5, April 2017 </htm:li>
-                    </htm:ul>
-                </htm:td>
-            </htm:tr>
-            <htm:tr>
-                <htm:td>[Base Virtualization PP]</htm:td>
-                <htm:td>Protection Profile for Virtualization, Version: 1.1, 2020-11-17</htm:td>                
-            </htm:tr>
-        </htm:table>
-    </appendix>
+    <bibliography>
+      <entry id="bib-base-pp">
+        <tag>VirtPP</tag>
+        <description>Protection Profile for Virtualization, Version: 1.1, 2020-11-17</description>
+      </entry>
+    </bibliography>
     <acronyms/>
 </Module>
