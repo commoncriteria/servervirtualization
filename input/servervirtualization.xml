@@ -551,6 +551,7 @@
                                 </htm:tr>
                            </htm:table>
                         </title>
+                        <ext-comp-def-title><title>QQQQ</title></ext-comp-def-title>
                         <note role="application">
                             The ST author is expected to update <ctr-ref ref-id="manfunc"/> with an indication as to whether any of the ‘optional’ or 
 				‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ 
