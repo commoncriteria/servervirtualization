@@ -539,8 +539,8 @@
                                 <htm:tr>
                                     <htm:td>27</htm:td>
                                     <htm:td><selectables>
-					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate.</selectable>
-					    <selectable>No ability to configure such action</selectable>
+					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate</selectable>
+					    <selectable>Not applicable</selectable>
 					    </selectables>
 				    </htm:td>
                                     <htm:td>S</htm:td>
