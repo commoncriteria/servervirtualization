@@ -6,7 +6,7 @@
 	Changes for version 1.1
 	- Converted into XML
 	- Converted into a PP-Module
-	- TD0360 Integrated
+	- TD0360 Integrated 
 	- Rationales and other PP-Module crap added
 	- Added audit function for configuring what to do if it is unanable to determine the validity of a certificate.
 -->
