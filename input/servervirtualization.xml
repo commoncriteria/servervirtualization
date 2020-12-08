@@ -168,7 +168,7 @@
         </cclaim>
         <cclaim name="Package Claims">
             <description>
-               This PP-Module conforms to the Functional Package for TLS and the Extended Package for Secure Shell (SSH).
+               This PP-Module conforms to the Functional Package for TLS.
             </description>
         </cclaim>
       </cclaims>
