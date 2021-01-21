@@ -394,7 +394,7 @@
                                     <htm:td>Ability to configure VM access to physical devices</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>O</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FDP_PPR_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>8</htm:td>
@@ -422,14 +422,14 @@
                                     <htm:td>Ability to configure the cryptographic functionality</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>12</htm:td>
                                     <htm:td>Ability to change default authorization factors</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FIA_PMG_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>13</htm:td>
@@ -478,7 +478,7 @@
                                     <htm:td>Ability to configure name/address of audit/logging server to which to send audit/logging records</htm:td>
                                     <htm:td>X</htm:td> 
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FAU_STG_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>19</htm:td>
@@ -499,7 +499,7 @@
                                     <htm:td>Ability to connect/disconnect removable devices to/from a VM</htm:td>
                                     <htm:td>O</htm:td>
                                     <htm:td>O</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FPT_RDM_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>22</htm:td>
