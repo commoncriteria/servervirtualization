@@ -1,4 +1,4 @@
-Extended Package for Server Virtualization 
+Functional Package for Server Virtualization 
 ============
 [![Build Status](https://travis-ci.com/commoncriteria/servervirtualization.svg?branch=master)](https://travis-ci.com/commoncriteria/servervirtualization) 
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/servervirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/servervirtualization/issues) 
@@ -12,8 +12,12 @@ A list of products that have passed evaluation against this Protection Profile c
 
 ## Draft Version
 
-* [Extended Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html) (html)
-* [Extended Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.pdf) (pdf)
+* [Functional Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html) (html)
+* [Functional Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.pdf) (pdf)
+* [Supporting Documents for Server Virtualization] (https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.html) (html)
+* [Supporting Documents for Server Virtualization] (https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.pdf) (PDF)
+
+
 
 ## Release Version
 * [Extended Package for Server Virtualization](https://www.niap-ccevs.org/Profile/Info.cfm?id=410)
