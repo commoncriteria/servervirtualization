@@ -14,8 +14,8 @@ A list of products that have passed evaluation against this Protection Profile c
 
 * [Functional Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.html) (html)
 * [Functional Package for Server Virtualization](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-release.pdf) (pdf)
-* [Supporting Documents for Server Virtualization] (https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.html) (html)
-* [Supporting Documents for Server Virtualization] (https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.pdf) (PDF)
+* [Supporting Documents for Server Virtualization](https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.html) (html)
+* [Supporting Documents for Server Virtualization](https://github.com/commoncriteria/commoncriteria.github.io/tree/master/pp/clientvirtualization/clientvirtualization-sd.pdf) (PDF)
 
 
 
