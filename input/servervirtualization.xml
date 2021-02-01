@@ -38,7 +38,7 @@
     </RevisionHistory>
     
     <!-- 1. Introduction -->
-    <chapter id="Introduction" title="Introduction">
+    <section id="Introduction" title="Introduction">
 
      	<!-- 1.1 Overview -->
     
@@ -115,10 +115,10 @@
 	must also claim conformance either to this Module or to the PP Module for Client Virtualization.
         
 	<!-- 1.3.1 TOE Boundary -->
-        <subsection id="TOEboundary" title="TOE Boundary">
+        <section id="TOEboundary" title="TOE Boundary">
           The TOE boundary is the same as that which is defined for a Virtualization System in the
 		base Virtualization PP. 
-        </subsection>   
+        </section>   
       </section>
       
 	<!-- 1.4 Use Cases -->
@@ -147,10 +147,10 @@
           </usecase>
         </usecases>
       </section>
-    </chapter>
+    </section>
   
 	<!-- 2. Conformance Claims -->
-    <chapter id="conf" title="Conformance Claims">
+    <section id="conf" title="Conformance Claims">
     <cclaims>
         <cclaim name="Conformance Statement">
           <description> 
@@ -167,10 +167,10 @@
           </description>
         </cclaim>
       </cclaims>
-    </chapter>
+    </section>
   
 	<!-- 3. Security Problem Description -->
-    <chapter id="spd" title="Security Problem Description">
+    <section id="spd" title="Security Problem Description">
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
       enforce.<htm:br/><htm:br/>
@@ -210,10 +210,10 @@
       <section id="securityPolicy" title="Organizational Security Policies">
 	      This PP-Module defines no additional Organizational Security Policies.
     </section>
-    </chapter>
+    </section>
 	
 	<!-- 4. Security Objectives -->
-    <chapter id="objectives" title="Security Objectives">
+    <section id="objectives" title="Security Objectives">
 	    
 	    <!-- 4.1 Security Objectives for the TOE -->
         <section id="TOEobjectives" title="Security Objectives for the TOE">
@@ -248,10 +248,10 @@
 	<section title="Security Objectives Rationale" id="rationale">
          <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
          </section>
-    </chapter>
+    </section>
 	
 	<!-- 5. Security Requirements -->
-    <chapter id="sfr" title="Security Requirements">
+    <section id="sfr" title="Security Requirements">
 	    
 	 <!-- 5.1 Virtualization PP -->
 	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization" plural="Virtualization"
@@ -289,13 +289,13 @@
 	 <!-- 5.2 TOE Security Functional Requirements -->
 	  <man-sfrs>	
 		  
-  	    <subsection id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
+  	    <section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
         	<audit-table table="mandatory">
   	     		<htm:br/><htm:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
 	  	</audit-table>
-	    </subsection>
+	    </section>
 		  
-            <subsection id="management-fmt" title="Security Management (FMT)">
+            <section id="management-fmt" title="Security Management (FMT)">
 		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
            		<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
 				additional component, FMT_MOF_EXT.1. 
@@ -593,14 +593,14 @@
                     </f-element>
 		<audit-event/>
                 </f-component>
-            </subsection>
+            </section>
 	  </man-sfrs>
 	    
 	  <!-- 5.3 TOE Security Functional Requirements Rationale -->
           <opt-sfrs/>
 	  <sel-sfrs/>
           <obj-sfrs/> 
-    </chapter>
+    </section>
     
 
     <appendix id="ent" title="Entropy">
