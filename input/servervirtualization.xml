@@ -291,7 +291,7 @@
 		  
   	    <section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
         	<audit-table table="mandatory">
-  	     		<htm:br/><htm:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
+  	     		<htm:br/><htm:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
 	  	</audit-table>
 	    </section>
 		  
@@ -322,7 +322,7 @@
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator 
-				or User as shown in <ctr-ref ref-id="manfunc"/>, based on the following key:<htm:br/><htm:br/>
+				or User as shown in <xref to="manfunc"/>, based on the following key:<htm:br/><htm:br/>
                             <htm:ul style="list-style: none;">
                                 <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br/>
                                 <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br/>
@@ -330,7 +330,7 @@
                                 <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular 
 					selection-based SFR)</htm:li><htm:br/>
                             </htm:ul>
-                            <htm:center><htm:h4><ctr ctr-type="Table" id="manfunc">: Server Virtualization Management Functions</ctr></htm:h4></htm:center>
+                            <htm:center><htm:h4><ctr ctr-type="Table" pre="Table " id="manfunc">: Server Virtualization Management Functions</ctr></htm:h4></htm:center>
                             <htm:table>
                                 <htm:tr>
                                     <htm:th>Number</htm:th> 
@@ -551,7 +551,7 @@
                           <assignable>description of management functions</assignable>.
                         </title></ext-comp-def-title>
                         <note role="application">
-                            The ST author is expected to update <ctr-ref ref-id="manfunc"/> with an indication as to whether any of the ‘optional’ or 
+                            The ST author is expected to update <xref to="manfunc"/> with an indication as to whether any of the ‘optional’ or 
 				‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ 
 				column as it is provided in this PP-Module as an aid to the ST author in constructing the table.<htm:br/><htm:br/>
                             This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<htm:br/><htm:br/>
@@ -569,7 +569,7 @@
                             		The evaluator shall examine the TSS and Operational Guidance to ensure that it describes which 
 					security management functions require Administrator privilege and the actions associated with each 
 					management function. The evaluator shall verify that for each management function and role
-					specified in the FMT_MOF_EXT.1.1 table <ctr-ref ref-id="manfunc"/>,
+					specified in the FMT_MOF_EXT.1.1 table <xref to="manfunc"/>,
 					<!-- make this an actual table reference -->
 					the defined role is able to perform all mandatory functions as well as all 
 					optional or selection-based functions claimed in the ST.<htm:br/><htm:br/>
@@ -582,7 +582,7 @@
 				</Guidance>
 				<Tests>
 	                             The evaluator shall test each management function for each role listed in the FMT_MOF_EXT.1.1 table
-					<ctr-ref ref-id="manfunc"/> <!-- make this an actual table reference -->
+					<xref to="manfunc"/> <!-- make this an actual table reference -->
 					in the ST to demonstrate that the function can be performed by the role(s) that are authorized 
 					to do so and the result of the function is demonstrated. The evaluator shall also verify for each
 					claimed management function that if the TOE claims not to provide a
