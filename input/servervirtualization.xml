@@ -173,7 +173,7 @@
     <section id="spd" title="Security Problem Description">
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
-      enforce.<htm:br/><htm:br/>
+      enforce.<htm:br/>
 	    
 	<!-- 3.1 Threats -->
       <section id="threats" title="Threats">
@@ -303,8 +303,9 @@
 		</ext-comp-def>
 		<f-component cc-id="fmt_mof_ext.1" name="Management of Security Functions Behavior">
 			<consistency-rationale>This SFR requires the Server Virtualization product to manage security functionality
-				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
-				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</consistency-rationale>
+				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_PPR_EXT.1, FDP_VMS_EXT.1,
+				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FCS_CKM.1, FCS_CKM.2, FCS_COP.1/HASH, FIA_AFL_EXT.1, 
+				FAU_STG_EXT.1, FIA_X509_EXT.2.2, and FTA_TAB.1.</consistency-rationale>
 	            	<comp-lev>defines required management functions and responsibilities.</comp-lev>
 		        <management>There are no additional management functions beyond those already described in FMT_MOF_EXT.1.</management>
            		<audit>There are no auditable events defined for this SFR.</audit>
