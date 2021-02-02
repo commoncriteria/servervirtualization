@@ -599,7 +599,8 @@
 	  <!-- 5.3 TOE Security Functional Requirements Rationale -->
           <opt-sfrs/>
 	  <sel-sfrs/>
-          <obj-sfrs/> 
+          <obj-sfrs/>
+	  <impl-dep-sfrs/>
     </section>
     
 
