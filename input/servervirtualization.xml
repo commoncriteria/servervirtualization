@@ -279,9 +279,9 @@
 		<con-sec-prob/>
 		<con-obj/>
 		<con-op-en/>
-		<con-mod id="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the base PP, but is 
+		<con-mod ref="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the base PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
-		<con-mod id="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the base PP, but is 
+		<con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the base PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
 		
 	</base-pp>
