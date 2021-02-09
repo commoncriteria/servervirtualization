@@ -594,7 +594,11 @@
 				</Tests>
                         </aactivity>
                     </f-element>
-		<audit-event/>
+		<audit-event>
+			<audit-event-descr>Attempts to invoke any of the management functions listed in <xref to="manfunc"/></audit-event-descr>
+			<audit-event-info>Success or failure of attempt</audit-event-info>
+			<audit-event-info>Identity of actor</audit-event-info>
+		</audit-event>			
                 </f-component>
             </section>
 	  </man-sfrs>
