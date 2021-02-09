@@ -418,7 +418,9 @@
                                     <htm:td>Ability to configure the cryptographic functionality</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>N</htm:td>
-                                    <htm:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH</htm:td>
+                                    <htm:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the Functional Packages
+					    for Transport Layer Security (TLS) and for Secure Shell (SSH) if claimed for methods
+					    to configure their respective cryptographic functionality.</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>12</htm:td>
