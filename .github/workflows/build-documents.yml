@@ -17,7 +17,7 @@ jobs:
       - name: Checkout project and transforms
         uses: actions/checkout@v2 
         with: 
-        submodules: true
+            submodules: true
       - name: Set up Python 3
         uses: actions/setup-python@v2
         with:
