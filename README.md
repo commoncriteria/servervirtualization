@@ -14,8 +14,8 @@ A list of products that have passed evaluation against this Protection Profile c
 
 * [PP-Module for Server Virtualization](https://commoncriteria.github.io/servervirtualization/servervirtualization-release.html) (html)
 * [PP-Module for Server Virtualization](https://commoncriteria.github.io/servervirtualization/servervirtualization-release.pdf) (pdf)
-* [Supporting Documents for Server Virtualization](https://github.com/commoncriteria/commoncriteria.github.io/tree/master/clientvirtualization/clientvirtualization-sd.html) (html)
-* [Supporting Documents for Server Virtualization](https://github.com/commoncriteria/commoncriteria.github.io/tree/master/clientvirtualization/clientvirtualization-sd.pdf) (PDF)
+* [Supporting Documents for Server Virtualization](https://commoncriteria.github.io/clientvirtualization/clientvirtualization-sd.html) (html)
+* [Supporting Documents for Server Virtualization](https://commoncriteria.github.io/clientvirtualization/clientvirtualization-sd.pdf) (PDF)
 
 
 
