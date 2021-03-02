@@ -316,7 +316,7 @@
                         	<title>The TSF shall be capable of supporting 
                             		<selectables>
 	                                	<selectable>local</selectable>
-        	                        	<selectable id="sel-mof-1e1-remote">remote</selectable>    <!-- This selection brings in FTP_TRP in the base -->
+        	                        	<selectable id="sel-mof-1e1-remote-server">remote</selectable>    <!-- This selection brings in FTP_TRP in the base -->
                             		</selectables> administration.
                         	</title>
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the base PP to be included in the ST.</note>
