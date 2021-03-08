@@ -6,7 +6,7 @@
 	Changes for version 1.1
 	- Converted into XML
 	- Converted into a PP-Module
-	- TD0360 Integrated
+	- TD0360 Integrated 
 	- Rationales and other PP-Module crap added
 	- Added audit function for configuring what to do if it is unanable to determine the validity of a certificate.
 -->
@@ -17,9 +17,9 @@
 
     <PPReference>
        <ReferenceTable>
-            <PPVersion>1.1</PPVersion>
+            <PPVersion>1.1 Draft</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
-            <PPPubDate>2020-11-17</PPPubDate>
+            <PPPubDate>2021-03-04</PPPubDate>
             <Keywords>Server Virtualization</Keywords>
         </ReferenceTable>
     </PPReference>
@@ -38,7 +38,7 @@
     </RevisionHistory>
     
     <!-- 1. Introduction -->
-    <chapter id="Introduction" title="Introduction">
+    <section id="Introduction" title="Introduction">
 
      	<!-- 1.1 Overview -->
     
@@ -115,17 +115,17 @@
 	must also claim conformance either to this Module or to the PP Module for Client Virtualization.
         
 	<!-- 1.3.1 TOE Boundary -->
-        <subsection id="TOEboundary" title="TOE Boundary">
+        <section id="TOEboundary" title="TOE Boundary">
           The TOE boundary is the same as that which is defined for a Virtualization System in the
 		base Virtualization PP. 
-        </subsection>   
+        </section>   
       </section>
       
 	<!-- 1.4 Use Cases -->
       <section id="usecase" title="Use Cases">
-        Requirements in this PP Module are designed to address the security problem in the following use cases. The
-        description of these use cases provides instructions for how the TOE and its Operational Environment should be 
-        made to support the functionality required by this PP Module.
+        Requirements in this PP Module are designed to address the security problem in the following use cases. The description of these use
+	      cases provides examples for how the TOE and its Operational Environment could support the functionality 
+	      required by this PP-Module.
         <usecases>
           <usecase title="Virtualized Servers" id="virtservers">
             <description>
@@ -147,10 +147,10 @@
           </usecase>
         </usecases>
       </section>
-    </chapter>
+    </section>
   
 	<!-- 2. Conformance Claims -->
-    <chapter id="conf" title="Conformance Claims">
+    <section id="conf" title="Conformance Claims">
     <cclaims>
         <cclaim name="Conformance Statement">
           <description> 
@@ -166,19 +166,14 @@
                 Release 5 [CC].
           </description>
         </cclaim>
-        <cclaim name="Package Claims">
-            <description>
-               This PP-Module conforms to the Functional Package for TLS and the Extended Package for Secure Shell (SSH).
-            </description>
-        </cclaim>
       </cclaims>
-    </chapter>
+    </section>
   
 	<!-- 3. Security Problem Description -->
-    <chapter id="spd" title="Security Problem Description">
+    <section id="spd" title="Security Problem Description">
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
-      enforce.<htm:br/><htm:br/>
+      enforce.<htm:br/>
 	    
 	<!-- 3.1 Threats -->
       <section id="threats" title="Threats">
@@ -215,10 +210,10 @@
       <section id="securityPolicy" title="Organizational Security Policies">
 	      This PP-Module defines no additional Organizational Security Policies.
     </section>
-    </chapter>
+    </section>
 	
 	<!-- 4. Security Objectives -->
-    <chapter id="objectives" title="Security Objectives">
+    <section id="objectives" title="Security Objectives">
 	    
 	    <!-- 4.1 Security Objectives for the TOE -->
         <section id="TOEobjectives" title="Security Objectives for the TOE">
@@ -253,10 +248,10 @@
 	<section title="Security Objectives Rationale" id="rationale">
          <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
          </section>
-    </chapter>
+    </section>
 	
 	<!-- 5. Security Requirements -->
-    <chapter id="sfr" title="Security Requirements">
+    <section id="sfr" title="Security Requirements">
 	    
 	 <!-- 5.1 Virtualization PP -->
 	<base-pp version="1.1" name="Virtualization" product="Virtualization System" short="Virtualization" plural="Virtualization"
@@ -284,9 +279,9 @@
 		<con-sec-prob/>
 		<con-obj/>
 		<con-op-en/>
-		<con-mod id="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the base PP, but is 
+		<con-mod ref="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the base PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
-		<con-mod id="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the base PP, but is 
+		<con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the base PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
 		
 	</base-pp>
@@ -294,13 +289,13 @@
 	 <!-- 5.2 TOE Security Functional Requirements -->
 	  <man-sfrs>	
 		  
-  	    <subsection id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
+  	    <section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
         	<audit-table table="mandatory">
-  	     		<htm:br/><htm:b><ctr ctr-type="Table" id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
+  	     		<htm:br/><htm:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
 	  	</audit-table>
-	    </subsection>
+	    </section>
 		  
-            <subsection id="management-fmt" title="Security Management (FMT)">
+            <section id="management-fmt" title="Security Management (FMT)">
 		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
            		<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
 				additional component, FMT_MOF_EXT.1. 
@@ -308,8 +303,9 @@
 		</ext-comp-def>
 		<f-component cc-id="fmt_mof_ext.1" name="Management of Security Functions Behavior">
 			<consistency-rationale>This SFR requires the Server Virtualization product to manage security functionality
-				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_VMS_EXT.1,
-				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FIA_AFL_EXT.1, and FTA_TAB.1.</consistency-rationale>
+				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_PPR_EXT.1, FDP_VMS_EXT.1,
+				FMT_MSA_EXT.1, FPT_HCL_EXT.1, FPT_RDM_EXT.1, FCS_CKM.1, FCS_CKM.2, FCS_COP.1/HASH, FIA_AFL_EXT.1, 
+				FAU_STG_EXT.1, FIA_X509_EXT.2.2, and FTA_TAB.1.</consistency-rationale>
 	            	<comp-lev>defines required management functions and responsibilities.</comp-lev>
 		        <management>There are no additional management functions beyond those already described in FMT_MOF_EXT.1.</management>
            		<audit>There are no auditable events defined for this SFR.</audit>
@@ -320,14 +316,14 @@
                         	<title>The TSF shall be capable of supporting 
                             		<selectables>
 	                                	<selectable>local</selectable>
-        	                        	<selectable id="sel-mof-1e1-remote">remote</selectable>    <!-- This selection brings in FTP_TRP in the base -->
+        	                        	<selectable id="sel-mof-1e1-remote-server">remote</selectable>    <!-- This selection brings in FTP_TRP in the base -->
                             		</selectables> administration.
                         	</title>
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the base PP to be included in the ST.</note>
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
                         <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator 
-				or User as shown in <ctr-ref ref-id="manfunc"/>, based on the following key:<htm:br/><htm:br/>
+				or User as shown in <xref to="manfunc"/>, based on the following key:<htm:br/><htm:br/>
                             <htm:ul style="list-style: none;">
                                 <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br/>
                                 <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br/>
@@ -335,7 +331,7 @@
                                 <htm:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular 
 					selection-based SFR)</htm:li><htm:br/>
                             </htm:ul>
-                            <htm:center><htm:h4><ctr ctr-type="Table" id="manfunc">: Server Virtualization Management Functions</ctr></htm:h4></htm:center>
+                            <htm:center><htm:h4><ctr ctr-type="Table" pre="Table " id="manfunc">: Server Virtualization Management Functions</ctr></htm:h4></htm:center>
                             <htm:table>
                                 <htm:tr>
                                     <htm:th>Number</htm:th> 
@@ -394,7 +390,7 @@
                                     <htm:td>Ability to configure VM access to physical devices</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>O</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FDP_PPR_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>8</htm:td>
@@ -422,14 +418,16 @@
                                     <htm:td>Ability to configure the cryptographic functionality</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the Functional Packages
+					    for Transport Layer Security (TLS) and for Secure Shell (SSH) if claimed for methods
+					    to configure their respective cryptographic functionality.</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>12</htm:td>
                                     <htm:td>Ability to change default authorization factors</htm:td>
                                     <htm:td>X</htm:td>
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FIA_PMG_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>13</htm:td>
@@ -478,7 +476,7 @@
                                     <htm:td>Ability to configure name/address of audit/logging server to which to send audit/logging records</htm:td>
                                     <htm:td>X</htm:td> 
                                     <htm:td>N</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FAU_STG_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>19</htm:td>
@@ -499,7 +497,7 @@
                                     <htm:td>Ability to connect/disconnect removable devices to/from a VM</htm:td>
                                     <htm:td>O</htm:td>
                                     <htm:td>O</htm:td>
-                                    <htm:td> </htm:td>
+                                    <htm:td>See FPT_RDM_EXT.1</htm:td>
                                 </htm:tr>
                                 <htm:tr>
                                     <htm:td>22</htm:td>
@@ -539,8 +537,8 @@
                                 <htm:tr>
                                     <htm:td>27</htm:td>
                                     <htm:td><selectables>
-					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate.</selectable>
-					    <selectable>No ability to configure such action</selectable>
+					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate</selectable>
+					    <selectable>Not applicable</selectable>
 					    </selectables>
 				    </htm:td>
                                     <htm:td>S</htm:td>
@@ -556,7 +554,7 @@
                           <assignable>description of management functions</assignable>.
                         </title></ext-comp-def-title>
                         <note role="application">
-                            The ST author is expected to update <ctr-ref ref-id="manfunc"/> with an indication as to whether any of the ‘optional’ or 
+                            The ST author is expected to update <xref to="manfunc"/> with an indication as to whether any of the ‘optional’ or 
 				‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ 
 				column as it is provided in this PP-Module as an aid to the ST author in constructing the table.<htm:br/><htm:br/>
                             This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<htm:br/><htm:br/>
@@ -574,33 +572,43 @@
                             		The evaluator shall examine the TSS and Operational Guidance to ensure that it describes which 
 					security management functions require Administrator privilege and the actions associated with each 
 					management function. The evaluator shall verify that for each management function and role
-					specified in <ctr-ref ref-id="manfunc"/>, the defined role is able to perform all mandatory functions as well as all 
+					specified in the FMT_MOF_EXT.1.1 Server Virtualization Management Functions Table (Table 3),
+					<!-- make this an actual table reference -->
+					the defined role is able to perform all mandatory functions as well as all 
 					optional or selection-based functions claimed in the ST.<htm:br/><htm:br/>
 				</TSS>
 				<Guidance>
 	                            The evaluator shall examine the Operational Guidance to ensure that it describes how the Administrator
 					or User are able to perform each management function that the ST claims the TOE supports.<htm:br/><htm:br/>
                             		The evaluator shall verify for each claimed management function that the Operational Guidance is 
-					sufficiently detailed to allow the function to be performed and that the function can be performed
-					by the role(s) that are authorized to do so.<htm:br/><htm:br/>
+					sufficiently detailed to allow the function to be performed.<htm:br/><htm:br/>
 				</Guidance>
 				<Tests>
-	                            The evaluator shall also verify for each claimed management function that if the TOE claims not to provide a
+	                             The evaluator shall test each management function for each role listed in the FMT_MOF_EXT.1.1 
+					Server Virtualization Management Functions Table (Table 3). <!-- make this an actual table reference -->
+					in the ST to demonstrate that the function can be performed by the role(s) that are authorized 
+					to do so and the result of the function is demonstrated. The evaluator shall also verify for each
+					claimed management function that if the TOE claims not to provide a
 					particular role with access to the function, then it is not possible to access the TOE as that
 					role and perform that function.<htm:br/><htm:br/>
 				</Tests>
                         </aactivity>
                     </f-element>
-		<audit-event/>
+		<audit-event>
+			<audit-event-descr>Attempts to invoke any of the management functions listed in <xref to="manfunc"/></audit-event-descr>
+			<audit-event-info>Success or failure of attempt</audit-event-info>
+			<audit-event-info>Identity of actor</audit-event-info>
+		</audit-event>			
                 </f-component>
-            </subsection>
+            </section>
 	  </man-sfrs>
 	    
 	  <!-- 5.3 TOE Security Functional Requirements Rationale -->
           <opt-sfrs/>
 	  <sel-sfrs/>
-          <obj-sfrs/> 
-    </chapter>
+          <obj-sfrs/>
+	  <impl-dep-sfrs/>
+    </section>
     
 
     <appendix id="ent" title="Entropy">
