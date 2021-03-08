@@ -3,3 +3,5 @@ output/*.*
 *~
 input/*.html
 input/schemas.xml
+User.make
+goorm.manifest
