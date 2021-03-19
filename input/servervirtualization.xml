@@ -350,7 +350,7 @@
                                 <htm:tr>
                                     <htm:td>2</htm:td>
                                     <htm:td><selectables>
-					    <selectable id="sel-mf-2">Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</selectable>
+					    <selectable id="sel-mf-pwd-policy">Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</selectable>
 					    <selectable>Not applicable.</selectable></selectables></htm:td>
                                     <htm:td>S</htm:td>
                                     <htm:td>N</htm:td>
@@ -464,7 +464,7 @@
                                 <htm:tr>
                                     <htm:td>17</htm:td>
                                     <htm:td><selectables>
-					    <selectable id="sel-mf-17">Ability to configure name/address of directory server to bind with</selectable>
+					    <selectable id="sel-mf-dir-server">Ability to configure name/address of directory server to bind with</selectable>
 					    <selectable>Not applicable</selectable></selectables></htm:td>
                                     <htm:td>S</htm:td>
                                     <htm:td>O</htm:td>
@@ -537,7 +537,7 @@
                                 <htm:tr>
                                     <htm:td>27</htm:td>
                                     <htm:td><selectables>
-					    <selectable>Ability to configure action taken if unable to determine the validity of a certificate</selectable>
+					    <selectable id="sel-mf-cert-no-validity-action">Ability to configure action taken if unable to determine the validity of a certificate</selectable>
 					    <selectable>Not applicable</selectable>
 					    </selectables>
 				    </htm:td>
