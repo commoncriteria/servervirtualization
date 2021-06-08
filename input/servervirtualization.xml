@@ -333,7 +333,7 @@
                                 <htm:tr>
                                     <htm:th>Number</htm:th> 
                                     <htm:th>Function</htm:th> 
-                                    <htm:th>Administrator</htm:th> 
+                                    <htm:th>Admin</htm:th> 
                                     <htm:th>User</htm:th> 
                                     <htm:th>Notes (all SFR references are from the Base-PP</htm:th> 
                                 </htm:tr>
@@ -619,7 +619,7 @@
     <bibliography>
       <entry id="bib-base-pp">
         <tag>VirtPP</tag>
-        <description>Protection Profile for Virtualization, Version: 1.1, 2020-11-17</description>
+        <description>Protection Profile for Virtualization, Version: 1.1, 2021-06-14</description>
       </entry>
     </bibliography>
 </Module>
