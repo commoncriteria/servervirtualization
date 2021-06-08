@@ -319,8 +319,8 @@
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the Base-PP to be included in the ST.</note>
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
-                        <title>The TSF shall be capable of performing the following management functions, controlled by an Administrator 
-				or User as shown in <xref to="manfunc"/>, based on the following key:<htm:br/><htm:br/>
+                        <title>The TSF shall be capable of performing the following management functions, [<htm:i>controlled by an Administrator 
+				or User as shown in <xref to="manfunc"/>, based on the following key:</htm:i><htm:p/>
                             <htm:ul style="list-style: none;">
                                 <htm:li>X = Mandatory (TOE must provide that function to that role)</htm:li><htm:br/>
                                 <htm:li>O = Optional (TOE may or may not provide that function to that role)</htm:li><htm:br/>
@@ -545,6 +545,7 @@
 				    <!-- sel "sel-mf-27" if req="fia-x509-ext-2e2" ids="sel-x509-adminset"  -->
                                 </htm:tr>
                            </htm:table>
+						   <htm:br/>]
                         </title>
                         <ext-comp-def-title><title>
                           The TSF shall be capable of performing the following management functions
