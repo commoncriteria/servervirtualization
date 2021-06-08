@@ -19,7 +19,7 @@
        <ReferenceTable>
             <PPVersion>1.1</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
-            <PPPubDate>2021-05-19</PPPubDate>
+            <PPPubDate>2021-06-14</PPPubDate>
             <Keywords>Server Virtualization</Keywords>
         </ReferenceTable>
     </PPReference>
@@ -32,8 +32,8 @@
         </entry>
         <entry>
             <version>1.1</version>
-            <date>2020-11-17</date>
-            <subject>Converted to Module</subject>
+            <date>2020-06-14</date>
+            <subject>Publication as a PP-Module</subject>
         </entry>
     </RevisionHistory>
     
