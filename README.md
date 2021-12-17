@@ -2,8 +2,11 @@ PP-Module for Server Virtualization
 ============
 ![Build](https://github.com/commoncriteria/servervirtualization/workflows/Build/badge.svg)
 ![Validate](https://github.com/commoncriteria/servervirtualization/workflows/Validate/badge.svg)
+[![SanityChecks](https://raw.githubusercontent.com/commoncriteria/servervirtualization/gh-pages/master/warnings-badge.svg)](https://github.com/commoncriteria/servervirtualization/blob/gh-pages/SanityChecksOutput.md)
+[![SpellCheck](https://raw.githubusercontent.com/commoncriteria/servervirtualization/gh-pages/master/spell-badge.svg)](https://github.com/commoncriteria/servervirtualization/blob/gh-pages/SpellCheckReport.txt)
+[![QuickBuild](https://github.com/commoncriteria/servervirtualization/actions/workflows/quick_build.yml/badge.svg)](https://commoncriteria.github.io/servervirtualization/servervirtualization-release.html)
 [![GitHub issues Open](https://img.shields.io/github/issues/commoncriteria/servervirtualization.svg?maxAge=2592000)](https://github.com/commoncriteria/servervirtualization/issues) 
-![license](https://img.shields.io/badge/license-Unlicensed-blue.svg)
+
 
 This repository hosts the draft version of the Extended Package for Server Virtualization based on the 
 [Essential Security Requirements (ESR)](https://commoncriteria.github.io/pp/servervirtualization/servervirtualization-esr.html) for this technology class of 
