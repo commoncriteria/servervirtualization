@@ -1,0 +1,7 @@
+* https://commoncriteria.github.io/servervirtualization/master/AppliedTDs-Diff.html[AppliedTDs-Diff.html]
+* https://commoncriteria.github.io/servervirtualization/master/AppliedTDs.html[AppliedTDs.html]
+* https://commoncriteria.github.io/servervirtualization/master/diff-v1.1_draft1.html[diff-v1.1_draft1.html]
+* https://commoncriteria.github.io/servervirtualization/master/servervirtualization-release-linkable.html[servervirtualization-release-linkable.html]
+* https://commoncriteria.github.io/servervirtualization/master/servervirtualization-release.html[servervirtualization-release.html]
+* https://commoncriteria.github.io/servervirtualization/master/servervirtualization-sd.html[servervirtualization-sd.html]
+* https://commoncriteria.github.io/servervirtualization/master/servervirtualization.html[servervirtualization.html]
