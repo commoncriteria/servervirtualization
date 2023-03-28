@@ -12,7 +12,7 @@
 -->
 
 
-<Module boilerplate="yes" target-products="Server Virtualization Systems" xmlns="https://niap-ccevs.org/cc/v1"
+<Module boilerplate="yes" target-products="Server Virtualization Systems" target-product="Server Virtualization System" xmlns="https://niap-ccevs.org/cc/v1"
   name="Server Virtualization" xmlns:htm="http://www.w3.org/1999/xhtml" xmlns:sec="https://niap-ccevs.org/cc/v1/section">
 
     <PPReference>
@@ -252,7 +252,10 @@
 	    
 	 <!-- 5.1 Virtualization PP -->
 	<base-pp id="b-virt">
-          <raw-url>https://raw.githubusercontent.com/commoncriteria/virtualization/master/input/virtualization.xml</raw-url>
+          <git>
+	    <url>https://github.com/commoncriteria/virtualization</url>
+	    <branch>release-1.1</branch>
+	  </git>
           <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408</url>
 
 		<!-- 5.1 Virtualization PP Security Functional Requirements Direction -->
@@ -287,7 +290,7 @@
 	  <man-sfrs>	
 		  
   	    <section id="ss-audit-table" title="Auditable Events for Mandatory SFRs">
-        	<audit-table table="mandatory">
+        	<audit-table table="mandatory" id="at-man">
   	     		<htm:br/><htm:b><ctr ctr-type="Table" pre="Table " id="atref-mandatory">: Auditable Events for Mandatory SFRs</ctr></htm:b>
 	  	</audit-table>
 	    </section>
