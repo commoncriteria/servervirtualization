@@ -1,0 +1,2 @@
+/home/runner/work/servervirtualization/servervirtualization/input/servervirtualization.xml:617:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
+/home/runner/work/servervirtualization/servervirtualization/input/servervirtualization.xml:618:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"

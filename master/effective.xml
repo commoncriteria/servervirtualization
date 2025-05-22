@@ -27,8 +27,24 @@
         </entry>
         
     </RevisionHistory>
+    <release-notes><h:h3>TDs Applied</h:h3></release-notes><include-pkg id="pkg-tls">
+    <git>
+      <url>https://github.com/commoncriteria/tls</url>
+      <branch>release-1.1</branch>
+    </git>
+    <url>https://commoncriteria.github.io/tls/release-2.0/tls-release.html</url>
+
+    </include-pkg> 
+    <include-pkg id="pkg-ssh">
+    <git>
+      <url>https://github.com/commoncriteria/ssh</url>
+      <branch>release-2.0</branch>
+    </git>
+    <url>https://commoncriteria.github.io/ssh/release-2.0/ssh-release.html</url>
     
-    <release-notes><h:h3>TDs Applied</h:h3></release-notes><!-- 1. Introduction -->
+  </include-pkg>
+    
+    <!-- 1. Introduction -->
     <section id="Introduction" title="Introduction">
 
      	<!-- 1.1 Overview -->
@@ -218,13 +234,9 @@
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
             Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
 		security objectives for the Operational Environment to satisfy.        
-        </section>
+        </section></section>
 	    
 	 <!-- 4.3 Security Objectives Rationale -->
-	<section title="Security Objectives Rationale" id="rationale">
-         <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
-         </section>
-    </section>
 	
 	<!-- 5. Security Requirements -->
     <section id="sfr" title="Security Requirements">
@@ -275,9 +287,9 @@
 		  
             <section id="management-fmt" title="Security Management (FMT)">
 		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
-           		<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
+           		<fam-behavior> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
 				additional component, FMT_MOF_EXT.1. 
-			</mod-def>		
+                </fam-behavior>		
 		</ext-comp-def>
 		<f-component cc-id="fmt_mof_ext.1" name="Management of Security Functions Behavior">
 			<consistency-rationale>This SFR requires the Server Virtualization product to manage security functionality
@@ -396,8 +408,7 @@
                                     <h:td>Ability to configure the cryptographic functionality</h:td>
                                     <h:td>X</h:td>
                                     <h:td>N</h:td>
-                                    <h:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the Functional Packages
-					    for Transport Layer Security (TLS) and for Secure Shell (SSH) if claimed for methods
+                                    <h:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the <xref to="pkg-tls"/> and for <xref to="pkg-ssh"/> if claimed for methods
 					    to configure their respective cryptographic functionality.</h:td>
                                 </h:tr>
                                 <h:tr>
@@ -583,10 +594,11 @@
 	  </man-sfrs>
 	    
 	  <!-- 5.3 TOE Security Functional Requirements Rationale -->
-          <opt-sfrs/>
-	  <sel-sfrs/>
-          <obj-sfrs/>
-	  <impl-dep-sfrs/>
+      
+        <opt-sfrs/>
+        <obj-sfrs/>
+        <sel-sfrs/>
+        <impl-dep-sfrs/>
     </section>
     
 
