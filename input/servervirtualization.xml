@@ -305,9 +305,9 @@
 		  
             <section id="management-fmt" title="Security Management (FMT)">
 		<ext-comp-def fam-id="FMT_MOF_EXT" title="Management of Security Functions Behavior">
-           		<mod-def> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
+           		<fam-behavior> This family is defined in the Virtualization PP. This Module augments the extended family by adding one
 				additional component, FMT_MOF_EXT.1. 
-			</mod-def>		
+                </fam-behavior>		
 		</ext-comp-def>
 		<f-component cc-id="fmt_mof_ext.1" name="Management of Security Functions Behavior">
 			<consistency-rationale>This SFR requires the Server Virtualization product to manage security functionality
