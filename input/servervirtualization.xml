@@ -214,7 +214,7 @@
 		      <addressed-by>FMT_MOF_EXT.1</addressed-by>
 				<rationale>
                     This SFR mitigates this threat by ensuring that the only way to modify the VS is through a trusted update process initiated by an authorized Administrator as required by FMT_MOF_EXT.1.</rationale>
-		      </rationale>
+		    
 	      </threat>		      
 	      </threats>
       </section>
