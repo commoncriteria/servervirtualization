@@ -1,0 +1,4 @@
+/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:140:14: error: element "cclaims" not allowed here; expected text, element "CClaimsInfo", "_", "assignable", "choice", "comment", "ctr", "depends", "endnote", "equation", "figure", "implements", "no-link", "provides", "refinement", "replace", "requires", "rule", "selectables", "snip", "testlist" or "xref" or an element from another namespace
+/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:156:15: error: element "section" incomplete; missing required element "CClaimsInfo"
+/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:159:60: error: value of attribute "title" is invalid; must be equal to "Security Problem Definition"
+/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:239:23: error: element "base-pp" missing required attributes "name", "product", "short" and "version"
