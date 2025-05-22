@@ -1,2 +1,1 @@
-/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:599:20: error: element "obj-sfrs" not allowed yet; missing required element "sel-sfrs"
-/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:600:20: error: element "sel-sfrs" not allowed here; expected element "impl-dep-sfrs"
+/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:601:15: error: element "section" incomplete; missing required element "obj-sfrs"
