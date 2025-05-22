@@ -1,4 +1,4 @@
-<Module xmlns="https://niap-ccevs.org/cc/v1" xmlns:sec="https://niap-ccevs.org/cc/v1/section" xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes" target-product="Client Virtualization System" name="Client Virtualization Systems">
+<Module xmlns="https://niap-ccevs.org/cc/v1" xmlns:sec="https://niap-ccevs.org/cc/v1/section" xmlns:h="http://www.w3.org/1999/xhtml" boilerplate="yes" target-product="Server Virtualization System" name="Server Virtualization Systems">
 
     <PPReference>
        <ReferenceTable>
