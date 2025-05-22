@@ -42,6 +42,22 @@
         </entry>
         
     </RevisionHistory>
+    <include-pkg id="pkg-tls">
+    <git>
+      <url>https://github.com/commoncriteria/tls</url>
+      <branch>release-1.1</branch>
+    </git>
+    <url>https://commoncriteria.github.io/tls/release-2.0/tls-release.html</url>
+
+    </include-pkg> 
+    <include-pkg id="pkg-ssh">
+    <git>
+      <url>https://github.com/commoncriteria/ssh</url>
+      <branch>release-2.0</branch>
+    </git>
+    <url>https://commoncriteria.github.io/ssh/release-2.0/ssh-release.html</url>
+    
+  </include-pkg>
     
     <!-- 1. Introduction -->
     <section id="Introduction" title="Introduction">
@@ -239,10 +255,6 @@
         </section>
 	    
 	 <!-- 4.3 Security Objectives Rationale -->
-	<section title="Security Objectives Rationale" id="rationale">
-         <!-- Note: This section should remain empty and is populated from the rationale tags in the previous sections.  -->
-         </section>
-    </section>
 	
 	<!-- 5. Security Requirements -->
     <section id="sfr" title="Security Requirements">
@@ -414,8 +426,7 @@
                                     <h:td>Ability to configure the cryptographic functionality</h:td>
                                     <h:td>X</h:td>
                                     <h:td>N</h:td>
-                                    <h:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the Functional Packages
-					    for Transport Layer Security (TLS) and for Secure Shell (SSH) if claimed for methods
+                                    <h:td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the <xref to="pkg-tls"/> and for <xref to="pkg-ssh"/> if claimed for methods
 					    to configure their respective cryptographic functionality.</h:td>
                                 </h:tr>
                                 <h:tr>
