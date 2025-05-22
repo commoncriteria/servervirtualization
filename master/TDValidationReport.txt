@@ -1,2 +1,0 @@
-/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:177:60: error: value of attribute "title" is invalid; must be equal to "Security Problem Definition"
-/home/runner/work/servervirtualization/servervirtualization/output/effective.xml:233:23: error: element "base-pp" missing required attributes "name", "product", "short" and "version"

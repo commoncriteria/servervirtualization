@@ -174,7 +174,7 @@
   </section>  
   
 	<!-- 3. Security Problem Description -->
-    <section id="spd" title="Security Problem Description">
+    <section id="spd" title="Security Problem Definition">
       The security problem is described in terms of the threats that the TOE is expected to address, assumptions
       about its operational environment, and any organizational security policies that the TOE is expected to 
       enforce.<h:br/>
@@ -230,7 +230,8 @@
     <section id="sfr" title="Security Requirements">
 	    
 	 <!-- 5.1 Virtualization PP -->
-	<base-pp id="b-virt">
+
+        <base-pp id="b-virt" version="2.0" name="Server Virtualization Systems" product="Server Virtualization Systems" short="CV" plural="Server Virtualization Systems">
           <git><url>https://raw.githubusercontent.com/commoncriteria/virtualization</url>
 	  <branch>master</branch></git>
           <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408</url>
