@@ -17,14 +17,18 @@
                 </tr>
             </table>
         </div>
-        <h1 class="title" style="page-break-before:auto;">PP-Module for Server Virtualization Systemss</h1>
+        <div id="commmentbox-">
+            <a href="#Comment-1-">Comment: Comment-1-</a>
+            <br>
+        </div>
+        <h1 class="title" style="page-break-before:auto;">PP-Module for Client Virtualization Systems</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
         <div class="center">
             <img src="images/niaplogo.png" alt="NIAP Logo">
             <br>
-             Version: 1.1
+             Version: 2.0
             <br>
-            2021-06-14
+            2025-05-22
             <br>
             <b>National Information Assurance Partnership</b>
             <br>
@@ -33,6 +37,9 @@
         <table>
             <tr class="header">
                 <th>Version</th><th>Date</th><th>Comment</th>
+            </tr>
+            <tr>
+                <td>2.0</td><td>2025-05-22</td><td>CC2022 conversion</td>
             </tr>
             <tr>
                 <td>1.0</td><td>2016-11-17</td><td>Initial Publication as an Extended Package</td>
@@ -46,13 +53,15 @@
         </h3>
         <h2>Contents</h2>
         <div class="toc" id="toc">
-            <a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#targets" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecase" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#conf" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#objectives" style="text-indent:0px">3<span>Security Objectives</span></a><a href="#TOEobjectives" style="text-indent:10px">3.1<span>Security Objectives for the TOE</span></a><a href="#objectivesEnvironment" style="text-indent:10px">3.2<span>Security Objectives for the Operational Environment</span></a><a href="#rationale" style="text-indent:10px">3.3<span>Security Objectives Rationale</span></a><a href="#sfr" style="text-indent:0px">4<span>Security Requirements</span></a><a href="#secreq-b-virt" style="text-indent:10px">4.1<span> Protection Profile for Server Virtualization Systemss Security Functional Requirements Direction </span></a><a href="#modsfr-b-virt" style="text-indent:20px">4.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">4.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">4.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#management-fmt" style="text-indent:20px">4.2.2<span>Security Management (FMT)</span></a><a href="#obj-req-map" style="text-indent:10px">4.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">5<span>Consistency Rationale</span></a><a href="#conrat-b-virt" style="text-indent:10px">5.1<span> Protection Profile for Server Virtualization Systemss</span></a><a href="#contoe-b-virt" style="text-indent:20px">5.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-b-virt" style="text-indent:20px">5.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-b-virt" style="text-indent:20px">5.1.3<span> Consistency of Objectives </span></a><a href="#conreq-b-virt" style="text-indent:20px">5.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.1<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_MOF_EXT" style="text-indent:30px">C.2.1.1<span>FMT_MOF_EXT Management of Security Functions Behavior</span></a><a href="#ent" style="text-indent:0px">Appendix D - <span>Entropy</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a>
+            <a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#targets" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecase" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#objectives" style="text-indent:0px">3<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">3.1<span>Security Objectives for the Operational Environment</span></a><a href="#rationale" style="text-indent:10px">3.2<span>Security Objectives Rationale</span></a><a href="#sfr" style="text-indent:0px">4<span>Security Requirements</span></a><a href="#secreq-b-virt" style="text-indent:10px">4.1<span> Protection Profile for Client Virtualization Systems Security Functional Requirements Direction </span></a><a href="#modsfr-b-virt" style="text-indent:20px">4.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">4.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">4.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#management-fmt" style="text-indent:20px">4.2.2<span>Security Management (FMT)</span></a><a href="#obj-req-map" style="text-indent:10px">4.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">5<span>Consistency Rationale</span></a><a href="#conrat-b-virt" style="text-indent:10px">5.1<span> Protection Profile for Client Virtualization Systems</span></a><a href="#contoe-b-virt" style="text-indent:20px">5.1.1<span> Consistency of TOE Type </span></a><a href="#consecprob-b-virt" style="text-indent:20px">5.1.2<span> Consistency of Security Problem Definition </span></a><a href="#conobj-b-virt" style="text-indent:20px">5.1.3<span> Consistency of OE Objectives </span></a><a href="#conreq-b-virt" style="text-indent:20px">5.1.4<span> Consistency of Requirements </span></a><a href="#opt-sfrs" style="text-indent:0px">Appendix A - <span>Optional SFRs</span></a><a href="#opt-sfrs" style="text-indent:10px">A.1<span>Strictly Optional Requirements </span></a><a href="#obj-sfrs" style="text-indent:10px">A.2<span>Objective Requirements </span></a><a href="#impl-dep-sfrs" style="text-indent:10px">A.3<span>Implementation-dependent Requirements </span></a><a href="#sel-sfrs" style="text-indent:0px">Appendix B - <span>Selection-based Requirements </span></a><a href="#ext-comp-defs" style="text-indent:0px">Appendix C - <span>Extended Component Definitions</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.1<span>Extended Components Table</span></a><a href="#ext-comp-defs-bg" style="text-indent:10px">C.2<span>Extended Component Definitions</span></a><a href="#ext-comp-FMT" style="text-indent:20px">C.2.1<span>Security Management (FMT)</span></a><a href="#ext-comp-FMT_MOF_EXT" style="text-indent:30px">C.2.1.1<span>FMT_MOF_EXT Management of Security Functions Behavior</span></a><a href="#ent" style="text-indent:0px">Appendix D - <span>Entropy</span></a><a href="#acronyms" style="text-indent:0px">Appendix E - <span>Acronyms</span></a><a href="#appendix-bibliography" style="text-indent:0px">Appendix F - <span>Bibliography</span></a>
         </div>
         <h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
         <h2 class="indexable" data-level="2" id="overview">1.1 Overview</h2>
          The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to define the security functionality of a Server Virtualization product in terms of [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] and to define functional and assurance requirements for such products. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not complete in itself, but rather is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>: 
         <ul>
-            <li>Protection Profile for Virtualization, Version 1.1, 14 Jun 2021.</li>
+            <li>
+                Protection Profile for Virtualization, Version 2.0, DD MMM 202Y.<span style="" class="comment " id="Comment-1-"> TBD</span>
+            </li>
         </ul>
          This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because Server Virtualization is a specific type of Virtualization System and is expected to implement security functionality that is not common to all Virtualization Systems. One additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> to define security functionality that is unique to this particular type of Virtualization System. 
         <div class="no-link">
@@ -244,41 +253,53 @@
             </dd>
         </dl>
          
-        <h1 class="indexable" data-level="1" id="conf">2 Conformance Claims</h1>
-         <span class="description"> This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> inherits exact conformance as required from the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> and as defined in the <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr> addenda for Exact Conformance, Selection-Based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr>, and Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> (dated May 2017). 
-            <br>
-            <br>
-             There are no other <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules that are allowed to be specified in a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. </span> <span class="description"> This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is conformant to Parts 2 (extended) and 3 (extended) of Common Criteria Version 3.1, Release 5 [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]. </span> 
-        <h1 class="indexable" data-level="1" id="objectives">3 Security Objectives</h1>
-        <h2 class="indexable" data-level="2" id="TOEobjectives">3.1 Security Objectives for the TOE</h2>
-         This Module defines no additional <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> security objectives beyond those defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. Note however that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> defined in this Module will assist in the achievement of the following objectives defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>: 
+        <h1 class="indexable" data-level="1" id="sec-cclaims">2 Conformance Claims</h1>
+         
         <dl>
-            <dt class="SO defined" id="O.VMM_INTEGRITY">O.VMM_INTEGRITY</dt>
+            <dt>Conformance Statement</dt>
+            <p></p>
             <dd>
-                <span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 4.1.</span>
+                An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> must claim exact conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
             </dd>
-            <dt class="SO defined" id="O.MANAGEMENT_ACCESS">O.MANAGEMENT_ACCESS</dt>
+            <p></p>
             <dd>
-                <span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 4.1.</span>
+                The evaluation methods used for evaluating the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> are a combination of the workunits defined in <a href="#bibCEM">[CEM]</a> as well as the Evaluation Activities for ensuring that individual <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_SAR">SARs</a></abbr> have a sufficient level of supporting evidence in the Security Target and guidance documentation and have been sufficiently tested by the laboratory as part of completing ATE_IND.1. Any functional packages this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> claims similarly contain their own Evaluation Activities that are used in this same manner. 
+            </dd>
+            <dt>CC Conformance Claims</dt>
+            <p></p>
+            <dd>
+                This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is conformant to Part 2 (extended) and Part 3 (extended) of Common Criteria <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1. 
+            </dd>
+            <dt>PP Claim</dt>
+            <p></p>
+            <dd>
+                 This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not claim conformance to any Protection Profile. 
+            </dd>
+            <p></p>
+            <dd>
+                The following <abbr class="dyn-abbr"><a href="#abbr_PP">PPs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules are allowed to be specified in a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>: 
+                <ul>
+                    <li>Protection Profile for Virtualization 2.0</li>
+                </ul>
+            </dd>
+            <dt>Package Claim</dt>
+            <p></p>
+            <dd>
+                This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any Functional or Assurance Packages.
             </dd>
         </dl>
          
-        <h2 class="indexable" data-level="2" id="objectivesEnvironment">3.2 Security Objectives for the Operational Environment</h2>
+        <h1 class="indexable" data-level="1" id="objectives">3 Security Objectives</h1>
+        <h2 class="indexable" data-level="2" id="objectivesEnvironment">3.1 Security Objectives for the Operational Environment</h2>
          This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>. Because this Module does not define any additional assumptions or organizational security policies, there are no additional security objectives for the Operational Environment to satisfy. 
-        <h2 id="rationale" class="indexable,h2" data-level="2">3.3 Security Objectives Rationale</h2>
-         This section describes how the assumptions, threats, and organizational security policies map to the security objectives. 
+        <h2 id="rationale" class="indexable,h2" data-level="2">3.2 Security Objectives Rationale</h2>
+         This section describes how the assumptions and organizational security policies map to operational environment security objectives. 
         <table>
             <caption>
                 <span class="ctr" data-myid="t-sec-obj-rat" data-counter-type="ct-Table" id="t-sec-obj-rat">Table <span class="counter">1</span></span>: Security Objectives Rationale
             </caption>
             <tr class="header">
-                <td>Threat, Assumption, or OSP</td><td>Security Objectives</td><td>Rationale</td>
-            </tr>
-            <tr class="major-row">
-                <td rowspan="1">T.UNAUTHORIZED_​UPDATE</td><td><a href="#O.VMM_INTEGRITY">O.VMM_​INTEGRITY</a></td><td>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized Administrator as required by FMT_MOF_EXT. </td>
-            </tr>
-            <tr class="major-row">
-                <td rowspan="1">T.UNAUTHORIZED_​ACCESS</td><td><a href="#O.MANAGEMENT_ACCESS">O.MANAGEMENT_​ACCESS</a></td><td>Access to management functions must be limited to authorized Administrators as managed through controls required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
+                <td>Assumption or OSP</td><td>Security Objectives</td><td>Rationale</td>
             </tr>
         </table>
         <h1 id="sfr" class="indexable" data-level="1">4 Security Requirements</h1>
@@ -297,10 +318,10 @@
                  <b>Iteration</b> operation: Is indicated by appending the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> name with a slash and unique identifier suggesting the purpose of the operation, e.g. "/EXAMPLE1." 
             </li>
         </ul>
-        <h2 id="secreq-b-virt" class="indexable" data-level="2">4.1 Protection Profile for Server Virtualization Systemss Security Functional Requirements Direction </h2>
+        <h2 id="secreq-b-virt" class="indexable" data-level="2">4.1 Protection Profile for Client Virtualization Systems Security Functional Requirements Direction </h2>
          In a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> that includes the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to rely on some of the security functions implemented by the Virtualization System as a whole and evaluated against the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. This section describes any modifications that the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must make to <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> to satisfy the required <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> functionality. 
         <h3 id="modsfr-b-virt" class="indexable" data-level="3">4.1.1 Modified SFRs </h3>
-         This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined by the Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. 
+         This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined by the Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. 
         <h2 id="man-sfrs" class="indexable" data-level="2">4.2 TOE Security Functional Requirements</h2>
          The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>. These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. 
         <h3 class="indexable" data-level="3" id="ss-audit-table">4.2.1 Auditable Events for Mandatory SFRs</h3>
@@ -483,35 +504,31 @@
         </div>
         <h2 id="obj-req-map" class="indexable" data-level="2">4.3 TOE Security Functional Requirements Rationale</h2>
         <p>
-            The following rationale provides justification for each security objective for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to meet and achieve the security objectives:
+            The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:
             <br>
             <table>
                 <caption>
                     <span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale
                 </caption>
                 <tr>
-                    <th>Objective</th><th>Addressed by</th><th>Rationale</th>
+                    <th>Threat</th><th>Addressed by</th><th>Rationale</th>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="1"><a href="#O.VMM_INTEGRITY">O.VMM_​INTEGRITY</a>
-                        <br>
-                    </td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>Integrity of a Virtualization System can be maintained by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized Administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
+                    <td rowspan="1">T.UNAUTHORIZED_​UPDATE</td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized Administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
                 </tr>
                 <tr class="major-row">
-                    <td rowspan="1"><a href="#O.MANAGEMENT_ACCESS">O.MANAGEMENT_​ACCESS</a>
-                        <br>
-                    </td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>Access to management functions must be limited to authorized Administrators as managed through controls required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
+                    <td rowspan="1">T.UNAUTHORIZED_​ACCESS</td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td> This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized Administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td>
                 </tr>
             </table>
         </p>
         <h1 id="mod-conrat" class="indexable" data-level="1">5 Consistency Rationale</h1>
-        <h2 id="conrat-b-virt" class="indexable" data-level="2">5.1 Protection Profile for Server Virtualization Systemss</h2>
+        <h2 id="conrat-b-virt" class="indexable" data-level="2">5.1 Protection Profile for Client Virtualization Systems</h2>
         <h3 id="contoe-b-virt" class="indexable" data-level="3">5.1.1 Consistency of TOE Type </h3>
         When this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is used to extend the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> type for the overall <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is still a Virtualization System. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary does not change. 
         <h3 id="consecprob-b-virt" class="indexable" data-level="3">5.1.2 Consistency of Security Problem Definition </h3>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">5</span></span>: Consistency of Security Problem Definition (Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">5</span></span>: Consistency of Security Problem Definition (Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th>
@@ -523,29 +540,13 @@
                 <td>T.UNAUTHORIZED_ACCESS</td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td>
             </tr>
         </table>
-        <h3 id="conobj-b-virt" class="indexable" data-level="3">5.1.3 Consistency of Objectives </h3>
-        <p>
-            <table>
-                <caption>
-                    <span class="ctr" data-myid="t-con-objs" data-counter-type="ct-Table" id="t-con-objs">Table <span class="counter">6</span></span>: Consistency of Objectives (Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
-                </caption>
-                <tr>
-                    <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> Objective</th><th>Consistency Rationale</th>
-                </tr>
-                <tr>
-                    <td><a href="#O.VMM_INTEGRITY">O.VMM_INTEGRITY</a></td><td>This objective comes directly from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
-                </tr>
-                <tr>
-                    <td><a href="#O.MANAGEMENT_ACCESS">O.MANAGEMENT_ACCESS</a></td><td>This objective comes directly from the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</td>
-                </tr>
-            </table>
-        </p>
+        <h3 id="conobj-b-virt" class="indexable" data-level="3">5.1.3 Consistency of OE Objectives </h3>
         <p></p>
         <h3 id="conreq-b-virt" class="indexable" data-level="3">5.1.4 Consistency of Requirements </h3>
-         This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are needed to support Server Virtualization Systems functionality. This is considered to be consistent because the functionality provided by the Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is being used for its intended purpose. The rationale for why this does not conflict with the claims defined by the Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are as follows: 
+         This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are needed to support Client Virtualization System functionality. This is considered to be consistent because the functionality provided by the Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is being used for its intended purpose. The rationale for why this does not conflict with the claims defined by the Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are as follows: 
         <table>
             <caption>
-                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">7</span></span>: Consistency of Requirements (Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
+                <span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">6</span></span>: Consistency of Requirements (Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base) 
             </caption>
             <tr>
                 <th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th>
@@ -554,13 +555,13 @@
                 <th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:center"> This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any requirements when the Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base. </td>
+                <td colspan="2" style="text-align:center"> This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any requirements when the Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base. </td>
             </tr>
             <tr>
                 <th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
             </tr>
             <tr>
-                <td colspan="2" style="text-align:center"> This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the Server Virtualization Systemss <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base. </td>
+                <td colspan="2" style="text-align:center"> This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the Client Virtualization Systems <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base. </td>
             </tr>
             <tr>
                 <th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
@@ -616,7 +617,7 @@
          All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table: 
         <table class="sort_kids_">
             <caption data-sortkey="#0">
-                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">8</span></span>: Extended Component Definitions</b>
+                <b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">7</span></span>: Extended Component Definitions</b>
             </caption>
             <tr data-sortkey="#1">
                 <th>Functional Class</th><th>Functional Components</th>
@@ -667,7 +668,7 @@
         <h1 id="acronyms" class="indexable" data-level="A">Appendix E - Acronyms</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">9</span></span>: Acronyms 
+                <span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">8</span></span>: Acronyms 
             </caption>
             <tr class="header">
                 <th>Acronym</th><th>Meaning</th>
@@ -739,7 +740,7 @@
         <h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F - Bibliography</h1>
         <table>
             <caption>
-                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">10</span></span>: Bibliography
+                <span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">9</span></span>: Bibliography
             </caption>
             <tr class="header">
                 <th>Identifier</th><th>Title</th>
@@ -748,13 +749,28 @@
                 <td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - 
                         <ul>
                             <li>
-                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART1V3.1R5.pdf">Part 1: Introduction and General Model</a>, CCMB-2017-04-001, Version 3.1 Revision 5, April 2017.
+                                <a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
                             </li>
                             <li>
-                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART2V3.1R5.pdf">Part 2: Security Functional Components</a>, CCMB-2017-04-002, Version 3.1 Revision 5, April 2017.
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: Security functional requirements</a>, CCMB-2022-11-002, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
                             </li>
                             <li>
-                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CCPART3V3.1R5.pdf">Part 3: Security Assurance Components</a>, CCMB-2017-04-003, Version 3.1 Revision 5, April 2017.
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART3R1.pdf">Part 3: Security assurance requirements</a>, CCMB-2022-11-003, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
+                            </li>
+                            <li>
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART4R1.pdf">Part 4: Framework for the specification of evaluation methods and activities</a>, CCMB-2022-11-004, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
+                            </li>
+                            <li>
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART5R1.pdf">Part 5: Pre-defined packages of security requirements</a>, CCMB-2022-11-005, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
+                            </li>
+                        </ul>
+                    </span></td>
+            </tr>
+            <tr>
+                <td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - 
+                        <ul>
+                            <li>
+                                <a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf"> Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.
                             </li>
                         </ul>
                     </span></td>
