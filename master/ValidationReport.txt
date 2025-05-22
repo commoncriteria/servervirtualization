@@ -1,1 +1,1 @@
-/home/runner/work/servervirtualization/servervirtualization/input/servervirtualization.xml:619:15: error: element "section" incomplete; missing required element "obj-sfrs"
+/home/runner/work/servervirtualization/servervirtualization/input/servervirtualization.xml:619:15: error: element "section" incomplete; missing required element "impl-dep-sfrs"
