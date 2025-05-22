@@ -9,8 +9,8 @@
 <!-- Plural name of the TOE product (optional)  -->
 <!-- Whether to use boilerplate text by default (can be disabled in sections) -->
 <!-- A short name for the PP (e.g. App or MDF) -->
-<Module boilerplate="yes" target-product="Client Virtualization System" 
-  name="Client Virtualization Systems"
+<Module boilerplate="yes" target-product="Server Virtualization System" 
+  name="Server Virtualization Systems"
   xmlns="https://niap-ccevs.org/cc/v1"
   xmlns:sec="https://niap-ccevs.org/cc/v1/section"
   xmlns:h="http://www.w3.org/1999/xhtml">
