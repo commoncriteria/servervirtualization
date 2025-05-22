@@ -252,7 +252,7 @@
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
             Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
 		security objectives for the Operational Environment to satisfy.        
-        </section>
+        </section></section>
 	    
 	 <!-- 4.3 Security Objectives Rationale -->
 	
@@ -612,10 +612,11 @@
 	  </man-sfrs>
 	    
 	  <!-- 5.3 TOE Security Functional Requirements Rationale -->
-          <opt-sfrs/>
-	  <sel-sfrs/>
-          <obj-sfrs/>
-	  <impl-dep-sfrs/>
+      
+        <opt-sfrs/>
+        <obj-sfrs/>
+        <sel-sfrs/>
+        <impl-dep-sfrs/>
     </section>
     
 
