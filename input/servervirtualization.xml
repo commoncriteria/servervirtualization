@@ -285,8 +285,8 @@
 		</con-toe>
 	
 		<con-sec-prob/>
-		<con-obj/>
-		<con-op-en/>
+		<con-op-en>This PP does not introduce any new Security Objectives for the Operational Environment. Please refer to the Base-PP.</con-op-en>
+		
 		<con-mod ref="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
 		<con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
