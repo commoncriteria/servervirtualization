@@ -629,15 +629,15 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/><a href="#Comment-2-">Comment: Comment-2-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for Server Virtualization Systems</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
-      Version: 2.0<br/>2025-05-22<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>2.0</td><td>2025-05-22</td><td>CC2022 conversion</td></tr>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br/></div><h1 class="title" style="page-break-before:auto;">PP-Module for Server Virtualization Systems</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"></img><br/>
+      Version: 2.0<br/>2025-06-06<br/><b>National Information Assurance Partnership</b><br/></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>2.0</td><td>2025-06-06</td><td>CC2022 conversion</td></tr>
 <tr><td>1.0</td><td>2016-11-17</td><td>Initial Publication as an Extended Package</td></tr>
 <tr><td>1.1</td><td>2020-06-14</td><td>Publication as a <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></td></tr>
 </table><h3>TDs Applied</h3><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#targets" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecase" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sfr" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-b-virt" style="text-indent:10px">5.1<span>
-    Protection Profile for Server Virtualization Systems
+    Protection Profile for Virtualization
        Security Functional Requirements Direction
     </span></a><a href="#modsfr-b-virt" style="text-indent:20px">5.1.1<span> Modified SFRs </span></a><a href="#man-sfrs" style="text-indent:10px">5.2<span>TOE Security Functional Requirements</span></a><a href="#ss-audit-table" style="text-indent:20px">5.2.1<span>Auditable Events for Mandatory SFRs</span></a><a href="#management-fmt" style="text-indent:20px">5.2.2<span>Security Management (FMT)</span></a><a href="#obj-req-map" style="text-indent:10px">5.3<span>TOE Security Functional Requirements Rationale</span></a><a href="#mod-conrat" style="text-indent:0px">6<span>Consistency Rationale</span></a><a href="#conrat-b-virt" style="text-indent:10px">6.1<span>
-    Protection Profile for Server Virtualization Systems</span></a><a href="#contoe-b-virt" style="text-indent:20px">6.1.1<span>
+    Protection Profile for Virtualization</span></a><a href="#contoe-b-virt" style="text-indent:20px">6.1.1<span>
 	Consistency of TOE Type
       </span></a><a href="#consecprob-b-virt" style="text-indent:20px">6.1.2<span>
 	Consistency of Security Problem Definition
@@ -712,21 +712,21 @@ The following sections list Common Criteria and technology terms used in this do
 <tr><td><div id="Host_Operating_System_(OS)">Host Operating System (OS)</div></td><td>An operating system onto which a VS is installed. Relative to the VS, 
           the Host OS is part of the Platform.</td></tr>
 <tr><td><div id="Hypercall">Hypercall</div></td><td>An API function that allows VM-aware software running within a VM to invoke VMM functionality.</td></tr>
-<tr><td><div id="Hypervisor">Hypervisor</div></td><td>The Hypervisor is part of the VMM. It is the software executive of the physical platform
-          of a VS. A Hypervisor’s primary function is to mediate access to all CPU and memory resources, but it is also
+<tr><td><div id="Hypervisor">Hypervisor</div></td><td>The hypervisor is part of the VMM. It is the software executive of the physical platform
+          of a VS. A hypervisor’s primary function is to mediate access to all CPU and memory resources, but it is also
           responsible for either the direct management or the delegation of the management of all other hardware
           devices on the hardware platform.</td></tr>
-<tr><td><div id="Management_Subsystem">Management Subsystem</div></td><td>Components of the VS that allow VS Administrators to configure and manage the
+<tr><td><div id="Management_Subsystem">Management Subsystem</div></td><td>Components of the VS that allow VS administrators to configure and manage the
           VMM, as well as configure Guest VMs. VMM management functions include VM configuration, virtualized network
           configuration, and allocation of physical resources.</td></tr>
 <tr><td><div id="Platform">Platform</div></td><td>The hardware, firmware, and software environment into which a VS is installed and executes.</td></tr>
-<tr><td><div id="User">User</div></td><td>Users operate Guest VMs and are subject to configuration policies applied to the VS by Administrators.
+<tr><td><div id="User">User</div></td><td>Users operate Guest VMs and are subject to configuration policies applied to the VS by administrators.
 		      Users need not be human as in the case of embedded or headless VMs, users are often nothing more than software
 		      entities that operate within the VM.</td></tr>
 <tr><td><div id="Virtual_Machine">Virtual Machine (VM)</div></td><td>A Virtual Machine is a virtualized hardware environment in which an operating system
 		      may execute.</td></tr>
 <tr><td><div id="Virtual_Machine_Manager">Virtual Machine Manager (VMM)</div></td><td>A VMM is a collection of software components responsible for enabling VMs to
-		      function as expected by the software executing within them. Generally, the VMM consists of a Hypervisor, Service 
+		      function as expected by the software executing within them. Generally, the VMM consists of a hypervisor, Service 
 		      VMs, and other components of the VS, such as virtual devices, binary translation systems, and physical device
 		      drivers. It manages concurrent execution of all VMs and virtualizes platform resources as needed.</td></tr>
 <tr><td><div id="Virtualization_System">Virtualization System (VS)</div></td><td>A software product that enables multiple independent computing systems to 
@@ -759,7 +759,7 @@ The following sections list Common Criteria and technology terms used in this do
 	
       <h2 class="indexable" data-level="2" id="usecase">1.4 Use Cases</h2>
         Requirements in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are designed to address the security problem in the following use cases. The description of these use
-	      cases provides examples for how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and its Operational Environment could support the functionality 
+	      cases provides examples for how the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> and its operational environment could support the functionality 
 	      required by this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
         <dl><dt id="virtservers"> [USE CASE 1] Virtualized Servers</dt><dd><span class="description">
               A platform for virtualized instances of network-based services traditionally executed on separate hardware platforms, such as
@@ -797,8 +797,16 @@ The following sections list Common Criteria and technology terms used in this do
 					any Protection Profile.
 				</dd><p></p><dd>The following <abbr class="dyn-abbr"><a href="#abbr_PP">PPs</a></abbr> and <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-Modules are allowed to be specified in a 
 					<abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>:
-					<ul><li>Protection Profile for Virtualization 2.0</li></ul></dd><dt>Package Claim</dt><p></p><dd>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not conformant to any 
-						Functional or Assurance Packages.</dd></dl>
+					<ul><li>Protection Profile for Virtualization 2.0</li></ul></dd><dt>Package Claim</dt><p></p><dd><ul><li>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is 
+					    Functional Package for Secure Shell Version 2.0 conformant.</li><li>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is 
+					    Functional Package for Transport Layer Security Version 2.1 conformant.</li><li>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not conform to any 
+						assurance packages.</li></ul></dd><p></p><dd>
+		The functional packages to which the <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> conforms may include <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are not mandatory 
+		to claim for the sake of conformance. An <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> that claims one or more of these functional 
+		packages may include any non-mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that are appropriate to claim based on the 
+		capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> and on any triggers for their inclusion based inherently on the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> 
+		selections made. 
+	</dd></dl>
   <h1 class="indexable" data-level="1" id="spd">3 Security Problem Definition</h1>
       The security problem is described in terms of the threats that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to address, assumptions
       about its operational environment, and any organizational security policies that the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to 
@@ -808,7 +816,7 @@ The following sections list Common Criteria and technology terms used in this do
       <h2 class="indexable" data-level="2" id="threats">3.1 Threats</h2>
         This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> defines no additional threats beyond those defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. Note however that the
         <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> will assist in the mitigation of the following threats defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>:   
-	      <dl><dt class="threat defined" id="T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</dt><dd><span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 3.1.</span></dd><dt class="threat defined" id="T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</dt><dd><span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 3.1.</span></dd></dl>
+	      <dl><dt class="threat defined" id="T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</dt><dd><span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 3.1.</span></dd><dt class="threat defined" id="T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</dt><dd><span class="description">See Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, Section 3.1.</span></dd></dl>
       
 	    
 	
@@ -832,7 +840,7 @@ The following sections list Common Criteria and technology terms used in this do
 This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any objectives for the <abbr class="dyn-abbr"><a href="#abbr_OE">OE</a></abbr>.
       
             Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
-		security objectives for the Operational Environment to satisfy.        
+		security objectives for the operational environment to satisfy.        
         <h1 id="sfr" class="indexable" data-level="1">5 Security Requirements</h1>
       This chapter describes the security requirements which have to be fulfilled by the product under evaluation.
      Those requirements comprise functional components from Part 2 and assurance components from Part 3 of 
@@ -858,7 +866,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
        </li>
      </ul>
    <h2 id="secreq-b-virt" class="indexable" data-level="2">5.1 
-    Protection Profile for Server Virtualization Systems
+    Protection Profile for Virtualization
        Security Functional Requirements Direction
     </h2>
 			In a <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> that includes the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is expected to rely on some of the 
@@ -866,14 +874,14 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 			This section describes any modifications that the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author must make to <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> to satisfy the 
 			required <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> functionality.
 		<h3 id="modsfr-b-virt" class="indexable" data-level="3">5.1.1  Modified SFRs </h3>
-      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined by the CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.
+      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> defined by the App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.
     <h2 id="man-sfrs" class="indexable" data-level="2">5.2 TOE Security Functional Requirements</h2>
 	The following section describes the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> that must be satisfied by any <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance to this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr>.
 	These <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> must be claimed regardless of which <abbr class="dyn-abbr"><a href="#abbr_PP-Configuration">PP-Configuration</a></abbr> is used to define the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>.
         	
 		  
   	    <h3 class="indexable" data-level="3" id="ss-audit-table">5.2.1 Auditable Events for Mandatory SFRs</h3>
-        	<table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-mandatory" data-counter-type="ct-Table" id="at-mandatory">Table <span class="counter">1</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FMT_MOF_EXT.1"><td rowspan="2"><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_MOF_EXT.1#"><td></td></tr><tr data-sortkey="FMT_MOF_EXT.1.7"><td>Attempts to invoke any of the management functions listed in <a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">2</span></a></td><td><ul><li>Success or failure of attempt</li><li>Identity of actor</li></ul></td></tr></table>
+        	<table class="sort_kids_" border="1"><caption data-sortkey="#0"><span class="ctr" data-myid="at-mandatory" data-counter-type="ct-Table" id="at-mandatory">Table <span class="counter">1</span></span>: Auditable Events for Mandatory Requirements</caption><tr data-sortkey="#1"><th>Requirement</th><th>Auditable Events</th><th>Additional Audit Record Contents</th></tr><tr data-sortkey="FMT_MOF_EXT.1"><td rowspan="2"><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td style="display:none"></td></tr><tr style="display:none;" data-sortkey="FMT_MOF_EXT.1#"><td></td></tr><tr data-sortkey="FMT_MOF_EXT.1.7"><td>Attempts to invoke any of the management functions listed in <a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">3</span></a><a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">3</span></a></td><td><ul><li>Success or failure of attempt</li><li>Identity of actor</li></ul></td></tr></table>
 	    
 		  
             <h3 id="management-fmt" class="indexable" data-level="3">5.2.2 Security Management (FMT)</h3>
@@ -890,16 +898,17 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
                         	<div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> to be included in the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr>.</span></div></div></div>
-                    <div class="element"><div class="reqid" id="FMT_MOF_EXT.1.2"><a href="#FMT_MOF_EXT.1.2" class="abbr">FMT_MOF_EXT.1.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management functions, [<i>controlled by an Administrator 
-				or User as shown in <a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">2</span></a>, based on the following key:</i><p></p>
-                            <ul style="list-style: none;">
-                                <li>X = Mandatory (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must provide that function to that role)</li><br/>
-                                <li>O = Optional (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may or may not provide that function to that role)</li><br/>
-                                <li>N = Not Permitted (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must not provide that function to that role)</li><br/>
-                                <li>S = Selection-Based (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must provide that function to that role if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims a particular 
-					selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>)</li><br/>
-                            </ul>
+                    <div class="element"><div class="reqid" id="FMT_MOF_EXT.1.2"><a href="#FMT_MOF_EXT.1.2" class="abbr">FMT_MOF_EXT.1.2</a></div><div class="reqdesc">The <abbr class="dyn-abbr"><a href="#abbr_TSF">TSF</a></abbr> shall be capable of performing the following management
+                            functions, [<i>controlled by an administrator 
+				or user as shown in the key in <a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">3</span></a><a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">3</span></a></i>]<p></p>
                             <center><h4><span class="ctr" data-myid="manfunc" data-counter-type="ct-Table" id="manfunc">Table  <span class="counter">2</span>: Server Virtualization Management Functions</span></h4></center>
+                            <div class="table-key" style="border-style: solid; padding: 5px;">
+                                X = Mandatory (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must provide that function to that role)<br/>
+                                O = Optional (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> may or may not provide that function to that role)<br/>
+                                N = Not Permitted (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must not provide that function to that role)<br/>
+                                S = Selection-Based (<abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> must provide that function to that role if the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> claims a particular selection-based <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>)<br/>
+                            </div>
+                            <center><h4><span class="ctr" data-myid="manfunc" data-counter-type="ct-Table" id="manfunc">Table  <span class="counter">3</span>: Server Virtualization Management Functions</span></h4></center>
                             <table>
                                 <tr>
                                     <th>Number</th> 
@@ -917,7 +926,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>[<b>selection</b>: <span class="selectable-content" id="sel-mf-pwd-policy">Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</span>, <span class="selectable-content" id="_s_4">Not applicable.</span>]</td>
+                                    <td>[<b>selection</b>: <span class="selectable-content" id="sel-mf-pwd-policy">Ability to configure administrator password policy as defined in FIA_PMG_EXT.1</span>, <span class="selectable-content" id="_s_4">Not applicable.</span>]</td>
                                     <td>S</td>
                                     <td>N</td>
                                     <td>Must be selected if <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> includes FIA_PMG_EXT.1.</td>
@@ -1113,15 +1122,15 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
                         <div class="appnote"><span class="note-header">Application
       Note:
     </span><span class="note">
-                            The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author is expected to update <a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">2</span></a> with an indication as to whether any of the ‘optional’ or 
+                            The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author is expected to update <a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">3</span></a><a onclick="showTarget('manfunc')" href="#manfunc" class="manfunc-ref">Table  <span class="counter">3</span></a> with an indication as to whether any of the ‘optional’ or 
 				‘selection-based’ functions are included as part of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>. The <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author may also omit the ‘Notes’ 
 				column as it is provided in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> as an aid to the <abbr class="dyn-abbr"><a href="#abbr_ST">ST</a></abbr> author in constructing the table.<br/><br/>
                             This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> addresses the roles of the <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2 <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<br/><br/>
-                            Administration is considered “local” if the Administrator is physically present at the machine on which the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr>
+                            Administration is considered “local” if the administrator is physically present at the machine on which the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr>
 				is installed.<br/><br/>
-                            Administration is considered “remote” if communications between the Administrator and the Management Subsystem
+                            Administration is considered “remote” if communications between the administrator and the Management Subsystem
 				travel on a network.<br/><br/>
-                            There is no requirement to authenticate Users of the Virtualization System. Users that have access to VMs but
+                            There is no requirement to authenticate users of the Virtualization System. Users that have access to VMs but
 				not to the Management Subsystem need not authenticate to the Virtualization System in order to use Guest
 				VMs. Requirements for authentication of <abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr> users is determined by the policies of the domains running
 				within the Guest VMs.<br/><br/>
@@ -1130,44 +1139,44 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
                 </div>
             
 	  <h2 id="obj-req-map" class="indexable" data-level="2">5.3 TOE Security Functional Requirements Rationale</h2><p>The following rationale provides justification for each <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> for the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr>, 
-    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">3</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_​UPDATE</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized Administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td></tr>
-<tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_​ACCESS</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>
-                    This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized Administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td></tr>
+    showing that the <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> are suitable to address the specified threats:<br/><table><caption><span class="ctr" data-myid="t-obj_map" data-counter-type="ct-Table" id="t-obj_map">Table <span class="counter">4</span></span>: <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> Rationale</caption><tr><th>Threat</th><th>Addressed by</th><th>Rationale</th></tr><tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_​ACCESS</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>
+	                  This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by limiting the management functions to be limited to
+	                  authorized administrators as managed through controls required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td></tr>
+<tr class="major-row"><td rowspan="1"><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_​UPDATE</a></td><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> mitigates this threat by ensuring that the only way to modify the <abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr> is through a trusted update process initiated by an authorized administrator as required by <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>.</td></tr>
 </table></p><h1 id="mod-conrat" class="indexable" data-level="1">6 Consistency Rationale</h1><h2 id="conrat-b-virt" class="indexable" data-level="2">6.1 
-    Protection Profile for Server Virtualization Systems</h2><h3 id="contoe-b-virt" class="indexable" data-level="3">6.1.1 
+    Protection Profile for Virtualization</h2><h3 id="contoe-b-virt" class="indexable" data-level="3">6.1.1 
 	Consistency of TOE Type
       </h3>When this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is used to extend the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>, the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> type for
 		        the overall <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> is still a Virtualization System. The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> boundary does not change.
 		<h3 id="consecprob-b-virt" class="indexable" data-level="3">6.1.2 
 	Consistency of Security Problem Definition
-      </h3><table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">4</span></span>: Consistency of Security Problem Definition (CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
-		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is 
-			managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td></tr><tr><td><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is 
+      </h3><table><caption><span class="ctr" data-myid="t-con-sec-prob-def" data-counter-type="ct-Table" id="t-con-sec-prob-def">Table <span class="counter">5</span></span>: Consistency of Security Problem Definition (App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
+		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Threat, Assumption, OSP</th><th>Consistency Rationale</th></tr><tr><td><a href="#T.UNAUTHORIZED_ACCESS">T.UNAUTHORIZED_ACCESS</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is 
+                managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td></tr><tr><td><a href="#T.UNAUTHORIZED_UPDATE">T.UNAUTHORIZED_UPDATE</a></td><td>This threat applies to functionality that is described in the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>, but is 
 			managed through functionality described in this <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>-module.</td></tr></table><h3 id="conobj-b-virt" class="indexable" data-level="3">6.1.3 
 			Consistency of OE Objectives
-		</h3><p>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not introduce any new Security Objectives for the Operational Environment. Please refer to the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</p><h3 id="conreq-b-virt" class="indexable" data-level="3">6.1.4 
+		</h3><p>This <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> does not introduce any new security objectives for the operational environment.
+		    Refer to the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.</p><h3 id="conreq-b-virt" class="indexable" data-level="3">6.1.4 
 	Consistency of Requirements
       </h3>
       This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> identifies several <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr> from the
-      CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are needed to support
+      App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> that are needed to support
       Server Virtualization System functionality.
       This is considered to be consistent because the functionality provided by the
-      CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is being used for its intended purpose.
+      App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is being used for its intended purpose.
       
           The rationale for why this does not conflict with the claims
       defined by the
-      CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are as follows:
-      <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">5</span></span>: Consistency of Requirements (CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
+      App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> are as follows:
+      <table><caption><span class="ctr" data-myid="t-con-reqs" data-counter-type="ct-Table" id="t-con-reqs">Table <span class="counter">6</span></span>: Consistency of Requirements (App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> base)
 		</caption><tr><th><abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> Requirement</th><th>Consistency Rationale</th></tr><tr><th colspan="2"> Modified <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 			This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any requirements when the
-			CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base.
+			App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base.
 		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
-	      CV <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base.
+	      App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base.
 	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the Server Virtualization product to manage security functionality
-				defined in the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_PPR_EXT.1, FDP_VMS_EXT.1,
-				FIA_UAU.5, FPT_RDM_EXT.1, FCS_CKM.1, FCS_CKM.2, FCS_COP.1/HASH, FIA_AFL_EXT.1, 
-				FAU_STG_EXT.1, FIA_X509_EXT.2.2, and FTA_TAB.1.<span style="" class="comment " id="Comment-2-">Should FIA_X509_EXT.4 be included in this list?</span></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
+				defined in the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.</td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements.
 	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements.
@@ -1190,7 +1199,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 
 	All extended components specified in the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> are listed in this table:
 
-<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">6</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Security Management (FMT)"><td>Security Management (FMT)</td><td>FMT_MOF_EXT Management of Security Functions Behavior<br/></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Security Management (FMT)"><h3 id="ext-comp-FMT" class="indexable" data-level="3">C.2.1 Security Management (FMT)</h3>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the
+<table class="sort_kids_"><caption data-sortkey="#0"><b><span class="ctr" data-myid="" data-counter-type="ct-Table" id="">Table <span class="counter">7</span></span>: Extended Component Definitions</b></caption><tr data-sortkey="#1"><th>Functional Class</th><th>Functional Components</th></tr><tr data-sortkey="Security Management (FMT)"><td>Security Management (FMT)</td><td>FMT_MOF_EXT Management of Security Functions Behavior<br/></td></tr></table><h2 id="ext-comp-defs-bg" class="indexable" data-level="2">C.2 Extended Component Definitions</h2><span class="sort_kids_"><span data-sortkey="Security Management (FMT)"><h3 id="ext-comp-FMT" class="indexable" data-level="3">C.2.1 Security Management (FMT)</h3>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> defines the following extended components as part of the
 	 FMT class originally defined by <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr> Part 2:
 	<h3 id="ext-comp-FMT_MOF_EXT" class="indexable" data-level="4">C.2.1.1 FMT_MOF_EXT Management of Security Functions Behavior</h3><div style="margin-left: 1em;"><h4>Family Behavior</h4><div> This family is defined in the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. This Module augments the extended family by adding one
 				additional component, <a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a>. 
@@ -1208,7 +1217,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 	Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. As with other <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> requirements, the only additional requirement is that the
 	entropy documentation also applies to the specific Server Virtualization capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in
 	addition to the functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>.
-    <h1 id="acronyms" class="indexable" data-level="A">Appendix E -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">7</span></span>: Acronyms
+    <h1 id="acronyms" class="indexable" data-level="A">Appendix E -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">8</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
 <tr><td><span class="term" id="abbr_CEM"><abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr></span></td><td><span id="long_abbr_CEM">Common Evaluation Methodology</span></td></tr>
@@ -1230,7 +1239,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 <tr><td><span class="term" id="abbr_VM"><abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr></span></td><td><span id="long_abbr_VM">Virtual Machine</span></td></tr>
 <tr><td><span class="term" id="abbr_VMM"><abbr class="dyn-abbr"><a href="#abbr_VMM">VMM</a></abbr></span></td><td><span id="long_abbr_VMM">Virtual Machine Manager</span></td></tr>
 <tr><td><span class="term" id="abbr_VS"><abbr class="dyn-abbr"><a href="#abbr_VS">VS</a></abbr></span></td><td><span id="long_abbr_VS">Virtualization System</span></td></tr>
-</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">8</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
+</table><h1 id="appendix-bibliography" class="indexable" data-level="A">Appendix F -  Bibliography</h1><table><caption><span class="ctr" data-myid="t-biblio" data-counter-type="ct-Table" id="t-biblio">Table <span class="counter">9</span></span>: Bibliography</caption><tr class="header"><th>Identifier</th><th>Title</th></tr><tr><td><span id="bibCC">[<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>]</span></td><td><span class="description">Common Criteria for Information Technology Security Evaluation - <ul>
             <li><a href="https://www.commoncriteriaportal.org/files/ccfiles/CC2022PART1R1.pdf">Part 1: 
 				Introduction and general model</a>, CCMB-2022-11-001, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022.</li>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CC2022PART2R1.pdf">Part 2: 

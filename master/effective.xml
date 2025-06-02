@@ -4,7 +4,7 @@
        <ReferenceTable>
             <PPVersion>2.0</PPVersion>
             <PPAuthor>National Information Assurance Partnership</PPAuthor>
-            <PPPubDate>2025-05-22</PPPubDate>
+            <PPPubDate>2025-06-06</PPPubDate>
             <Keywords>Server Virtualization</Keywords>
         </ReferenceTable>
     </PPReference>
@@ -12,7 +12,7 @@
     <RevisionHistory>
         <entry>
             <version>2.0</version>
-            <date>2025-05-22</date>
+            <date>2025-06-06</date>
             <subject>CC2022 conversion</subject>
         </entry>
         <entry>
@@ -83,23 +83,23 @@
           server functionality in Guest VMs, such as a web server or desktop productivity applications.</term>
      <term full="Host Operating System (OS)">An operating system onto which a VS is installed. Relative to the VS, 
           the Host OS is part of the Platform.</term>
-      <term full="Hypervisor">The Hypervisor is part of the VMM. It is the software executive of the physical platform
-          of a VS. A Hypervisor’s primary function is to mediate access to all CPU and memory resources, but it is also
+      <term full="Hypervisor">The hypervisor is part of the VMM. It is the software executive of the physical platform
+          of a VS. A hypervisor’s primary function is to mediate access to all CPU and memory resources, but it is also
           responsible for either the direct management or the delegation of the management of all other hardware
           devices on the hardware platform.</term>
       <term full="Hypercall">An API function that allows VM-aware software running within a VM to invoke VMM functionality.</term>
-      <term full="Management Subsystem">Components of the VS that allow VS Administrators to configure and manage the
+      <term full="Management Subsystem">Components of the VS that allow VS administrators to configure and manage the
           VMM, as well as configure Guest VMs. VMM management functions include VM configuration, virtualized network
           configuration, and allocation of physical resources.</term>
       <term abbr="OS" full="Operating System"/>
       <term full="Platform">The hardware, firmware, and software environment into which a VS is installed and executes.</term>
-      <term full="User">Users operate Guest VMs and are subject to configuration policies applied to the VS by Administrators.
+      <term full="User">Users operate Guest VMs and are subject to configuration policies applied to the VS by administrators.
 		      Users need not be human as in the case of embedded or headless VMs, users are often nothing more than software
 		      entities that operate within the VM.</term>
       <term full="Virtual Machine" abbr="VM">A Virtual Machine is a virtualized hardware environment in which an operating system
 		      may execute.</term>
       <term full="Virtual Machine Manager" abbr="VMM">A VMM is a collection of software components responsible for enabling VMs to
-		      function as expected by the software executing within them. Generally, the VMM consists of a Hypervisor, Service 
+		      function as expected by the software executing within them. Generally, the VMM consists of a hypervisor, Service 
 		      VMs, and other components of the VS, such as virtual devices, binary translation systems, and physical device
 		      drivers. It manages concurrent execution of all VMs and virtualizes platform resources as needed.</term>
       <term full="Virtualization System" abbr="VS">A software product that enables multiple independent computing systems to 
@@ -132,7 +132,7 @@
 	<!-- 1.4 Use Cases -->
       <section id="usecase" title="Use Cases">
         Requirements in this PP-Module are designed to address the security problem in the following use cases. The description of these use
-	      cases provides examples for how the TOE and its Operational Environment could support the functionality 
+	      cases provides examples for how the TOE and its operational environment could support the functionality 
 	      required by this PP-Module.
         <usecases>
           <usecase title="Virtualized Servers" id="virtservers">
@@ -182,7 +182,10 @@
         </cc-pp-config-with>
 		<!-- Package claims -->
         
-		<cc-pkg-claim/>
+	    <cc-pkg-claim>
+	        <FP-cc-ref conf="conformant">Functional Package for Secure Shell Version 2.0</FP-cc-ref>
+	        <FP-cc-ref conf="conformant">Functional Package for Transport Layer Security Version 2.1</FP-cc-ref>	       
+	    </cc-pkg-claim>
 
 		
 
@@ -200,20 +203,20 @@
         This PP defines no additional threats beyond those defined in the Base-PP. Note however that the
         SFRs defined in this PP-Module will assist in the mitigation of the following threats defined in the Base-PP:   
 	      <threats>
-	      <threat name="T.UNAUTHORIZED_UPDATE">
-		      <description>See Virtualization PP, Section 3.1.</description>
-		      <consistency-rationale>This threat comes directly from the Base-PP.</consistency-rationale>
-		      <addressed-by>FMT_MOF_EXT.1</addressed-by>
-				<rationale>This SFR mitigates this threat by ensuring that the only way to modify the VS is through a trusted update process initiated by an authorized Administrator as required by FMT_MOF_EXT.1.</rationale>
-	      </threat>
-	      <threat name="T.UNAUTHORIZED_ACCESS">
-		      <description>See Virtualization PP, Section 3.1.</description>
-		      <consistency-rationale>This threat comes directly from the Base-PP.</consistency-rationale>
-		      <addressed-by>FMT_MOF_EXT.1</addressed-by>
-				<rationale>
-                    This SFR mitigates this threat by ensuring that the only way to modify the VS is through a trusted update process initiated by an authorized Administrator as required by FMT_MOF_EXT.1.</rationale>
-		    
-	      </threat>		      
+	          <threat name="T.UNAUTHORIZED_ACCESS">
+	              <description>See Virtualization PP, Section 3.1.</description>
+	              <consistency-rationale>This threat comes directly from the Base-PP.</consistency-rationale>
+	              <addressed-by>FMT_MOF_EXT.1</addressed-by>
+	              <rationale>
+	                  This SFR mitigates this threat by limiting the management functions to be limited to
+	                  authorized administrators as managed through controls required by FMT_MOF_EXT.1.</rationale>	              
+	          </threat>
+	          <threat name="T.UNAUTHORIZED_UPDATE">
+		          <description>See Virtualization PP, Section 3.1.</description>
+		          <consistency-rationale>This threat comes directly from the Base-PP.</consistency-rationale>
+		          <addressed-by>FMT_MOF_EXT.1</addressed-by>
+				  <rationale>This SFR mitigates this threat by ensuring that the only way to modify the VS is through a trusted update process initiated by an authorized administrator as required by FMT_MOF_EXT.1.</rationale>
+	      </threat>	      		      
 	      </threats>
       </section>
 	    
@@ -233,7 +236,7 @@
 	<!-- 4.2 Security Objectives for the Operational Environment -->
         <section id="objectivesEnvironment" title="Security Objectives for the Operational Environment">
             Because this Module does not define any additional assumptions or organizational security policies, there are no additional 
-		security objectives for the Operational Environment to satisfy.        
+		security objectives for the operational environment to satisfy.        
         </section></section>
 	    
 	 <!-- 4.3 Security Objectives Rationale -->
@@ -243,7 +246,7 @@
 	    
 	 <!-- 5.1 Virtualization PP -->
 
-        <base-pp id="b-virt" version="2.0" name="Server Virtualization Systems" product="Server Virtualization Systems" short="CV" plural="Server Virtualization Systems">
+        <base-pp id="b-virt" product="virtualization" name="Virtualization" short="App" version="2.0">
           <git><url>https://raw.githubusercontent.com/commoncriteria/virtualization</url>
 	  <branch>master</branch></git>
           <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=408&amp;id=408</url>
@@ -267,12 +270,14 @@
 		</con-toe>
 	
 		<con-sec-prob/>
-		<con-op-en>This PP does not introduce any new Security Objectives for the Operational Environment. Please refer to the Base-PP.</con-op-en>
+		<con-op-en>This PP does not introduce any new security objectives for the operational environment.
+		    Refer to the Base-PP.</con-op-en>
 		
-		<con-mod ref="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
+            <con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
+                managed through functionality described in this PP-module.</con-mod>
+            <con-mod ref="T.UNAUTHORIZED_UPDATE">This threat applies to functionality that is described in the Base-PP, but is 
 			managed through functionality described in this PP-module.</con-mod>
-		<con-mod ref="T.UNAUTHORIZED_ACCESS">This threat applies to functionality that is described in the Base-PP, but is 
-			managed through functionality described in this PP-module.</con-mod>
+		
 		
 	</base-pp>
 	
@@ -293,9 +298,7 @@
 		</ext-comp-def>
 		<f-component cc-id="fmt_mof_ext.1" name="Management of Security Functions Behavior">
 			<consistency-rationale>This SFR requires the Server Virtualization product to manage security functionality
-				defined in the Virtualization PP in FPT_TUD_EXT.1, FIA_PMG_EXT.1, FDP_VNC_EXT.1, FDP_PPR_EXT.1, FDP_VMS_EXT.1,
-				FIA_UAU.5, FPT_RDM_EXT.1, FCS_CKM.1, FCS_CKM.2, FCS_COP.1/HASH, FIA_AFL_EXT.1, 
-				FAU_STG_EXT.1, FIA_X509_EXT.2.2, and FTA_TAB.1.<comment>Should FIA_X509_EXT.4 be included in this list?</comment></consistency-rationale>
+				defined in the Virtualization PP.</consistency-rationale>
 	            	<comp-lev>defines required management functions and responsibilities.</comp-lev>
 		        <management>There are no additional management functions beyond those already described in FMT_MOF_EXT.1.</management>
            		<audit>There are no auditable events defined for this SFR.</audit>
@@ -312,15 +315,16 @@
                         <note role="application">Selection of “remote” requires the selection-based requirement FTP_TRP.1 defined in the Base-PP to be included in the ST.</note>
                     </f-element>
                     <f-element id="fmt-mof-ext-1e2">
-                        <title>The TSF shall be capable of performing the following management functions, [<h:i>controlled by an Administrator 
-				or User as shown in <xref to="manfunc"/>, based on the following key:</h:i><h:p/>
-                            <h:ul style="list-style: none;">
-                                <h:li>X = Mandatory (TOE must provide that function to that role)</h:li><h:br/>
-                                <h:li>O = Optional (TOE may or may not provide that function to that role)</h:li><h:br/>
-                                <h:li>N = Not Permitted (TOE must not provide that function to that role)</h:li><h:br/>
-                                <h:li>S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular 
-					selection-based SFR)</h:li><h:br/>
-                            </h:ul>
+                        <title>The TSF shall be capable of performing the following management
+                            functions, [<h:i>controlled by an administrator 
+				or user as shown in the key in <xref to="manfunc"/></h:i>]<h:p/>
+                            <h:center><h:h4><ctr ctr-type="Table" pre="Table " id="manfunc">: Server Virtualization Management Functions</ctr></h:h4></h:center>
+                            <h:div class="table-key" style="border-style: solid; padding: 5px;">
+                                X = Mandatory (TOE must provide that function to that role)<h:br/>
+                                O = Optional (TOE may or may not provide that function to that role)<h:br/>
+                                N = Not Permitted (TOE must not provide that function to that role)<h:br/>
+                                S = Selection-Based (TOE must provide that function to that role if the TOE claims a particular selection-based SFR)<h:br/>
+                            </h:div>
                             <h:center><h:h4><ctr ctr-type="Table" pre="Table " id="manfunc">: Server Virtualization Management Functions</ctr></h:h4></h:center>
                             <h:table>
                                 <h:tr>
@@ -340,7 +344,7 @@
                                 <h:tr>
                                     <h:td>2</h:td>
                                     <h:td><selectables>
-					    <selectable id="sel-mf-pwd-policy">Ability to configure Administrator password policy as defined in FIA_PMG_EXT.1</selectable>
+					    <selectable id="sel-mf-pwd-policy">Ability to configure administrator password policy as defined in FIA_PMG_EXT.1</selectable>
 					    <selectable>Not applicable.</selectable></selectables></h:td>
                                     <h:td>S</h:td>
                                     <h:td>N</h:td>
@@ -548,11 +552,11 @@
 				‘selection-based’ functions are included as part of the TOE. The ST author may also omit the ‘Notes’ 
 				column as it is provided in this PP-Module as an aid to the ST author in constructing the table.<h:br/><h:br/>
                             This SFR addresses the roles of the CC Part 2 SFRs FMT_MOF.1, FMT_SMF.1, and FMT_SMR.2.<h:br/><h:br/>
-                            Administration is considered “local” if the Administrator is physically present at the machine on which the VS
+                            Administration is considered “local” if the administrator is physically present at the machine on which the VS
 				is installed.<h:br/><h:br/>
-                            Administration is considered “remote” if communications between the Administrator and the Management Subsystem
+                            Administration is considered “remote” if communications between the administrator and the Management Subsystem
 				travel on a network.<h:br/><h:br/>
-                            There is no requirement to authenticate Users of the Virtualization System. Users that have access to VMs but
+                            There is no requirement to authenticate users of the Virtualization System. Users that have access to VMs but
 				not to the Management Subsystem need not authenticate to the Virtualization System in order to use Guest
 				VMs. Requirements for authentication of VM users is determined by the policies of the domains running
 				within the Guest VMs.<h:br/><h:br/>
@@ -560,7 +564,7 @@
                         <aactivity>
 				<TSS>
                             		The evaluator shall examine the TSS and Operational Guidance to ensure that it describes which 
-					security management functions require Administrator privilege and the actions associated with each 
+					security management functions require administrator privilege and the actions associated with each 
 					management function. The evaluator shall verify that for each management function and role
 					specified in the FMT_MOF_EXT.1.1 Server Virtualization Management Functions Table (<xref to="manfunc"/>),
 					<!-- make this an actual table reference -->
@@ -568,8 +572,8 @@
 					optional or selection-based functions claimed in the ST.<h:br/><h:br/>
 				</TSS>
 				<Guidance>
-	                            The evaluator shall examine the Operational Guidance to ensure that it describes how the Administrator
-					or User are able to perform each management function that the ST claims the TOE supports.<h:br/><h:br/>
+	                            The evaluator shall examine the Operational Guidance to ensure that it describes how the administrator
+					or user are able to perform each management function that the ST claims the TOE supports.<h:br/><h:br/>
                             		The evaluator shall verify for each claimed management function that the Operational Guidance is 
 					sufficiently detailed to allow the function to be performed.<h:br/><h:br/>
 				</Guidance>
