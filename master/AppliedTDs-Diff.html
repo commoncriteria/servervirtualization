@@ -22,6 +22,8 @@
             <br>
             <a href="#Comment-2-">Comment: Comment-2-</a>
             <br>
+            <a href="#Comment-3-">Comment: Comment-3-</a>
+            <br>
         </div>
         <h1 class="title" style="page-break-before:auto;">PP-Module for Server Virtualization Systems</h1>
         <h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1>
@@ -41,13 +43,13 @@
                 <th>Version</th><th>Date</th><th>Comment</th>
             </tr>
             <tr>
-                <td>2.0</td><td>2025-06-06</td><td>CC2022 conversion</td>
-            </tr>
-            <tr>
                 <td>1.0</td><td>2016-11-17</td><td>Initial Publication as an Extended Package</td>
             </tr>
             <tr>
                 <td>1.1</td><td>2020-06-14</td><td>Publication as a <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></td>
+            </tr>
+            <tr>
+                <td>2.0</td><td>2025-06-06</td><td>CC2022 conversion</td>
             </tr>
         </table>
         <h3>
@@ -59,13 +61,13 @@
         </div>
         <h1 class="indexable" data-level="1" id="Introduction">1 Introduction</h1>
         <h2 class="indexable" data-level="2" id="overview">1.1 Overview</h2>
-         The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to define the security functionality of a Server Virtualization product in terms of [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] and to define functional and assurance requirements for such products. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not complete in itself, but rather is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>: 
+         The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to define the security functionality of a server virtualization product in terms of [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] and to define functional and assurance requirements for such products. This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not complete in itself, but rather is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>: 
         <ul>
             <li>
                 Protection Profile for Virtualization, Version 2.0, DD MMM 202Y.<span style="" class="comment " id="Comment-1-"> TBD</span>
             </li>
         </ul>
-         This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because Server Virtualization is a specific type of Virtualization System and is expected to implement security functionality that is not common to all Virtualization Systems. One additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> to define security functionality that is unique to this particular type of Virtualization System. 
+         This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because server virtualization is a specific type of Virtualization System and is expected to implement security functionality that is not common to all Virtualization Systems. One additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> has been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> to define security functionality that is unique to this particular type of Virtualization System. 
         <div class="no-link">
             <h2 id="glossary" class="indexable" data-level="2">1.2 Terms</h2>
              The following sections list Common Criteria and technology terms used in this document. 
@@ -232,7 +234,7 @@
             </table>
         </div>
         <h2 class="indexable" data-level="2" id="targets">1.3 Compliant Targets of Evaluation</h2>
-         Server Virtualization, for the purposes of this Module, refers to a virtualization system that implements virtualized hardware components on server-class hardware. It creates a virtualized hardware environment for each instance of an operating system (virtual machines or VMs) permitting these environments to execute concurrently while maintaining isolation and the appearance of exclusive control over assigned computing resources. Each <abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr> instance supports applications such as file servers, web servers, and mail servers. Server virtualization may also support client operating systems in a virtual desktop or thin-client environment. Typically, virtualized servers provide services to remote clients from a data center, and are generally not directly accessible by non-administrative users.
+         Server virtualization, for the purposes of this Module, refers to a virtualization system that implements virtualized hardware components on server-class hardware. It creates a virtualized hardware environment for each instance of an operating system (virtual machines or VMs) permitting these environments to execute concurrently while maintaining isolation and the appearance of exclusive control over assigned computing resources. Each <abbr class="dyn-abbr"><a href="#abbr_VM">VM</a></abbr> instance supports applications such as file servers, web servers, and mail servers. Server virtualization may also support client operating systems in a virtual desktop or thin-client environment. Typically, virtualized servers provide services to remote clients from a data center, and are generally not directly accessible by non-administrative users.
         <br>
         <br>
          A <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance with this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> must also claim conformance to the Protection Profile for Virtualization. And a <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> that claims conformance with the Protection Profile for Virtualization must also claim conformance either to this Module or to the <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> for Client Virtualization. 
@@ -449,7 +451,7 @@
                             <td>10</td><td>Ability to configure removable media policy</td><td>X</td><td>N</td><td>See FPT_RDM_EXT.1</td>
                         </tr>
                         <tr>
-                            <td>11</td><td>Ability to configure the cryptographic functionality</td><td>X</td><td>N</td><td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the <a href="https://commoncriteria.github.io/tls/release-2.0/tls-release.html">Functional Package for Transport Layer Security (TLS), version 1.1</a> and for <a href="https://commoncriteria.github.io/ssh/release-2.0/ssh-release.html">Functional Package for Secure Shell (SSH), version 2.0</a> if claimed for methods to configure their respective cryptographic functionality.</td>
+                            <td>11</td><td>Ability to configure the cryptographic functionality</td><td>X</td><td>N</td><td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH. See also, the <a href="https://commoncriteria.github.io/tls/release-2.1/tls-release.html">Functional Package for Transport Layer Security (TLS), version 2.1</a> and for <a href="https://commoncriteria.github.io/ssh/release-2.0/ssh-release.html">Functional Package for Secure Shell (SSH), version 2.0</a> if claimed for methods to configure their respective cryptographic functionality.</td>
                         </tr>
                         <tr>
                             <td>12</td><td>Ability to change default authorization factors</td><td>X</td><td>N</td><td>See FIA_PMG_EXT.1</td>
@@ -590,7 +592,7 @@
                 <th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
             </tr>
             <tr>
-                <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the Server Virtualization product to manage security functionality defined in the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.</td>
+                <td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the server virtualization product to manage security functionality defined in the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>.</td>
             </tr>
             <tr>
                 <th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th>
@@ -698,7 +700,7 @@
                 </div>
             </span></span>
         <h1 id="ent" class="indexable" data-level="A">Appendix D - Entropy</h1>
-         The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not require any additional supplementary information to describe its entropy sources beyond the requirements outlined in the &lsquo;Entropy Documentation and Assessment&rsquo; section of the Base Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. As with other <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> requirements, the only additional requirement is that the entropy documentation also applies to the specific Server Virtualization capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in addition to the functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
+         The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not require any additional supplementary information to describe its entropy sources beyond the requirements outlined in the &lsquo;Entropy Documentation and Assessment&rsquo; section of the Base Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr>. As with other <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> requirements, the only additional requirement is that the entropy documentation also applies to the specific server virtualization capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in addition to the functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>. 
         <h1 id="acronyms" class="indexable" data-level="A">Appendix E - Acronyms</h1>
         <table>
             <caption>
@@ -810,7 +812,7 @@
                     </span></td>
             </tr>
             <tr>
-                <td><span id="bib-base-pp">[VirtPP]</span></td><td><span class="description">Protection Profile for Virtualization, Version: 1.1, 2021-06-14</span></td>
+                <td><span id="bib-base-pp">[VirtPP]</span></td><td><span class="description">Protection Profile for Virtualization, Version: 2.0, YYYY-MM-DD <span style="" class="comment " id="Comment-3-">Adjust date when published</span></span></td>
             </tr>
         </table>
     </body>

@@ -6,6 +6,7 @@ output/servervirtualization-release-linkable.html: FDP
 output/servervirtualization-release-linkable.html: FIA
 output/servervirtualization-release-linkable.html: MMM
 output/servervirtualization-release-linkable.html: TBD
+output/servervirtualization-release-linkable.html: YYYY
 output/servervirtualization-release.html: 202Y
 output/servervirtualization-release.html: Assessment’
 output/servervirtualization-release.html: CC2022
@@ -16,11 +17,13 @@ output/servervirtualization-release.html: FIA
 output/servervirtualization-release.html: MMM
 output/servervirtualization-release.html: Notes’
 output/servervirtualization-release.html: TBD
+output/servervirtualization-release.html: YYYY
 output/servervirtualization-release.html: based’
 output/servervirtualization-release.html: optional’
 output/servervirtualization-sd.html: AGD
 output/servervirtualization-sd.html: CC2022
 output/servervirtualization-sd.html: CEM
+output/servervirtualization-sd.html: YYYY
 output/servervirtualization-sd.html: evaluator’s
 output/servervirtualization-sd.html: fail’
 output/servervirtualization-sd.html: pass’
@@ -34,5 +37,6 @@ output/servervirtualization.html: FIA
 output/servervirtualization.html: MMM
 output/servervirtualization.html: Notes’
 output/servervirtualization.html: TBD
+output/servervirtualization.html: YYYY
 output/servervirtualization.html: based’
 output/servervirtualization.html: optional’

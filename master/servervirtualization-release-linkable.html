@@ -627,10 +627,10 @@ function showTarget(id){
 	            img[src="images/collapsed.png"] { display:none;}
 
           }
-    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br><a href="#Comment-2-">Comment: Comment-2-</a><br></div><h1 class="title" style="page-break-before:auto;">PP-Module for Server Virtualization Systems</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"><br>
-      Version: 2.0<br>2025-06-06<br><b>National Information Assurance Partnership</b><br></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>2.0</td><td>2025-06-06</td><td>CC2022 conversion</td></tr>
-<tr><td>1.0</td><td>2016-11-17</td><td>Initial Publication as an Extended Package</td></tr>
+    </style></head><body onLoad="init()"><div id="commmentbox-"><a href="#Comment-1-">Comment: Comment-1-</a><br><a href="#Comment-2-">Comment: Comment-2-</a><br><a href="#Comment-3-">Comment: Comment-3-</a><br></div><h1 class="title" style="page-break-before:auto;">PP-Module for Server Virtualization Systems</h1><noscript><h1 style="text-align:center; border-style: dashed; border-width: medium; border-color: red;">This page is best viewed with JavaScript enabled!</h1></noscript><div class="center"><img src="images/niaplogo.png" alt="NIAP Logo"><br>
+      Version: 2.0<br>2025-06-06<br><b>National Information Assurance Partnership</b><br></div><h2 style="page-break-before:always;">Revision History</h2><table><tr class="header"><th>Version</th><th>Date</th><th>Comment</th></tr><tr><td>1.0</td><td>2016-11-17</td><td>Initial Publication as an Extended Package</td></tr>
 <tr><td>1.1</td><td>2020-06-14</td><td>Publication as a <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr></td></tr>
+<tr><td>2.0</td><td>2025-06-06</td><td>CC2022 conversion</td></tr>
 </table><h3>TDs Applied</h3><h2>Contents</h2><div class="toc" id="toc"><a href="#Introduction" style="text-indent:0px">1<span>Introduction</span></a><a href="#overview" style="text-indent:10px">1.1<span>Overview</span></a><a href="#glossary" style="text-indent:10px">1.2<span>Terms</span></a><a href="#cc-terms" style="text-indent:20px">1.2.1<span>Common Criteria Terms</span></a><a href="#tech-terms" style="text-indent:20px">1.2.2<span>Technical Terms</span></a><a href="#targets" style="text-indent:10px">1.3<span>Compliant Targets of Evaluation</span></a><a href="#TOEboundary" style="text-indent:20px">1.3.1<span>TOE Boundary</span></a><a href="#usecase" style="text-indent:10px">1.4<span>Use Cases</span></a><a href="#sec-cclaims" style="text-indent:0px">2<span>Conformance Claims</span></a><a href="#spd" style="text-indent:0px">3<span>Security Problem Definition</span></a><a href="#threats" style="text-indent:10px">3.1<span>Threats</span></a><a href="#Assumptions" style="text-indent:10px">3.2<span>Assumptions</span></a><a href="#Organizational_Security_Policies" style="text-indent:10px">3.3<span>Organizational Security Policies</span></a><a href="#objectives" style="text-indent:0px">4<span>Security Objectives</span></a><a href="#objectivesEnvironment" style="text-indent:10px">4.1<span>Security Objectives for the Operational Environment</span></a><a href="#sfr" style="text-indent:0px">5<span>Security Requirements</span></a><a href="#secreq-b-virt" style="text-indent:10px">5.1<span>
     Protection Profile for Virtualization
        Security Functional Requirements Direction
@@ -652,7 +652,7 @@ function showTarget(id){
      	
     
 	<h2 class="indexable" data-level="2" id="overview">1.1 Overview</h2>
-          The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to define the security functionality of a Server Virtualization product in
+          The scope of this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is to define the security functionality of a server virtualization product in
           terms of [<abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>] and to define functional and assurance requirements for such products<a id="period_0" href="#period_0">. </a>This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> is not 
           complete in itself, but rather is intended for use with the following <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr>:
 	      
@@ -660,7 +660,7 @@ function showTarget(id){
 		      <li>Protection Profile for Virtualization, Version 2.0, DD MMM 202Y<a id="period_1" href="#period_1">. </a><span style="" class="comment " id="Comment-1-"> TBD</span></li>
 	      </ul>
 
-	  This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because Server Virtualization is a specific type of Virtualization System and is expected to
+	  This <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> is valid because server virtualization is a specific type of Virtualization System and is expected to
           implement security functionality that is not common to all Virtualization Systems<a id="period_2" href="#period_2">. </a>One additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr>
           has been defined in this <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> to define security functionality that is unique to this
           particular type of Virtualization System<a id="period_3" href="#period_3">. </a>       
@@ -732,7 +732,7 @@ The following sections list Common Criteria and technology terms used in this do
   
 	
       <h2 class="indexable" data-level="2" id="targets">1.3 Compliant Targets of Evaluation</h2>
-        Server Virtualization, for the purposes of this Module, refers to a virtualization system that implements 
+        Server virtualization, for the purposes of this Module, refers to a virtualization system that implements 
         virtualized hardware components on server-class hardware<a id="period_53" href="#period_53">. </a>It creates a virtualized hardware environment for 
         each instance of an operating system (virtual machines or VMs) permitting these environments to execute
         concurrently while maintaining isolation and the appearance of exclusive control over assigned computing
@@ -969,9 +969,9 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
                                     <td>Ability to configure the cryptographic functionality</td>
                                     <td>X</td>
                                     <td>N</td>
-                                    <td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH<a id="period_103" href="#period_103">. </a>See also, the <a href="https://commoncriteria.github.io/tls/release-2.0/tls-release.html">Functional Package for Transport Layer Security (TLS),
+                                    <td>See FCS_CKM.1, FCS_CKM.2, and FCS_COP.1/HASH<a id="period_103" href="#period_103">. </a>See also, the <a href="https://commoncriteria.github.io/tls/release-2.1/tls-release.html">Functional Package for Transport Layer Security (TLS),
         version 
-        1.1</a> and for <a href="https://commoncriteria.github.io/ssh/release-2.0/ssh-release.html">Functional Package for Secure Shell (SSH),
+        2.1</a> and for <a href="https://commoncriteria.github.io/ssh/release-2.0/ssh-release.html">Functional Package for Secure Shell (SSH),
         version 
         2.0</a> if claimed for methods
 					    to configure their respective cryptographic functionality<a id="period_104" href="#period_104">. </a></td>
@@ -1145,7 +1145,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 			This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not modify any requirements when the
 			App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base<a id="period_125" href="#period_125">. </a>		  </td></tr><tr><th colspan="2"> Additional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th></tr><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not add any requirements when the
-	      App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base<a id="period_126" href="#period_126">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the Server Virtualization product to manage security functionality
+	      App <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr> is the base<a id="period_126" href="#period_126">. </a>	    </td></tr><tr><th colspan="2"> Mandatory <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td><a href="#FMT_MOF_EXT.1">FMT_MOF_EXT.1</a></td><td>This <abbr class="dyn-abbr"><a href="#abbr_SFR">SFR</a></abbr> requires the server virtualization product to manage security functionality
 				defined in the Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_127" href="#period_127">. </a></td></tr></tr><tr><th colspan="2"> Optional <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Optional requirements<a id="period_128" href="#period_128">. </a>	    </td></tr></tr><tr><th colspan="2"> Objective <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
 	      This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does not define any Objective requirements<a id="period_129" href="#period_129">. </a>	    </td></tr></tr><tr><th colspan="2"> Implementation-dependent <abbr class="dyn-abbr"><a href="#abbr_SFR">SFRs</a></abbr></th><tr><td colspan="2" style="text-align:center">
@@ -1178,7 +1178,7 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
 	The <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> does not require any additional supplementary information to describe its entropy sources
 	beyond the requirements outlined in the &#8216;Entropy Documentation and Assessment&#8217; section of the Base
 	Virtualization <abbr class="dyn-abbr"><a href="#abbr_PP">PP</a></abbr><a id="period_146" href="#period_146">. </a>As with other <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr> requirements, the only additional requirement is that the
-	entropy documentation also applies to the specific Server Virtualization capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in
+	entropy documentation also applies to the specific server virtualization capabilities of the <abbr class="dyn-abbr"><a href="#abbr_TOE">TOE</a></abbr> in
 	addition to the functionality required by the <abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr><a id="period_147" href="#period_147">. </a>    <h1 id="acronyms" class="indexable" data-level="A">Appendix E -  Acronyms</h1><table><caption><span class="ctr" data-myid="t-acronyms" data-counter-type="ct-Table" id="t-acronyms">Table <span class="counter">7</span></span>: Acronyms
 		</caption><tr class="header"><th>Acronym</th><th>Meaning</th></tr><tr><td><span class="term" id="abbr_Base-PP" data-plural="Base-PPs"><abbr class="dyn-abbr"><a href="#abbr_Base-PP">Base-PP</a></abbr></span></td><td><span id="long_abbr_Base-PP">Base Protection Profile</span></td></tr>
 <tr><td><span class="term" id="abbr_CC"><abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr></span></td><td><span id="long_abbr_CC">Common Criteria</span></td></tr>
@@ -1215,4 +1215,5 @@ This <abbr class="dyn-abbr"><a href="#abbr_PP-Module">PP-Module</a></abbr> does 
           </ul></span></td></tr><tr><td><span id="bibCEM">[<abbr class="dyn-abbr"><a href="#abbr_CEM">CEM</a></abbr>]</span></td><td><span class="description">Common Methodology for Information Technology Security Evaluation - <ul>
             <li><a href="http://www.commoncriteriaportal.org/files/ccfiles/CEM2022R1.pdf">
                  Evaluation methodology</a>, CCMB-2022-11-006, <abbr class="dyn-abbr"><a href="#abbr_CC">CC</a></abbr>:2022, Revision 1, November 2022<a id="period_153" href="#period_153">. </a></li>
-          </ul></span></td></tr><tr><td><span id="bib-base-pp">[VirtPP]</span></td><td><span class="description">Protection Profile for Virtualization, Version: 1.1, 2021-06-14</span></td></tr></table></body></html>
+          </ul></span></td></tr><tr><td><span id="bib-base-pp">[VirtPP]</span></td><td><span class="description">Protection Profile for Virtualization, Version: 2.0, YYYY-MM-DD <span style="" class="comment " id="Comment-3-">Adjust
+        date when published</span></span></td></tr></table></body></html>
