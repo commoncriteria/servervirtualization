@@ -73,7 +73,7 @@
           complete in itself, but rather is intended for use with the following Base-PP:
 	      
 	      <h:ul>
-		      <h:li>Protection Profile for Virtualization, Version 2.0, DD MMM 202Y.<comment> TBD</comment></h:li>
+		      <h:li>Protection Profile for Virtualization, Version 2.0</h:li>
 	      </h:ul>
 
 	  This Base-PP is valid because server virtualization is a specific type of Virtualization System and is expected to
@@ -640,11 +640,6 @@
 	addition to the functionality required by the Base-PP.
     </appendix>
 	
-    <bibliography>
-      <entry id="bib-base-pp">
-        <tag>VirtPP</tag>
-        <description>Protection Profile for Virtualization, Version: 2.0, YYYY-MM-DD <comment>Adjust
-        date when published</comment></description>
-      </entry>
-    </bibliography>
+    <bibliography/>
+      
 </Module>
