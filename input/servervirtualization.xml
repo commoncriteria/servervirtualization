@@ -41,7 +41,7 @@
         <entry>
             <version>2.0</version>
             <date>2025-06-06</date>
-            <subject>CC2022 conversion</subject>
+            <subject>CC:2022 conversion</subject>
         </entry>
         
     </RevisionHistory>
@@ -119,7 +119,7 @@
       <term full="Virtual Machine Manager" abbr="VMM">A VMM is a collection of software components responsible for enabling VMs to
 		      function as expected by the software executing within them. Generally, the VMM consists of a hypervisor, Service 
 		      VMs, and other components of the VS, such as virtual devices, binary translation systems, and physical device
-		      drivers. It manages concurrent execution of all VMs and virtualizes platform resources as needed.</term>
+		      drivers. It manages concurrent execution of all VMs and virtualized platform resources as needed.</term>
       <term full="Virtualization System" abbr="VS">A software product that enables multiple independent computing systems to 
 		      execute on the same physical hardware platform without interference from one another. For the purposes of this 
 		      document, the VS consists of a Virtual Machine Manager (VMM), Virtual Machine abstractions, a management subsystem,
